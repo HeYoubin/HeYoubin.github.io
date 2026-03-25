@@ -4,36 +4,37 @@ project:
   
 website:
   page-navigation: true
-  title: "Yujun Lian"
-  site-url: https://lianyujun.github.io
+  title: "Youbin He"
+  site-url: https://HeYoubin.github.io 
   favicon: images/site-logo.png
-  repo-url: https://github.com/lianyujun/lianyujun.github.io
+  repo-url: https://github.com/HeYoubin/HeYoubin.github.io 
   repo-actions: [edit, issue]
   
-  page-footer:
-    left: |
-      [lianxh.cn](https://www.lianxh.cn)<br>
-    right: |
-      Made with [Quarto](https://quarto.org/)<br>
+  # page-footer:
+  #   left: |
+  #     [lianxh.cn](https://www.lianxh.cn)<br>
+  #   right: |
+  #     Made with [Quarto](https://quarto.org/)<br>
     
   navbar: 
     background: "#A9CCE3"
+    # background: "#1A73E8"
     search: true
     right: 
       - text: "Home"
         href: index.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Books"
-        href: books.qmd
-      - text: "Blogs"
+      - text: "Research & Projects"
+        href: Res_Pro.qmd
+      - text: "Notes"
         href: blog.qmd
-      - text: "Codes"
+      - text: "Code"
         href: codes.qmd
       - text: "中文"
         href: Chinese.qmd
       - text: "CV"
-        href: CV.pdf
+        href: HYB_CV_V0.4.pdf
 
 format:
   html:
