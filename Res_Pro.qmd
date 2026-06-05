@@ -7,7 +7,7 @@ editor:
 
 ## Multi-scale Wildfire Driving Factor Modeling in Southwest China
 
-**Keywords:** Wildfire Risk Modeling, GeoAI, XGBoost, SHAP, GeoShapley, Spatial Machine Learning, Multi-scale Analysis, Remote Sensing
+**Keywords:** <span class="highlight-secondary">Wildfire Risk Modeling</span>, <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">XGBoost</span>, <span class="highlight-secondary">SHAP</span>, <span class="highlight-secondary">GeoShapley</span>, Spatial Machine Learning, Multi-scale Analysis, Remote Sensing
 
 **Research Question:** How do multi-source geospatial factors shape the spatiotemporal patterns of grassland and forest fires in Southwest China, and how can explainable machine learning improve interpretation of wildfire risk?
 
@@ -15,15 +15,15 @@ editor:
 
 **Methods:** The project uses multi-scale geospatial modeling to examine fire occurrence, intensity, and risk. It combines machine learning and explainable AI methods, including XGBoost, SHAP, and potentially GeoShapley, to explore nonlinear and spatially heterogeneous drivers.
 
-**Key Findings / Expected Contributions:** This work aims to improve understanding of wildfire risk drivers in Southwest China and provide interpretable evidence for ecological fire risk assessment. The manuscript, *Analysis of Spatiotemporal Driving Factors of Grassland and Forest Fires in Southwest China Based on a Multi-Scale Geospatial Approach*, is under review.
+**Key Findings / Expected Contributions:** This work aims to improve understanding of wildfire risk drivers in Southwest China and provide interpretable evidence for ecological fire risk assessment. The manuscript, *Analysis of Spatiotemporal Driving Factors of Grassland and Forest Fires in Southwest China Based on a Multi-Scale Geospatial Approach*, is <span class="status-tag">under review</span>.
 
-**My Role:** I led the project design, geospatial data preparation, modeling workflow, interpretation, visualization, and manuscript development.
+**My Role:** <span class="highlight-primary">I led the project design, geospatial data preparation, modeling workflow, interpretation, visualization, and manuscript development.</span>
 
 **Outputs:** Manuscript under review.
 
 ## Operational Remote Sensing Fire and Agricultural Monitoring Systems
 
-**Keywords:** Remote Sensing Engineering, MODIS, FY-3D/E/F, FY-4B, GaoFen, AQUA, L1-to-L2 Processing, Fire Monitoring, Agricultural Monitoring
+**Keywords:** <span class="highlight-secondary">Remote Sensing Engineering</span>, MODIS, FY-3D/E/F, FY-4B, GaoFen, AQUA, <span class="highlight-secondary">L1-to-L2 Processing</span>, Fire Monitoring, Agricultural Monitoring
 
 **Research Question:** How can production-oriented remote sensing workflows support reliable fire monitoring, agricultural monitoring, and satellite product generation?
 
@@ -33,7 +33,7 @@ editor:
 
 **Key Findings / Expected Contributions:** The work supports efficient generation of remote sensing products for surface temperature inversion, time-series compositing, thematic map production, vegetation index inversion, crop-growth assessment, and crop-yield estimation.
 
-**My Role:** Remote Sensing Algorithm Engineer, May 2024 to present. I contributed algorithm development, workflow testing, product automation, and independent development of a crop-yield estimation module.
+**My Role:** <span class="highlight-primary">Remote Sensing Algorithm Engineer, May 2024 to present.</span> I contributed algorithm development, workflow testing, product automation, and independent development of a crop-yield estimation module.
 
 **Outputs:** Operational remote sensing workflows and production-oriented algorithm modules. Internal implementation details, source code, client information, and non-public data paths are not disclosed.
 
@@ -47,11 +47,11 @@ editor:
 
 **Methods:** The project used supervised classification on Landsat 8 time-series for five land-use categories, dNBR-based burned-area extraction from Sentinel-2 and Landsat 8 imagery, and RSEI-based ecological environment assessment.
 
-**Key Findings / Expected Contributions:** The analysis quantified 103.5 km² expansion of built-up areas. It estimated approximately 825 ha of burned area, within 4% of the 791.6 ha field survey reference. RSEI analysis showed that excellent ecological zones declined by 38.2%, and vegetation cover dropped by 3.3% after fire disturbance.
+**Key Findings / Expected Contributions:** The analysis quantified <span class="highlight-primary">103.5 km² expansion</span> of built-up areas. It estimated approximately <span class="highlight-primary">825 ha of burned area</span>, within 4% of the 791.6 ha field survey reference. RSEI analysis showed that excellent ecological zones declined by <span class="highlight-primary">38.2%</span>, and vegetation cover dropped by <span class="highlight-primary">3.3%</span> after fire disturbance.
 
 **My Role:** I participated in data preprocessing, classification, burned-area extraction, ecological index analysis, validation, and result interpretation.
 
-**Outputs:** One first-author publication, one second-author publication, and an award in a university remote sensing competition.
+**Outputs:** <span class="highlight-primary">One first-author publication</span>, one second-author publication, and an award in a university remote sensing competition.
 
 ## Remote Sensing Scene Classification with ECA-ResNet34
 
@@ -63,8 +63,8 @@ editor:
 
 **Methods:** The project integrated Efficient Channel Attention blocks into ResNet-34 residual modules and validated the improved architecture on the AID dataset.
 
-**Key Findings / Expected Contributions:** The model achieved 94.95% classification accuracy, improving accuracy by 3.45 percentage points compared with standard ResNet-34.
+**Key Findings / Expected Contributions:** The model achieved <span class="highlight-primary">94.95% classification accuracy</span>, improving accuracy by <span class="highlight-primary">3.45 percentage points</span> compared with standard ResNet-34.
 
 **My Role:** I contributed model design, PyTorch implementation, experiment validation, and paper writing.
 
-**Outputs:** One first-author IEEE conference publication.
+**Outputs:** <span class="highlight-primary">One first-author IEEE conference publication.</span>

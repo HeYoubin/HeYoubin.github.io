@@ -1,6 +1,6 @@
 ---
 title: "Youbin He"
-image: images/youbinhe_2025.png
+image: images/HYB_2026.png
 about:
   id: hero-heading
   template: trestles
@@ -29,23 +29,23 @@ about:
 
 ::: {#hero-heading}
 
-I am a Remote Sensing Algorithm Engineer at XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD in Chengdu, China, and a prospective M.S./Ph.D. applicant in GeoAI, AI for Remote Sensing, Ecological Remote Sensing, and Wildfire Risk Modeling. My work connects geospatial machine learning, multi-source satellite data processing, and operational remote sensing product generation. I have research experience in wildfire driving factor modeling, ecological environment assessment, land-use change analysis, and remote sensing scene classification. I am especially interested in using spatial machine learning and explainable AI methods, including XGBoost, SHAP, and GeoShapley, to understand nonlinear and spatially heterogeneous environmental processes. I hope to contribute to research groups working on GeoAI, fire ecology, ecological monitoring, and reliable remote sensing systems for environmental decision support.
+I am a <span class="highlight-primary">Remote Sensing Algorithm Engineer</span> at XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD in Chengdu, China, and a <span class="highlight-primary">prospective M.S./Ph.D. applicant</span> in <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">AI for Remote Sensing</span>, <span class="highlight-secondary">Ecological Remote Sensing</span>, and <span class="highlight-secondary">Wildfire Risk Modeling</span>. My work connects geospatial machine learning, multi-source satellite data processing, and operational remote sensing product generation. I have research experience in wildfire driving factor modeling, ecological environment assessment, land-use change analysis, and remote sensing scene classification. I am especially interested in using spatial machine learning and explainable AI methods, including <span class="highlight-secondary">XGBoost</span>, <span class="highlight-secondary">SHAP</span>, and <span class="highlight-secondary">GeoShapley</span>, to understand nonlinear and spatially heterogeneous environmental processes. I hope to contribute to research groups working on GeoAI, fire ecology, ecological monitoring, and reliable remote sensing systems for environmental decision support.
 
 ## Current Position
 
-Remote Sensing Algorithm Engineer  
-XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD  
+<span class="highlight-primary">Remote Sensing Algorithm Engineer</span><br>
+XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD<br>
 Chengdu, China
 
 ## Education
 
-B.S. in Geographic Information Science  
-Shandong Jiaotong University  
-GPA 89.6 / 100, Top 3%
+B.S. in Geographic Information Science<br>
+Shandong Jiaotong University<br>
+<span class="highlight-primary">GPA 89.6 / 100, Top 3%</span>
 
 ## Application Focus
 
-I am seeking M.S. and Ph.D. opportunities in GeoAI, AI for Remote Sensing, Ecological Remote Sensing, and Wildfire Risk Modeling.
+I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span> in <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">AI for Remote Sensing</span>, <span class="highlight-secondary">Ecological Remote Sensing</span>, and <span class="highlight-secondary">Wildfire Risk Modeling</span>.
 
 ## Research Interests
 
@@ -58,9 +58,9 @@ I am seeking M.S. and Ph.D. opportunities in GeoAI, AI for Remote Sensing, Ecolo
 
 ## Selected Highlights
 
-- GPA 89.6 / 100, Top 3%.
-- One manuscript on grassland and forest fire driving factors in Southwest China is under review.
-- First-author and co-author publications in IEEE and SPIE conference proceedings.
+- <span class="highlight-primary">GPA 89.6 / 100, Top 3%</span>.
+- One manuscript on grassland and forest fire driving factors in Southwest China is <span class="status-tag">under review</span>.
+- <span class="highlight-primary">First-author</span> and co-author publications in IEEE and SPIE conference proceedings.
 - Research and engineering experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, and remote sensing product generation.
 - Awards including National Encouragement Scholarship, Comprehensive First-Class Scholarship, Esri-Cup awards, and Remote Sensing Technology Competition awards.
 

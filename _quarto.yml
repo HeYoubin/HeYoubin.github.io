@@ -11,7 +11,7 @@ website:
   repo-actions: [edit, issue]
 
   navbar:
-    background: "#355E3B"
+    background: "#1F4E79"
     search: true
     right:
       - text: "Home"
