@@ -1,6 +1,6 @@
 ---
-title: "YoubinHe"
-image: images/HYB_2026.png
+title: "Youbin He"
+image: images/youbinhe_2025.png
 about:
   id: hero-heading
   template: trestles
@@ -11,7 +11,7 @@ about:
       text: youbinhe0607@gmail.com
       href: mailto:youbinhe0607@gmail.com
     - icon: github
-      text: binbin's GitHub
+      text: GitHub
       href: https://github.com/HeYoubin
     - icon: book
       text: Google Scholar
@@ -19,51 +19,57 @@ about:
     - icon: fingerprint
       text: ORCID
       href: https://orcid.org/0009-0004-8018-0909
-    # - icon: brands zhihu
-    #   text: 知乎
-    #   href: https://www.zhihu.com/people/arlionn/
-    # - icon: brands weibo
-    #   text: 微博
-    #   href: https://weibo.com/arlionn
-    - icon: brands xiaohongshu
-      text: 小红书
-      href: https://www.xiaohongshu.com/user/profile/63b1162b00000000260070aa
-    # - icon: solid user
-    #   text: 工作主页
-    #   href: https://lingnan.sysu.edu.cn/faculty/LianYujun
-    # - icon: brands home
-    #   text: 连享会
-    #   href: https://www.lianxh.cn
-    - icon: 📝
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/youbin-he-610735308/
+    - icon: file-earmark-person
       text: CV
-      href: HYB_CV_V0.4.pdf  
+      href: Youbin_He_CV.pdf
 ---
 
 ::: {#hero-heading}
 
-Hello! I am Youbin He. 
+I am a Remote Sensing Algorithm Engineer at XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD in Chengdu, China, and a prospective M.S./Ph.D. applicant in GeoAI, AI for Remote Sensing, Ecological Remote Sensing, and Wildfire Risk Modeling. My work connects geospatial machine learning, multi-source satellite data processing, and operational remote sensing product generation. I have research experience in wildfire driving factor modeling, ecological environment assessment, land-use change analysis, and remote sensing scene classification. I am especially interested in using spatial machine learning and explainable AI methods, including XGBoost, SHAP, and GeoShapley, to understand nonlinear and spatially heterogeneous environmental processes. I hope to contribute to research groups working on GeoAI, fire ecology, ecological monitoring, and reliable remote sensing systems for environmental decision support.
 
-I am a **Remote Sensing Algorithm Engineer** based in China, specializing in the development of **automated data preprocessing pipelines** and applied algorithms for **fire and agricultural monitoring**. My current research interest lies at the intersection of **Machine Learning** and **Ecological Remote Sensing Big Data**. 
+## Current Position
 
-During my undergraduate studies, I served as a **Research Team Leader**, spearheading projects on "Multi-source Remote Sensing Data Applications for Ecological Environments" and "Urban Development Analysis". I was also a core member of the "Intelligent Geospatial Scene Interpretation" team. My academic dedication was recognized with multiple **National Third Prizes** in the prestigious **Esri-Cup Chinese College Students GIS Software Development Contest**.
+Remote Sensing Algorithm Engineer  
+XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD  
+Chengdu, China
 
-I am currently seeking **M.S. and Ph.D. opportunities** in **AI4RS** and **GeoAI**. 
-Please visit my [Research & Projects](Res_Pro.qmd) page for a deeper dive into my work.
+## Education
 
-Beyond coding and research, I am passionate about photography and cooking. Feel free to follow my social media to see the world (and food) through my lens.
+B.S. in Geographic Information Science  
+Shandong Jiaotong University  
+GPA 89.6 / 100, Top 3%
 
-## Key topics
+## Application Focus
 
-- AI4RS
-- GeoAI
-- Remote Sensing / Geographic Big Data Analysis
-- Ecological Remote Sensing
+I am seeking M.S. and Ph.D. opportunities in GeoAI, AI for Remote Sensing, Ecological Remote Sensing, and Wildfire Risk Modeling.
 
-## News
+## Research Interests
 
-- Feb 2026: Submitted a new paper on Analysis of Driving Factors of Forest and Grassland Fires in Southwest China(Under Review). 
-- Jan 2025: My paper on **Research on the spatial distribution and influencing factors of B&Bs in Liangshan prefecture based on GIS spatial analysis and spatial econometric model** has been published in ICMIC 2024.
-- May 2024: Joined XingTuZhiHui as a Remote Sensing Algorithm Engineer.
-- 2019-2023: Bachelor of Science, Shandong Jiaotong University, China, majoring in Geographic Information Science.
+- GeoAI and AI for Remote Sensing
+- Wildfire risk modeling and fire ecology
+- Multi-source satellite data analysis
+- Spatial machine learning and explainable AI
+- Ecological environment monitoring
+- Operational remote sensing systems
+
+## Selected Highlights
+
+- GPA 89.6 / 100, Top 3%.
+- One manuscript on grassland and forest fire driving factors in Southwest China is under review.
+- First-author and co-author publications in IEEE and SPIE conference proceedings.
+- Research and engineering experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, and remote sensing product generation.
+- Awards including National Encouragement Scholarship, Comprehensive First-Class Scholarship, Esri-Cup awards, and Remote Sensing Technology Competition awards.
+
+## Contact
+
+- Email: [youbinhe0607@gmail.com](mailto:youbinhe0607@gmail.com)
+- GitHub: <https://github.com/HeYoubin>
+- Google Scholar: <https://scholar.google.com/citations?user=-r5foIsAAAAJ&hl=zh-CN>
+- ORCID: <https://orcid.org/0009-0004-8018-0909>
+- LinkedIn: <https://www.linkedin.com/in/youbin-he-610735308/>
 
 :::

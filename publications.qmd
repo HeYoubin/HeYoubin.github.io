@@ -3,23 +3,21 @@ title: "Publications"
 editor: visual
 ---
 
-::: callout-note
-## Links
+## Profiles
 
-> -   **Google Scholar**: <https://scholar.google.com/citations?user=-r5foIsAAAAJ&hl=zh-CN>
-> -   **ORCID**: <https://orcid.org/0009-0004-8018-0909>
-<!-- > -   **ResearchGate:** <https://www.researchgate.net/profile/Yujun-Lian> -->
-:::
+- Google Scholar: <https://scholar.google.com/citations?user=-r5foIsAAAAJ&hl=zh-CN>
+- ORCID: <https://orcid.org/0009-0004-8018-0909>
 
- 
+## Manuscripts under review
 
-## Journal articles
-
-- Working on writing it.
+- Youbin He et al. *Analysis of Spatiotemporal Driving Factors of Grassland and Forest Fires in Southwest China Based on a Multi-Scale Geospatial Approach*. Under Review.
 
 ## Conference Papers
 
-- **He Y**, Yang Y. Research on the spatial distribution and influencing factors of B&Bs in Liangshan prefecture based on GIS spatial analysis and spatial econometric model[C]//International Conference on Mechatronics and Intelligent Control (ICMIC 2024). SPIE, 2025, 13447: 1300-1320.[-Link-](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13447/134474P/Research-on-the-spatial-distribution-and-influencing-factors-of-BBs/10.1117/12.3049158.short), [-PDF-](), [-Code-]()
-- Wang R, **He Y**, Li S, et al. Forest fire monitoring based on the remote sensing technology[C]//Fifth International Conference on Geology, Mapping, and Remote Sensing (ICGMRS 2024). SPIE, 2024, 13223: 505-508.[-Link-](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13223/1322322/Forest-fire-monitoring-based-on-the-remote-sensing-technology/10.1117/12.3035651.short), [-PDF-](), [-Code-]()
-- **He Y**, Ju X. XiChang City land dynamic changes based on the remote sensing data[C]//Fourth International Conference on Geology, Mapping, and Remote Sensing (ICGMRS 2023). SPIE, 2024, 12978: 277-282.[-Link-](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12978/1297818/XiChang-City-land-dynamic-changes-based-on-the-remote-sensing/10.1117/12.3020749.short), [-PDF-](), [-Code-]()
-- **Y. He**, S. Zhou and X. Quan, "Remote Sensing Image Scene Classification Based on ECA Attention Mechanism Convolutional Neural Network," 2022 IEEE 4th International Conference on Civil Aviation Safety and Information Technology (ICCASIT), Dali, China, 2022, pp. 1265-1269, doi: 10.1109/ICCASIT55725.2022.9949337.[-Link-](https://ieeexplore.ieee.org/abstract/document/9987089), [-PDF-](), [-Code-]()
+- Youbin He; Yanzhen Yang. Research on the spatial distribution and influencing factors of B&Bs in Liangshan prefecture based on GIS spatial analysis and spatial econometric model. ICMIC 2024, SPIE, Vol. 13447, pp. 1300-1320, 2025. [Link](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13447/134474P/Research-on-the-spatial-distribution-and-influencing-factors-of-BBs/10.1117/12.3049158.short)
+
+- Rui Wang, Youbin He, Songyan Li, Rubing Huang. Forest fire monitoring based on the remote sensing technology. ICGMRS 2024, SPIE, Vol. 13223, 2024. [Link](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13223/1322322/Forest-fire-monitoring-based-on-the-remote-sensing-technology/10.1117/12.3035651.short)
+
+- Youbin He, Xiaolei Ju. XiChang City land dynamic changes based on the remote sensing data. ICGMRS 2023, SPIE, Vol. 12978, 2023. [Link](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12978/1297818/XiChang-City-land-dynamic-changes-based-on-the-remote-sensing/10.1117/12.3020749.short)
+
+- Youbin He; Shuting Zhou; Xin Quan. Remote Sensing Image Scene Classification Based on ECA Attention Mechanism Convolutional Neural Network. IEEE 4th International Conference on Civil Aviation Safety and Information Technology, pp. 1265-1269, 2022. [Link](https://ieeexplore.ieee.org/abstract/document/9987089)

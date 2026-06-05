@@ -1,0 +1,14 @@
+---
+title: "Contact"
+editor:
+  markdown:
+    wrap: 72
+---
+
+For academic inquiries, graduate application communication, or collaboration related to GeoAI and remote sensing, please contact me through the links below.
+
+- Email: [youbinhe0607@gmail.com](mailto:youbinhe0607@gmail.com)
+- GitHub: <https://github.com/HeYoubin>
+- Google Scholar: <https://scholar.google.com/citations?user=-r5foIsAAAAJ&hl=zh-CN>
+- ORCID: <https://orcid.org/0009-0004-8018-0909>
+- LinkedIn: <https://www.linkedin.com/in/youbin-he-610735308/>
