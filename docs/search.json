@@ -9,9 +9,30 @@
   {
     "objectID": "Res_Pro.html",
     "href": "Res_Pro.html",
-    "title": "Selected Research Projects",
+    "title": "Research & Projects",
     "section": "",
-    "text": "Wildfire driving factor modeling, operational remote sensing systems, ecological environment assessment, and remote sensing scene classification."
+    "text": "Overview page for Featured Research, Applied Remote Sensing Engineering, and Additional GIS & Spatial Analysis."
+  },
+  {
+    "objectID": "research/featured-research.html",
+    "href": "research/featured-research.html",
+    "title": "Featured Research",
+    "section": "",
+    "text": "GeoAI, AI for Remote Sensing, wildfire risk modeling, wildfire disturbance and post-fire ecological dynamics in Xichang City, and attention-enhanced deep learning for remote sensing scene classification."
+  },
+  {
+    "objectID": "research/applied-remote-sensing-engineering.html",
+    "href": "research/applied-remote-sensing-engineering.html",
+    "title": "Applied Remote Sensing Engineering",
+    "section": "",
+    "text": "Production-oriented remote sensing engineering, satellite data preprocessing, L1-to-L2 product generation, fire monitoring, agricultural monitoring, and crop-yield estimation."
+  },
+  {
+    "objectID": "research/additional-gis-spatial-analysis.html",
+    "href": "research/additional-gis-spatial-analysis.html",
+    "title": "Additional GIS & Spatial Analysis",
+    "section": "",
+    "text": "GIScience projects covering multiscale spatial patterns of homestay development in Liangshan Prefecture and integrated assessment of urban development quality in Jinan City."
   },
   {
     "objectID": "publications.html",

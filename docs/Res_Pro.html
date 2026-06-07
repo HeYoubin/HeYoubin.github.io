@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Selected Research Projects - Youbin He</title>
+  <title>Research & Projects - Youbin He</title>
   <link rel="icon" href="images/site-logo.png" type="image/png">
   <link rel="stylesheet" href="site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
   <style>
     body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
     .navbar { background: #1F4E79; }
     .navbar a, .navbar-brand { color: #fff; }
+    .dropdown-menu a { color: #173B5C; }
+    .dropdown-menu a:hover { color: #1F5E9C; }
     main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
     h1, h2 { color: #173B5C; }
-    h2 { margin-top: 2.3rem; }
+    h2 { margin-top: 2rem; }
     a { color: #1F5E9C; text-decoration: none; }
-    a:hover { color: #173B5C; }
-    .highlight-primary { color: #1F4E79; font-weight: 700; }
-    .highlight-secondary { color: #0B5CAD; font-weight: 700; }
-    .status-tag { color: #8A6500; font-weight: 700; }
+    a:hover { color: #173B5C; text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -27,7 +26,14 @@
     <div class="collapse navbar-collapse show">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="Res_Pro.html">Research</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research/featured-research.html">Featured Research</a></li>
+            <li><a class="dropdown-item" href="research/applied-remote-sensing-engineering.html">Applied Remote Sensing Engineering</a></li>
+            <li><a class="dropdown-item" href="research/additional-gis-spatial-analysis.html">Additional GIS & Spatial Analysis</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
         <li class="nav-item"><a class="nav-link" href="codes.html">Code</a></li>
         <li class="nav-item"><a class="nav-link" href="Youbin_He_CV.pdf">CV</a></li>
@@ -37,43 +43,31 @@
   </div>
 </nav>
 <main>
-  <h1>Selected Research Projects</h1>
+  <h1>Research & Projects</h1>
+  <p>This page has been reorganized into three focused sections. Please use the <strong>Research & Projects</strong> menu in the navigation bar to view the current project pages.</p>
 
-  <h2>Multi-scale Wildfire Driving Factor Modeling in Southwest China</h2>
-  <p><strong>Keywords:</strong> <span class="highlight-secondary">Wildfire Risk Modeling</span>, <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">XGBoost</span>, <span class="highlight-secondary">SHAP</span>, <span class="highlight-secondary">GeoShapley</span>, Spatial Machine Learning, Multi-scale Analysis, Remote Sensing</p>
-  <p><strong>Research Question:</strong> How do multi-source geospatial factors shape the spatiotemporal patterns of grassland and forest fires in Southwest China, and how can explainable machine learning improve interpretation of wildfire risk?</p>
-  <p><strong>Data:</strong> Multi-source geospatial and remote sensing datasets related to fire occurrence, environmental conditions, vegetation, terrain, and human activity.</p>
-  <p><strong>Methods:</strong> The project uses multi-scale geospatial modeling to examine fire occurrence, intensity, and risk. It combines machine learning and explainable AI methods, including XGBoost, SHAP, and potentially GeoShapley, to explore nonlinear and spatially heterogeneous drivers.</p>
-  <p><strong>Key Findings / Expected Contributions:</strong> This work aims to improve understanding of wildfire risk drivers in Southwest China and provide interpretable evidence for ecological fire risk assessment. The manuscript, <em>Analysis of Spatiotemporal Driving Factors of Grassland and Forest Fires in Southwest China Based on a Multi-Scale Geospatial Approach</em>, is <span class="status-tag">under review</span>.</p>
-  <p><strong>My Role:</strong> <span class="highlight-primary">I led the project design, geospatial data preparation, modeling workflow, interpretation, visualization, and manuscript development.</span></p>
-  <p><strong>Outputs:</strong> Manuscript under review.</p>
+  <h2>Featured Research</h2>
+  <p>GeoAI, AI for Remote Sensing, ecological remote sensing, wildfire risk modeling, and remote sensing image interpretation.</p>
+  <ul>
+    <li>Wildfire Risk Modeling in Southwest China</li>
+    <li>Multi-source Remote Sensing Assessment of Wildfire Disturbance and Post-fire Ecological Dynamics in Xichang City</li>
+    <li>Attention-Enhanced Deep Learning for Remote Sensing Scene Classification</li>
+  </ul>
+  <p><a href="research/featured-research.html">Open Featured Research</a></p>
 
-  <h2>Operational Remote Sensing Fire and Agricultural Monitoring Systems</h2>
-  <p><strong>Keywords:</strong> <span class="highlight-secondary">Remote Sensing Engineering</span>, MODIS, FY-3D/E/F, FY-4B, GaoFen, AQUA, <span class="highlight-secondary">L1-to-L2 Processing</span>, Fire Monitoring, Agricultural Monitoring</p>
-  <p><strong>Research Question:</strong> How can production-oriented remote sensing workflows support reliable fire monitoring, agricultural monitoring, and satellite product generation?</p>
-  <p><strong>Data:</strong> Multi-source satellite data from sensors and platforms including MODIS, FY-3D/E/F, FY-4B, GaoFen-series GF-1/2/6, and AQUA.</p>
-  <p><strong>Methods:</strong> I developed and tested Python-based preprocessing algorithms for radiometric calibration, atmospheric correction, geometric correction, and image fusion. I also supported automated batch L1-to-L2 product generation and operational workflows for fire and agricultural monitoring.</p>
-  <p><strong>Key Findings / Expected Contributions:</strong> The work supports surface temperature inversion, time-series compositing, thematic map production, vegetation index inversion, crop-growth assessment, and crop-yield estimation.</p>
-  <p><strong>My Role:</strong> <span class="highlight-primary">Remote Sensing Algorithm Engineer, May 2024 to present.</span> I contributed algorithm development, workflow testing, product automation, and independent development of a crop-yield estimation module.</p>
-  <p><strong>Outputs:</strong> Operational remote sensing workflows and production-oriented algorithm modules. Internal implementation details, source code, client information, and non-public data paths are not disclosed.</p>
+  <h2>Applied Remote Sensing Engineering</h2>
+  <p>Production-oriented remote sensing engineering experience, including satellite data preprocessing, operational fire monitoring workflows, agricultural monitoring products, and crop-yield estimation modules.</p>
+  <p><a href="research/applied-remote-sensing-engineering.html">Open Applied Remote Sensing Engineering</a></p>
 
-  <h2>Multi-source Remote Sensing for Ecological Environment Assessment</h2>
-  <p><strong>Keywords:</strong> Landsat 8, Sentinel-2, dNBR, RSEI, Burned Area Extraction, Ecological Degradation Assessment, Land-use Classification</p>
-  <p><strong>Research Question:</strong> How can multi-source remote sensing data quantify land-use change, burned areas, and post-fire ecological impacts?</p>
-  <p><strong>Data:</strong> Preprocessed Landsat 8 time-series, Sentinel-2 imagery, field survey reference information, and ecological remote sensing indicators.</p>
-  <p><strong>Methods:</strong> Supervised classification for five land-use categories, dNBR-based burned-area extraction, and RSEI-based ecological assessment.</p>
-  <p><strong>Key Findings / Expected Contributions:</strong> The analysis quantified <span class="highlight-primary">103.5 km² expansion</span> of built-up areas. It estimated approximately <span class="highlight-primary">825 ha of burned area</span>, within 4% of the 791.6 ha field survey reference. RSEI analysis showed that excellent ecological zones declined by <span class="highlight-primary">38.2%</span>, and vegetation cover dropped by <span class="highlight-primary">3.3%</span> after fire disturbance.</p>
-  <p><strong>My Role:</strong> Data preprocessing, classification, burned-area extraction, ecological index analysis, validation, and result interpretation.</p>
-  <p><strong>Outputs:</strong> <span class="highlight-primary">One first-author publication</span>, one second-author publication, and an award in a university remote sensing competition.</p>
+  <h2>Additional GIS & Spatial Analysis</h2>
+  <p>Earlier GIScience and spatial analysis projects involving multi-source geospatial data, spatial statistics, spatial econometric models, and urban/regional analysis.</p>
+  <ul>
+    <li>Multiscale Spatial Patterns and Driving Mechanisms of Homestay Development in Liangshan Prefecture</li>
+    <li>Integrated Assessment of Urban Development Quality in Jinan City Using Multi-source Geospatial Data</li>
+  </ul>
+  <p><a href="research/additional-gis-spatial-analysis.html">Open Additional GIS & Spatial Analysis</a></p>
 
-  <h2>Remote Sensing Scene Classification with ECA-ResNet34</h2>
-  <p><strong>Keywords:</strong> Deep Learning, Remote Sensing Scene Classification, ECA Attention, ResNet-34, AID Dataset, PyTorch</p>
-  <p><strong>Research Question:</strong> Can channel attention improve deep-learning-based remote sensing scene classification?</p>
-  <p><strong>Data:</strong> AID remote sensing scene classification dataset.</p>
-  <p><strong>Methods:</strong> Efficient Channel Attention blocks were integrated into ResNet-34 residual modules and validated on the AID dataset.</p>
-  <p><strong>Key Findings / Expected Contributions:</strong> The model achieved <span class="highlight-primary">94.95% classification accuracy</span>, improving accuracy by <span class="highlight-primary">3.45 percentage points</span> compared with standard ResNet-34.</p>
-  <p><strong>My Role:</strong> Model design, PyTorch implementation, experiment validation, and paper writing.</p>
-  <p><strong>Outputs:</strong> <span class="highlight-primary">One first-author IEEE conference publication.</span></p>
+  <div class="alert alert-info" role="note">Detailed contribution statements, figures, datasets, and publication links will be added as Youbin provides project-specific materials.</div>
 </main>
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 </body>

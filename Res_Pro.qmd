@@ -1,70 +1,49 @@
 ---
-title: "Selected Research Projects"
+title: "Research & Projects"
 editor:
   markdown:
     wrap: 72
 ---
 
-## Multi-scale Wildfire Driving Factor Modeling in Southwest China
+This page has been reorganized into three focused sections. Please use
+the **Research & Projects** menu in the navigation bar to view the current
+project pages.
 
-**Keywords:** <span class="highlight-secondary">Wildfire Risk Modeling</span>, <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">XGBoost</span>, <span class="highlight-secondary">SHAP</span>, <span class="highlight-secondary">GeoShapley</span>, Spatial Machine Learning, Multi-scale Analysis, Remote Sensing
+## Featured Research
 
-**Research Question:** How do multi-source geospatial factors shape the spatiotemporal patterns of grassland and forest fires in Southwest China, and how can explainable machine learning improve interpretation of wildfire risk?
+GeoAI, AI for Remote Sensing, ecological remote sensing, wildfire risk
+modeling, and remote sensing image interpretation.
 
-**Data:** Multi-source geospatial and remote sensing datasets related to fire occurrence, environmental conditions, vegetation, terrain, and human activity.
+- Wildfire Risk Modeling in Southwest China
+- Multi-source Remote Sensing Assessment of Wildfire Disturbance and
+  Post-fire Ecological Dynamics in Xichang City
+- Attention-Enhanced Deep Learning for Remote Sensing Scene
+  Classification
 
-**Methods:** The project uses multi-scale geospatial modeling to examine fire occurrence, intensity, and risk. It combines machine learning and explainable AI methods, including XGBoost, SHAP, and potentially GeoShapley, to explore nonlinear and spatially heterogeneous drivers.
+[Open Featured Research](research/featured-research.qmd)
 
-**Key Findings / Expected Contributions:** This work aims to improve understanding of wildfire risk drivers in Southwest China and provide interpretable evidence for ecological fire risk assessment. The manuscript, *Analysis of Spatiotemporal Driving Factors of Grassland and Forest Fires in Southwest China Based on a Multi-Scale Geospatial Approach*, is <span class="status-tag">under review</span>.
+## Applied Remote Sensing Engineering
 
-**My Role:** <span class="highlight-primary">I led the project design, geospatial data preparation, modeling workflow, interpretation, visualization, and manuscript development.</span>
+Production-oriented remote sensing engineering experience, including
+satellite data preprocessing, operational fire monitoring workflows,
+agricultural monitoring products, and crop-yield estimation modules.
 
-**Outputs:** Manuscript under review.
+[Open Applied Remote Sensing Engineering](research/applied-remote-sensing-engineering.qmd)
 
-## Operational Remote Sensing Fire and Agricultural Monitoring Systems
+## Additional GIS & Spatial Analysis
 
-**Keywords:** <span class="highlight-secondary">Remote Sensing Engineering</span>, MODIS, FY-3D/E/F, FY-4B, GaoFen, AQUA, <span class="highlight-secondary">L1-to-L2 Processing</span>, Fire Monitoring, Agricultural Monitoring
+Earlier GIScience and spatial analysis projects involving multi-source
+geospatial data, spatial statistics, spatial econometric models, and
+urban/regional analysis.
 
-**Research Question:** How can production-oriented remote sensing workflows support reliable fire monitoring, agricultural monitoring, and satellite product generation?
+- Multiscale Spatial Patterns and Driving Mechanisms of Homestay
+  Development in Liangshan Prefecture
+- Integrated Assessment of Urban Development Quality in Jinan City Using
+  Multi-source Geospatial Data
 
-**Data:** Multi-source satellite data from sensors and platforms including MODIS, FY-3D/E/F, FY-4B, GaoFen-series GF-1/2/6, and AQUA.
+[Open Additional GIS & Spatial Analysis](research/additional-gis-spatial-analysis.qmd)
 
-**Methods:** I developed and tested Python-based preprocessing algorithms for radiometric calibration, atmospheric correction, geometric correction, and image fusion. I also supported automated batch L1-to-L2 product generation and operational workflows for fire and agricultural monitoring.
-
-**Key Findings / Expected Contributions:** The work supports efficient generation of remote sensing products for surface temperature inversion, time-series compositing, thematic map production, vegetation index inversion, crop-growth assessment, and crop-yield estimation.
-
-**My Role:** <span class="highlight-primary">Remote Sensing Algorithm Engineer, May 2024 to present.</span> I contributed algorithm development, workflow testing, product automation, and independent development of a crop-yield estimation module.
-
-**Outputs:** Operational remote sensing workflows and production-oriented algorithm modules. Internal implementation details, source code, client information, and non-public data paths are not disclosed.
-
-## Multi-source Remote Sensing for Ecological Environment Assessment
-
-**Keywords:** Landsat 8, Sentinel-2, dNBR, RSEI, Burned Area Extraction, Ecological Degradation Assessment, Land-use Classification
-
-**Research Question:** How can multi-source remote sensing data quantify land-use change, burned areas, and post-fire ecological impacts?
-
-**Data:** Preprocessed Landsat 8 time-series, Sentinel-2 imagery, field survey reference information, and ecological remote sensing indicators.
-
-**Methods:** The project used supervised classification on Landsat 8 time-series for five land-use categories, dNBR-based burned-area extraction from Sentinel-2 and Landsat 8 imagery, and RSEI-based ecological environment assessment.
-
-**Key Findings / Expected Contributions:** The analysis quantified <span class="highlight-primary">103.5 km² expansion</span> of built-up areas. It estimated approximately <span class="highlight-primary">825 ha of burned area</span>, within 4% of the 791.6 ha field survey reference. RSEI analysis showed that excellent ecological zones declined by <span class="highlight-primary">38.2%</span>, and vegetation cover dropped by <span class="highlight-primary">3.3%</span> after fire disturbance.
-
-**My Role:** I participated in data preprocessing, classification, burned-area extraction, ecological index analysis, validation, and result interpretation.
-
-**Outputs:** <span class="highlight-primary">One first-author publication</span>, one second-author publication, and an award in a university remote sensing competition.
-
-## Remote Sensing Scene Classification with ECA-ResNet34
-
-**Keywords:** Deep Learning, Remote Sensing Scene Classification, ECA Attention, ResNet-34, AID Dataset, PyTorch
-
-**Research Question:** Can channel attention improve deep-learning-based remote sensing scene classification?
-
-**Data:** AID remote sensing scene classification dataset.
-
-**Methods:** The project integrated Efficient Channel Attention blocks into ResNet-34 residual modules and validated the improved architecture on the AID dataset.
-
-**Key Findings / Expected Contributions:** The model achieved <span class="highlight-primary">94.95% classification accuracy</span>, improving accuracy by <span class="highlight-primary">3.45 percentage points</span> compared with standard ResNet-34.
-
-**My Role:** I contributed model design, PyTorch implementation, experiment validation, and paper writing.
-
-**Outputs:** <span class="highlight-primary">One first-author IEEE conference publication.</span>
+::: {.callout-note}
+Detailed contribution statements, figures, datasets, and publication
+links will be added as Youbin provides project-specific materials.
+:::

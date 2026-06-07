@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Additional GIS & Spatial Analysis - Youbin He</title>
+  <link rel="icon" href="../images/site-logo.png" type="image/png">
+  <link rel="stylesheet" href="../site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
+  <style>
+    body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
+    .navbar { background: #1F4E79; }
+    .navbar a, .navbar-brand { color: #fff; }
+    .dropdown-menu a { color: #173B5C; }
+    .dropdown-menu a:hover { color: #1F5E9C; }
+    main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
+    h1, h2 { color: #173B5C; }
+    h2 { margin-top: 2.5rem; }
+    a { color: #1F5E9C; text-decoration: none; }
+    a:hover { color: #173B5C; text-decoration: underline; }
+    .alert { border-radius: 6px; }
+    .highlight-primary { color: #1F4E79; font-weight: 700; }
+    figure { margin: 1.35rem 0; }
+    figcaption { color: #334155; font-size: 0.95rem; text-align: center; margin-top: 0.45rem; }
+    .figure-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; align-items: start; }
+    .project-figure { width: 100%; border: 1px solid #d7e7f6; background: #fff; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Youbin He</a>
+    <div class="collapse navbar-collapse show">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="featured-research.html">Featured Research</a></li>
+            <li><a class="dropdown-item" href="applied-remote-sensing-engineering.html">Applied Remote Sensing Engineering</a></li>
+            <li><a class="dropdown-item active" href="additional-gis-spatial-analysis.html">Additional GIS & Spatial Analysis</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="../codes.html">Code</a></li>
+        <li class="nav-item"><a class="nav-link" href="../Youbin_He_CV.pdf">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <h1>Additional GIS & Spatial Analysis</h1>
+  <p>This section presents my earlier GIScience and spatial analysis projects, highlighting my experience with multi-source geospatial data, spatial statistics, spatial econometric models, and urban/regional analysis.</p>
+  <div class="alert alert-info" role="note">Project details, figures, and contribution statements will be expanded after additional materials are provided.</div>
+
+  <h2>Multiscale Spatial Patterns and Driving Mechanisms of Homestay Development in Liangshan Prefecture</h2>
+  <p><strong>Keywords:</strong> GIS; Spatial Analysis; Homestays; B&amp;Bs; Liangshan Prefecture; POI; OSM; NPP-VIIRS; Kernel Density; Average Nearest Neighbor; Standard Deviational Ellipse; Geographical Detector; GWR; Spatial Econometrics; Tourism Geography</p>
+  <p><strong>Project trajectory:</strong> This work began as my undergraduate thesis, received undergraduate thesis recognition, was later extended into a first-author SPIE conference paper, and also supported my B1972 GIS competition submission.</p>
+
+  <h3>Overview</h3>
+  <p>This project investigates the spatial distribution and driving mechanisms of <strong>homestays / B&amp;Bs in Liangshan Prefecture</strong>, Sichuan, China. It was initially completed as my <strong>undergraduate thesis</strong> and later developed into a <strong>first-author SPIE conference paper</strong>. The study integrates multi-source geospatial data, including <strong>POI records</strong>, remote sensing imagery, road network data, and statistical data, to characterize homestay concentration and spatial heterogeneity. Methodologically, it combines GIS spatial analysis, Average Nearest Neighbor, kernel density analysis, Standard Deviational Ellipse, <strong>Geographical Detector</strong>, and <strong>Geographically Weighted Regression (GWR)</strong>. By connecting global-scale factor detection with local-scale regression modeling, the project demonstrates my foundation in GIScience, spatial statistics, spatial econometrics, and multi-source geospatial data analysis for regional tourism geography.</p>
+
+  <h3>Research Objective</h3>
+  <ul>
+    <li>Characterize the spatial distribution pattern of homestays in Liangshan Prefecture.</li>
+    <li>Identify clustering direction and spatial concentration characteristics using GIS-based spatial statistics.</li>
+    <li>Quantify global driving factors of homestay distribution using Geographical Detector.</li>
+    <li>Explore spatially heterogeneous local relationships using GWR.</li>
+    <li>Provide a spatial analytical basis for tourism resource planning and regional development evaluation.</li>
+  </ul>
+
+  <h3>Study Area</h3>
+  <p>The study area is Liangshan Yi Autonomous Prefecture in southwestern Sichuan Province, China, located between 26 degrees 03'--29 degrees 18' N and 100 degrees 03'--103 degrees 52' E. The prefecture covers approximately 60,400 km2 and includes 15 counties and 2 county-level cities. Its terrain is dominated by mountains and plateaus, and its tourism resources include Qionghai-Lushan, Luoji Mountain, Lugu Lake, and other major natural and cultural attractions.</p>
+
+  <h3>Data</h3>
+  <ul>
+    <li>Homestay / B&amp;B POI data: <strong>369 records</strong> collected for Liangshan Prefecture.</li>
+    <li>Tourism and service POI data, including attractions, catering, shopping, and leisure service facilities.</li>
+    <li>OSM road network data, including major road classes used for accessibility analysis.</li>
+    <li>Remote sensing imagery and nighttime light data used as part of the multi-source geospatial data framework.</li>
+    <li>Statistical and socioeconomic data used for factor analysis and spatial modeling.</li>
+  </ul>
+
+  <h3>Methods</h3>
+  <ul>
+    <li>Average Nearest Neighbor Index</li>
+    <li>Kernel density analysis and modified kernel density analysis</li>
+    <li>Standard Deviational Ellipse</li>
+    <li>Geographical Detector</li>
+    <li>Geographically Weighted Regression, GWR</li>
+    <li>Buffer analysis for transportation arteries and tourism attractions</li>
+    <li>GIS spatial visualization and mapping</li>
+    <li>Global and local scale factor analysis</li>
+  </ul>
+
+  <h3>Key Results</h3>
+  <ul>
+    <li>The spatial distribution of homestays showed a significant clustering pattern, with an Average Nearest Neighbor Index of <span class="highlight-primary">0.141986</span> and a Z-score of <span class="highlight-primary">-31.573762</span>.</li>
+    <li>Standard Deviational Ellipse analysis indicated a <span class="highlight-primary">NE-SW</span> distribution direction, with a rotation angle of <span class="highlight-primary">81.156 degrees</span>.</li>
+    <li>Kernel density analysis showed a "one main center, one subcenter, and multiple points" pattern: Xichang served as the main center, while Yanyuan / Lugu Lake formed a subcenter.</li>
+    <li>Geographical Detector analysis quantified driving factors at global and grid scales, showing that attractions, regional development, and population-related factors helped explain homestay distribution.</li>
+    <li>GWR-based local analysis showed spatial heterogeneity in the influence of key factors. The CA-GWR model achieved an adjusted R2 of <span class="highlight-primary">0.833</span> and an AICc of <span class="highlight-primary">3451.861</span>.</li>
+  </ul>
+
+  <h3>My Contribution</h3>
+  <ul>
+    <li>Conceptualized the research topic and developed the overall analytical framework for my undergraduate thesis.</li>
+    <li>Collected and processed multi-source geospatial datasets, including POI, OSM road network, remote sensing, nighttime light, and statistical data.</li>
+    <li>Independently implemented the spatial analysis and modeling workflow, including spatial pattern analysis, Geographical Detector analysis, and GWR-based local factor analysis.</li>
+    <li>Produced maps, statistical summaries, and result interpretations for the thesis and subsequent conference paper.</li>
+    <li>Led the writing, revision, and polishing of the undergraduate thesis and manuscript, with constructive feedback from my supervisor.</li>
+  </ul>
+
+  <h3>Outputs and Recognition</h3>
+  <ul>
+    <li>Role: <span class="highlight-primary">Independent undergraduate thesis project; first author of the subsequent SPIE conference paper</span>.</li>
+    <li>Undergraduate thesis project, later developed into a first-author SPIE conference paper.</li>
+    <li>Outstanding Undergraduate Thesis Award.</li>
+    <li>Competition project: B1972, <em>Spatial Distribution and Influencing Factors of Homestays in Liangshan Prefecture Based on Geographical Detector and Geographically Weighted Regression</em>.</li>
+    <li>Third Prize, Geographic Design Group, 2023 Esri-Cup Chinese College Students GIS Software Development Contest, Chinese Society for Geodesy, Photogrammetry and Cartography.</li>
+    <li>First-author paper: Youbin He; Yanzhen Yang. <em>Research on the spatial distribution and influencing factors of B&amp;Bs in Liangshan prefecture based on GIS spatial analysis and spatial econometric model</em>. ICMIC 2024, SPIE, Vol. 13447, pp. 1300-1320, 2025.</li>
+    <li>DOI: <a href="https://doi.org/10.1117/12.3049158">10.1117/12.3049158</a>.</li>
+    <li>Publisher link: <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13447/134474P/Research-on-the-spatial-distribution-and-influencing-factors-of-BBs/10.1117/12.3049158.short">SPIE Digital Library</a>.</li>
+    <li>Public PDF: Not listed because no legally shareable version has been confirmed.</li>
+  </ul>
+
+  <h3>Selected Figures</h3>
+  <figure>
+    <img class="project-figure" src="../images/projects/liangshan-homestay/liangshan-study-area.jpg" alt="Location and elevation map of Liangshan Prefecture, Sichuan, China.">
+    <figcaption>Study area and terrain context of Liangshan Prefecture.</figcaption>
+  </figure>
+
+  <div class="figure-grid">
+    <figure>
+      <img class="project-figure" src="../images/projects/liangshan-homestay/homestay-sde-kernel-density.jpg" alt="Standard Deviational Ellipse and kernel density map of homestays in Liangshan Prefecture.">
+      <figcaption>Standard Deviational Ellipse and homestay kernel density pattern.</figcaption>
+    </figure>
+    <figure>
+      <img class="project-figure" src="../images/projects/liangshan-homestay/homestay-attraction-kernel-density.jpg" alt="Kernel density relationship between homestays and attractions in Liangshan Prefecture.">
+      <figcaption>Modified homestay kernel density and attraction kernel density.</figcaption>
+    </figure>
+    <figure>
+      <img class="project-figure" src="../images/projects/liangshan-homestay/geodetector-interaction-grid.jpg" alt="Geographical Detector interaction results for grid-scale homestay distribution factors.">
+      <figcaption>Geographical Detector interaction results at the grid scale.</figcaption>
+    </figure>
+    <figure>
+      <img class="project-figure" src="../images/projects/liangshan-homestay/ca-gwr-coefficients.jpg" alt="Spatial distribution of CA-GWR coefficients for key homestay distribution factors.">
+      <figcaption>Spatial heterogeneity of key factors from the CA-GWR model.</figcaption>
+    </figure>
+  </div>
+
+  <hr>
+  <h2>Integrated Assessment of Urban Development Quality in Jinan City Using Multi-source Geospatial Data</h2>
+  <p><strong>Keywords:</strong> Urban Development Quality; Multi-source Geospatial Data; GIS; AHP; Composite Assessment; Spatial Analysis; Jinan City; Remote Sensing Applications; Urban Planning Support</p>
+
+  <h3>Overview</h3>
+  <p>This project evaluated urban development quality in <strong>Jinan City, Shandong Province, China</strong>, using multi-source geospatial data. Originally developed as the GIS competition work <strong>D367: Comprehensive Urban Analysis of Jinan City Based on Multi-source Data</strong>, the project integrated remote sensing imagery, nighttime light data, road network data, land-use information, and socioeconomic statistics into an <strong>AHP-based composite assessment framework</strong>. The assessment considered economic vitality, ecological quality, and urban welfare / social development dimensions, classified urban development levels into three tiers, and produced spatial evaluation maps for <span class="highlight-primary">2017–2020</span>. As an early team-based GIS and remote sensing application project, it demonstrates my experience in project leadership, urban spatial evaluation, multi-source data integration, and GIS-based analytical communication.</p>
+
+  <h3>Research Objective</h3>
+  <ul>
+    <li>Develop a multi-source geospatial framework for evaluating urban development quality in Jinan City.</li>
+    <li>Construct an assessment structure integrating economic, ecological, and social-welfare dimensions.</li>
+    <li>Apply AHP and composite assessment thinking to support urban development evaluation.</li>
+    <li>Classify urban development levels into three tiers for spatial comparison.</li>
+    <li>Provide GIS-based spatial evidence for urban planning and policy-oriented analysis.</li>
+  </ul>
+
+  <h3>Study Area</h3>
+  <p>The study area is <strong>Jinan City</strong>, Shandong Province, China. The project focuses on district-level urban development quality and uses multi-year geospatial and socioeconomic data from 2017 to 2020 to evaluate changes in urban economy, ecological environment, and social-welfare conditions.</p>
+
+  <h3>Data</h3>
+  <ul>
+    <li>Landsat 8 imagery for land surface temperature and ecological assessment inputs.</li>
+    <li>Sentinel-2 imagery used with Landsat 8 to support RSEI construction.</li>
+    <li>MODIS land surface temperature products.</li>
+    <li>NPP-VIIRS and Luojia-1 nighttime light data.</li>
+    <li>OSM road network data.</li>
+    <li>Per-capita GDP data from Jinan statistical yearbook materials.</li>
+    <li>Land-use classification data for 2017–2020.</li>
+  </ul>
+
+  <h3>Indicator System</h3>
+  <p>The project constructed an <strong>AHP-based urban development assessment framework</strong> organized around three dimensions: urban economy, urban ecology, and urban welfare / social development. The indicator system incorporated multi-source geospatial variables related to nighttime light intensity, economic development, ecological condition, road-network accessibility, and urbanization / land-use characteristics. These indicators were integrated to support a spatially explicit assessment of urban development quality across Jinan City.</p>
+  <p>Representative indicators included:</p>
+  <ul>
+    <li>ANLI nighttime light index</li>
+    <li>GDPP per-capita GDP index</li>
+    <li>Remote Sensing Ecological Index, RSEI</li>
+    <li>Road-network kernel density</li>
+    <li>Urbanization / land-use related indicators</li>
+  </ul>
+
+  <h3>Methods</h3>
+  <ul>
+    <li>Multi-source geospatial data preprocessing and spatial alignment.</li>
+    <li>Remote sensing index construction and ecological assessment using RSEI.</li>
+    <li>Nighttime-light-based economic proxy analysis.</li>
+    <li>Road-network kernel density analysis.</li>
+    <li>AHP-based weighting and composite assessment modeling.</li>
+    <li>GIS raster calculation, zonal statistics, and spatial visualization.</li>
+    <li>Three-tier classification of urban development quality.</li>
+  </ul>
+
+  <h3>Key Results</h3>
+  <ul>
+    <li>Developed an <strong>AHP-based composite assessment framework</strong> integrating economic, ecological, and social-welfare dimensions.</li>
+    <li>Produced GIS-based urban development quality maps for Jinan City from <span class="highlight-primary">2017–2020</span>.</li>
+    <li>Classified urban development quality into three tiers for spatial comparison and interpretation.</li>
+    <li>Integrated remote sensing products and non-remote-sensing geospatial datasets into a unified spatial evaluation workflow.</li>
+  </ul>
+
+  <h3>My Contribution</h3>
+  <ul>
+    <li>Role: <span class="highlight-primary">Project Leader</span>.</li>
+    <li>Coordinated the overall workflow from research design to final competition submission.</li>
+    <li>Conceptualized the project topic and developed the analytical framework for assessing urban development quality in Jinan City.</li>
+    <li>Organized data collection and preprocessing using multi-source geospatial datasets.</li>
+    <li>Led the construction of the indicator system and the AHP-based composite assessment model.</li>
+    <li>Implemented GIS-based spatial analysis, mapping, and visualization of urban development levels.</li>
+    <li>Interpreted the results and led the writing, revision, and refinement of the project report and competition materials.</li>
+    <li>Coordinated team collaboration and ensured completion of the project deliverables.</li>
+  </ul>
+
+  <h3>Outputs and Recognition</h3>
+  <ul>
+    <li>GIS competition project: D367, <em>Comprehensive Urban Analysis of Jinan City Based on Multi-source Data</em>.</li>
+    <li>Third Prize, Remote Sensing Application Group, 2022 Esri-Cup Chinese College Students GIS Software Development Contest, Chinese Society for Geodesy, Photogrammetry and Cartography.</li>
+    <li>First Prize, 2nd Remote Sensing Technology Competition, Shandong Jiaotong University.</li>
+  </ul>
+
+  <h3>Selected Figures</h3>
+  <figure>
+    <img class="project-figure" src="../images/projects/jinan-urban-quality/jinan-analytical-workflow.png" alt="Analytical workflow for the Jinan urban development quality assessment project.">
+    <figcaption>Analytical workflow integrating nighttime lights, GDP, OSM roads, Sentinel-2, Landsat 8, MODIS, and GIS-based composite assessment.</figcaption>
+  </figure>
+
+  <div class="figure-grid">
+    <figure>
+      <img class="project-figure" src="../images/projects/jinan-urban-quality/jinan-composite-assessment.jpg" alt="Composite urban development assessment map of Jinan City from 2017 to 2020.">
+      <figcaption>Composite urban development assessment results for Jinan City.</figcaption>
+    </figure>
+    <figure>
+      <img class="project-figure" src="../images/projects/jinan-urban-quality/jinan-nighttime-lights.jpg" alt="Nighttime light maps used to support economic development analysis in Jinan City.">
+      <figcaption>Nighttime-light evidence used as an economic development proxy.</figcaption>
+    </figure>
+    <figure>
+      <img class="project-figure" src="../images/projects/jinan-urban-quality/jinan-road-network-density.jpg" alt="Road network kernel density map for Jinan City.">
+      <figcaption>Road-network kernel density used in the social-welfare / accessibility dimension.</figcaption>
+    </figure>
+    <figure>
+      <img class="project-figure" src="../images/projects/jinan-urban-quality/jinan-land-use-2017-2020.jpg" alt="Land-use classification maps for Jinan City from 2017 to 2020.">
+      <figcaption>Land-use classification outputs for 2017–2020.</figcaption>
+    </figure>
+  </div>
+</main>
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

@@ -10,6 +10,8 @@
     body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
     .navbar { background: #1F4E79; }
     .navbar a, .navbar-brand { color: #fff; }
+    .dropdown-menu a { color: #173B5C; }
+    .dropdown-menu a:hover { color: #1F5E9C; }
     main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
     h1, h2 { color: #173B5C; }
     h2 { margin-top: 2rem; }
@@ -27,7 +29,14 @@
     <div class="collapse navbar-collapse show">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="Res_Pro.html">Research</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research/featured-research.html">Featured Research</a></li>
+            <li><a class="dropdown-item" href="research/applied-remote-sensing-engineering.html">Applied Remote Sensing Engineering</a></li>
+            <li><a class="dropdown-item" href="research/additional-gis-spatial-analysis.html">Additional GIS & Spatial Analysis</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
         <li class="nav-item"><a class="nav-link" href="codes.html">Code</a></li>
         <li class="nav-item"><a class="nav-link" href="Youbin_He_CV.pdf">CV</a></li>

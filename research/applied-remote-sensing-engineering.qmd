@@ -1,0 +1,153 @@
+---
+title: "Applied Remote Sensing Engineering"
+editor:
+  markdown:
+    wrap: 72
+---
+
+This section summarizes my production-oriented remote sensing engineering
+experience, including satellite data preprocessing, fire monitoring
+workflows, agricultural monitoring products, and crop-yield estimation
+modules.
+
+::: {.callout-note}
+This page uses public-safe descriptions only. Internal source code,
+client information, server paths, interface addresses, non-public system
+screenshots, contract information, and non-public data are not disclosed.
+:::
+
+## Satellite Data Preprocessing and L1-to-L2 Product Generation
+
+**Objective**
+
+- Support automated generation of operational remote sensing products
+  from satellite imagery.
+
+**Satellite Data**
+
+- GaoFen-series GF-1 / GF-2 / GF-6
+- AQUA satellite
+- [To be added]
+
+**Technical Workflow**
+
+- Python-based preprocessing algorithms
+- Radiometric calibration
+- Atmospheric correction
+- Geometric correction
+- Image fusion
+- Automated batch L1-to-L2 product generation
+
+**My Contribution**
+
+[To be added by Youbin]
+
+**Public-safe Description**
+
+This work focuses on algorithm development and testing for
+production-oriented remote sensing workflows. Detailed implementation
+logic, internal code, private paths, and non-public product examples are
+not disclosed.
+
+**Figures / Materials to be Added**
+
+- [Add generic preprocessing workflow diagram]
+- [Add non-sensitive sample product illustration]
+
+---
+
+## Operational Fire Monitoring Workflow
+
+**Objective**
+
+- Support operational fire monitoring through remote sensing product
+  generation and workflow testing.
+
+**Data and Products**
+
+- MODIS workflow components
+- Daily surface-temperature inversion products
+- Time-series compositing products
+- Thematic-map products
+
+**Workflow**
+
+- Assisted in MODIS workflow development
+- Supported daily surface-temperature inversion
+- Supported time-series compositing
+- Supported thematic-map production
+- Supported B/S module development and testing
+
+**My Contribution**
+
+[To be added by Youbin]
+
+**Public-safe Description**
+
+This section describes public-safe workflow experience in operational
+remote sensing product generation. It does not include internal system
+screenshots, client names, server addresses, or proprietary code.
+
+**Figures / Materials to be Added**
+
+- [Add fire monitoring workflow diagram]
+- [Add non-sensitive thematic product example]
+
+---
+
+## Agricultural Monitoring and Crop Growth Assessment
+
+**Objective**
+
+- Support agricultural monitoring and crop-growth assessment using
+  multi-source satellite data.
+
+**Satellite Data**
+
+- FY-3D / FY-3E / FY-3F
+- FY-4B
+- [To be added]
+
+**Products**
+
+- Vegetation index inversion products
+- Crop-growth assessment products
+- Automated workflow outputs
+
+**My Contribution**
+
+[To be added by Youbin]
+
+**Figures / Materials to be Added**
+
+- [Add agricultural monitoring workflow]
+- [Add vegetation index product example]
+
+---
+
+## Crop Yield Estimation Module
+
+**Objective**
+
+- Develop a crop-yield estimation module for production forecasting.
+
+**Method**
+
+- [To be added]
+
+**Input Data**
+
+- [To be added]
+
+**Output Products**
+
+- [To be added]
+
+**My Contribution**
+
+[To be added by Youbin]
+
+**Figures / Materials to be Added**
+
+- [Add module workflow]
+- [Add yield estimation product example]

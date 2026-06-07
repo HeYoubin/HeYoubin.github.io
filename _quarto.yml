@@ -16,8 +16,14 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Research"
-        href: Res_Pro.qmd
+      - text: "Research & Projects"
+        menu:
+          - text: "Featured Research"
+            href: research/featured-research.qmd
+          - text: "Applied Remote Sensing Engineering"
+            href: research/applied-remote-sensing-engineering.qmd
+          - text: "Additional GIS & Spatial Analysis"
+            href: research/additional-gis-spatial-analysis.qmd
       - text: "Publications"
         href: publications.qmd
       - text: "Code"
