@@ -27,7 +27,21 @@
     .hero img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
     .links { display: flex; flex-wrap: wrap; gap: 0.8rem 1rem; margin: 1rem 0; }
     .links a { font-weight: 600; }
+    .showcase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+    .showcase-tile { border: 1px solid #D7E7F6; border-left: 4px solid #1F4E79; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
+    .showcase-tile h3 { margin-top: 0; color: #1F4E79; }
+    .visitor-map-panel { border: 1px solid #D7E7F6; border-radius: 6px; background: #F8FBFE; padding: 1rem; margin: 1rem 0 1.5rem; }
+    .visitor-map-visual { position: relative; min-height: 220px; overflow: hidden; border: 1px solid #D7E7F6; border-radius: 6px; background: radial-gradient(circle at 20% 35%, rgba(31, 78, 121, 0.16) 0 9%, transparent 10%), radial-gradient(circle at 48% 42%, rgba(31, 94, 156, 0.14) 0 13%, transparent 14%), radial-gradient(circle at 72% 46%, rgba(31, 78, 121, 0.13) 0 11%, transparent 12%), linear-gradient(180deg, #ffffff 0%, #EAF3FB 100%); }
+    .visitor-map-visual::before { content: ""; position: absolute; inset: 18px; border: 1px dashed rgba(31, 78, 121, 0.35); border-radius: 50%; }
+    .map-dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #8A6500; box-shadow: 0 0 0 5px rgba(138, 101, 0, 0.16); }
+    .map-dot-1 { left: 23%; top: 42%; }
+    .map-dot-2 { left: 42%; top: 34%; }
+    .map-dot-3 { left: 56%; top: 52%; }
+    .map-dot-4 { left: 69%; top: 39%; }
+    .map-dot-5 { left: 78%; top: 58%; }
+    .last-updated { color: #4b5563; font-size: 0.95rem; margin-top: 2rem; text-align: right; }
     @media (max-width: 700px) { .hero { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) { .showcase-grid { grid-template-columns: 1fr; } .visitor-map-visual { min-height: 180px; } }
   </style>
 </head>
 <body>
@@ -100,6 +114,35 @@
     <li>Research and engineering experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, and remote sensing product generation.</li>
     <li>Awards including National Encouragement Scholarship, Comprehensive First-Class Scholarship, Esri-Cup awards, and Remote Sensing Technology Competition awards.</li>
   </ul>
+
+  <h2>Beyond Research</h2>
+  <p>Beyond my academic and engineering work, I enjoy using images and food as a quieter way to record places, seasons, and everyday observation. This section will grow into a personal showcase for food works and photography when I finish organizing a public image set.</p>
+  <div class="showcase-grid">
+    <section class="showcase-tile">
+      <h3>Food Studio</h3>
+      <p>Homemade dishes, plating experiments, and regional flavors that reflect my curiosity about craft, texture, and daily life.</p>
+    </section>
+    <section class="showcase-tile">
+      <h3>Photography Notes</h3>
+      <p>Landscape, city, campus, and fieldwork moments captured through the same habit of close observation that also shapes my remote sensing work.</p>
+    </section>
+  </div>
+
+  <h2>Visitor Map</h2>
+  <h3>Hello, World!</h3>
+  <p>Thanks for stopping by. Visitors from universities, research groups, and geospatial communities are warmly welcome. If you are interested in GeoAI, ecological remote sensing, wildfire research, or simply want to connect, please feel free to reach out.</p>
+  <div class="visitor-map-panel">
+    <div class="visitor-map-visual" aria-label="Stylized visitor map preview">
+      <span class="map-dot map-dot-1"></span>
+      <span class="map-dot map-dot-2"></span>
+      <span class="map-dot map-dot-3"></span>
+      <span class="map-dot map-dot-4"></span>
+      <span class="map-dot map-dot-5"></span>
+    </div>
+    <p>Visitor locations can be connected to a live map widget after a public tracking provider is configured.</p>
+  </div>
+
+  <p class="last-updated">Last updated: June 2026</p>
 </main>
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 </body>

@@ -64,6 +64,55 @@ I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span>
 - Research and engineering experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, and remote sensing product generation.
 - Awards including National Encouragement Scholarship, Comprehensive First-Class Scholarship, Esri-Cup awards, and Remote Sensing Technology Competition awards.
 
+## Beyond Research
+
+Beyond my academic and engineering work, I enjoy using images and food
+as a quieter way to record places, seasons, and everyday observation.
+This section will grow into a personal showcase for food works and
+photography when I finish organizing a public image set.
+
+::: {.showcase-grid}
+::: {.showcase-tile}
+### Food Studio
+
+Homemade dishes, plating experiments, and regional flavors that reflect
+my curiosity about craft, texture, and daily life.
+:::
+
+::: {.showcase-tile}
+### Photography Notes
+
+Landscape, city, campus, and fieldwork moments captured through the same
+habit of close observation that also shapes my remote sensing work.
+:::
+:::
+
+## Visitor Map
+
+### Hello, World!
+
+Thanks for stopping by. Visitors from universities, research groups, and
+geospatial communities are warmly welcome. If you are interested in
+GeoAI, ecological remote sensing, wildfire research, or simply want to
+connect, please feel free to reach out.
+
+::: {.visitor-map-panel}
+::: {.visitor-map-visual aria-label="Stylized visitor map preview"}
+<span class="map-dot map-dot-1"></span>
+<span class="map-dot map-dot-2"></span>
+<span class="map-dot map-dot-3"></span>
+<span class="map-dot map-dot-4"></span>
+<span class="map-dot map-dot-5"></span>
+:::
+
+Visitor locations can be connected to a live map widget after a public
+tracking provider is configured.
+:::
+
+::: {.last-updated}
+Last updated: June 2026
+:::
+
 ## Contact
 
 - Email: [youbinhe0607@gmail.com](mailto:youbinhe0607@gmail.com)

@@ -132,6 +132,86 @@ a:hover {
 }
 
 /* 4. 代码样式高亮调整，背景为浅灰色，github 风格 */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.showcase-tile {
+  border: 1px solid #D7E7F6;
+  border-left: 4px solid #1F4E79;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #F8FBFE;
+}
+
+.showcase-tile h3 {
+  margin-top: 0;
+}
+
+.visitor-map-panel {
+  border: 1px solid #D7E7F6;
+  border-radius: 6px;
+  background: #F8FBFE;
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.visitor-map-visual {
+  position: relative;
+  min-height: 220px;
+  overflow: hidden;
+  border: 1px solid #D7E7F6;
+  border-radius: 6px;
+  background:
+    radial-gradient(circle at 20% 35%, rgba(31, 78, 121, 0.16) 0 9%, transparent 10%),
+    radial-gradient(circle at 48% 42%, rgba(31, 94, 156, 0.14) 0 13%, transparent 14%),
+    radial-gradient(circle at 72% 46%, rgba(31, 78, 121, 0.13) 0 11%, transparent 12%),
+    linear-gradient(180deg, #ffffff 0%, #EAF3FB 100%);
+}
+
+.visitor-map-visual::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px dashed rgba(31, 78, 121, 0.35);
+  border-radius: 50%;
+}
+
+.map-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8A6500;
+  box-shadow: 0 0 0 5px rgba(138, 101, 0, 0.16);
+}
+
+.map-dot-1 { left: 23%; top: 42%; }
+.map-dot-2 { left: 42%; top: 34%; }
+.map-dot-3 { left: 56%; top: 52%; }
+.map-dot-4 { left: 69%; top: 39%; }
+.map-dot-5 { left: 78%; top: 58%; }
+
+.last-updated {
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visitor-map-visual {
+    min-height: 180px;
+  }
+}
+
 code {
   color: #d63384; /* 代码文本的颜色，使用 GitHub 风格的红色 */
   background-color: #f5f5f5; /* 代码块的背景色为浅灰色 */
