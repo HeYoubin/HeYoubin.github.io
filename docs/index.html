@@ -30,18 +30,21 @@
     .showcase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
     .showcase-tile { border: 1px solid #D7E7F6; border-left: 4px solid #1F4E79; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
     .showcase-tile h3 { margin-top: 0; color: #1F4E79; }
-    .visitor-map-panel { border: 1px solid #D7E7F6; border-radius: 6px; background: #F8FBFE; padding: 1rem; margin: 1rem 0 1.5rem; }
-    .visitor-map-visual { position: relative; min-height: 220px; overflow: hidden; border: 1px solid #D7E7F6; border-radius: 6px; background: radial-gradient(circle at 20% 35%, rgba(31, 78, 121, 0.16) 0 9%, transparent 10%), radial-gradient(circle at 48% 42%, rgba(31, 94, 156, 0.14) 0 13%, transparent 14%), radial-gradient(circle at 72% 46%, rgba(31, 78, 121, 0.13) 0 11%, transparent 12%), linear-gradient(180deg, #ffffff 0%, #EAF3FB 100%); }
-    .visitor-map-visual::before { content: ""; position: absolute; inset: 18px; border: 1px dashed rgba(31, 78, 121, 0.35); border-radius: 50%; }
-    .map-dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #8A6500; box-shadow: 0 0 0 5px rgba(138, 101, 0, 0.16); }
-    .map-dot-1 { left: 23%; top: 42%; }
-    .map-dot-2 { left: 42%; top: 34%; }
-    .map-dot-3 { left: 56%; top: 52%; }
-    .map-dot-4 { left: 69%; top: 39%; }
-    .map-dot-5 { left: 78%; top: 58%; }
-    .last-updated { color: #4b5563; font-size: 0.95rem; margin-top: 2rem; text-align: right; }
+    .visitor-map-card { border: 1px solid #D7E7F6; border-radius: 8px; background: #ffffff; box-shadow: 0 14px 34px rgba(23, 59, 92, 0.10); margin: 1rem 0 1.8rem; overflow: hidden; }
+    .visitor-map-body { display: grid; grid-template-columns: minmax(280px, 1.05fr) minmax(260px, 1fr); gap: 2rem; align-items: center; padding: 1.5rem; }
+    .visitor-map-visual { border-radius: 4px; overflow: hidden; background: #477DAE; min-height: 260px; }
+    .visitor-map-visual svg { display: block; width: 100%; height: 100%; min-height: 260px; }
+    .visitor-map-visual img, .visitor-map-visual iframe { display: block; width: 100%; max-width: 100%; min-height: 260px; border: 0; }
+    .visitor-map-visual rect { fill: #477DAE; }
+    .visitor-map-visual .land { fill: #F7FAFC; stroke: rgba(23, 59, 92, 0.28); stroke-width: 2; }
+    .visitor-point { fill: #D94F45; stroke: #ffffff; stroke-width: 2; }
+    .visitor-point.major { fill: #F0A62B; stroke-width: 3; }
+    .visitor-map-copy h3 { color: #111827; margin-top: 0; }
+    .visitor-map-copy ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+    .visitor-map-copy li { margin-bottom: 0.35rem; }
+    .last-updated { color: #4b5563; font-size: 0.95rem; margin-top: 2rem; font-style: italic; text-align: left; }
     @media (max-width: 700px) { .hero { grid-template-columns: 1fr; } }
-    @media (max-width: 700px) { .showcase-grid { grid-template-columns: 1fr; } .visitor-map-visual { min-height: 180px; } }
+    @media (max-width: 700px) { .showcase-grid { grid-template-columns: 1fr; } .visitor-map-body { grid-template-columns: 1fr; padding: 1rem; } .visitor-map-visual, .visitor-map-visual svg { min-height: 210px; } }
   </style>
 </head>
 <body>
@@ -129,17 +132,21 @@
   </div>
 
   <h2>Visitor Map</h2>
-  <h3>Hello, World!</h3>
-  <p>Thanks for stopping by. Visitors from universities, research groups, and geospatial communities are warmly welcome. If you are interested in GeoAI, ecological remote sensing, wildfire research, or simply want to connect, please feel free to reach out.</p>
-  <div class="visitor-map-panel">
-    <div class="visitor-map-visual" aria-label="Stylized visitor map preview">
-      <span class="map-dot map-dot-1"></span>
-      <span class="map-dot map-dot-2"></span>
-      <span class="map-dot map-dot-3"></span>
-      <span class="map-dot map-dot-4"></span>
-      <span class="map-dot map-dot-5"></span>
+  <div class="visitor-map-card">
+    <div class="visitor-map-body">
+      <div class="visitor-map-visual" aria-label="MapMyVisitors live visitor map">
+        <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=O2pB4sowHZbyb_5MyEmbRlEEVs5a2zBgCq41YB3Hslk&cl=ffffff&w=a"></script>
+      </div>
+      <section class="visitor-map-copy">
+        <h3>Hello, World!</h3>
+        <p>Thanks for stopping by. Visitors from research institutions, universities, and geospatial communities around the world are warmly welcome. If you are interested in collaborating or just want to say hi, feel free to reach out.</p>
+        <ul>
+          <li>Chengdu, China</li>
+          <li><a href="mailto:youbinhe0607@gmail.com">youbinhe0607@gmail.com</a></li>
+          <li>Visitor locations tracked by <a href="https://mapmyvisitors.com/web/1c5fy">MapMyVisitors</a>.</li>
+        </ul>
+      </section>
     </div>
-    <p>Visitor locations can be connected to a live map widget after a public tracking provider is configured.</p>
   </div>
 
   <p class="last-updated">Last updated: June 2026</p>
