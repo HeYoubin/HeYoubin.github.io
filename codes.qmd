@@ -1,9 +1,15 @@
 ---
-title: "Selected Code & Reproducible Research"
+title: "Open Resources and GitHub Resources"
 editor:
   markdown:
     wrap: 72
 ---
+
+This page is retained for old links and future public resources. Most
+professional engineering code cannot be publicly released due to
+confidentiality requirements. Public research code, reproducible
+examples, and cleaned documentation will be shared through GitHub when
+available.
 
 ## Public Repositories
 
@@ -20,6 +26,8 @@ Selected repositories will be added after code cleaning and documentation.
 
 ## Code Availability
 
-Code and data for the wildfire modeling project will be made available upon reasonable request or after publication, subject to data-sharing and publication policies.
+Code and data for the wildfire modeling project will be made available
+upon reasonable request or after publication, subject to data-sharing and
+publication policies.
 
 Company source code, internal system details, client information, private data paths, and uncleaned research code are not disclosed on this website.

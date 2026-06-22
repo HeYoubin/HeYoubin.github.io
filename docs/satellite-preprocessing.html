@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-sensor Satellite Preprocessing Pipelines - Youbin He</title>
+  <link rel="icon" href="images/site-logo.png" type="image/png">
+  <link rel="stylesheet" href="site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
+  <style>
+    body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
+    .navbar { background: #1F4E79; }
+    .navbar a, .navbar-brand { color: #fff; }
+    .navbar a:hover { color: #EAF3FB; }
+    .dropdown-menu a { color: #173B5C; }
+    .dropdown-menu a:hover { color: #1F5E9C; }
+    main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
+    h1, h2, h3 { color: #173B5C; }
+    h2 { margin-top: 2rem; }
+    h3 { margin-top: 1.35rem; }
+    a { color: #1F5E9C; text-decoration: none; }
+    a:hover { color: #173B5C; text-decoration: underline; }
+    .callout { border-left: 4px solid #1F4E79; background: #F8FBFE; border-radius: 6px; padding: 1rem; margin: 1rem 0 1.5rem; }
+    .experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .experience-card { border: 1px solid #D7E7F6; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
+    .experience-card h3 { margin-top: 0; }
+    strong, .highlight-primary { color: #1F4E79; font-weight: 700; }
+    .highlight { color: #0b4f8a; font-weight: 700; background: linear-gradient(transparent 62%, rgba(255, 193, 7, 0.28) 62%); padding: 0 2px; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 1rem 0; }
+    .tech-tag { display: inline-block; padding: 0.25rem 0.55rem; border-radius: 999px; background: #eef4fb; color: #174a7c; font-size: 0.88rem; font-weight: 600; }
+    .page-subtitle { color: #4b5563; font-size: 1.05rem; margin-top: -0.35rem; margin-bottom: 1.25rem; }
+    .workflow-figure-card, .preprocess-section, .confidentiality-note { border: 1px solid #D7E7F6; border-radius: 8px; background: #ffffff; padding: 1rem; margin: 1rem 0 1.4rem; }
+    .workflow-figure-card { background: #F8FBFE; }
+    .workflow-figure-card img { display: block; width: 100%; height: auto; border-radius: 6px; }
+    .figure-caption { color: #4b5563; font-size: 0.92rem; margin: 0.6rem 0 0; text-align: center; }
+    .confidentiality-note { border-left: 4px solid #1F4E79; background: #F8FBFE; }
+    @media (max-width: 760px) { .experience-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Youbin He</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research &amp; Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research/featured-research.html">Featured Research</a></li>
+            <li><a class="dropdown-item" href="research/applied-remote-sensing-engineering.html">Applied Remote Sensing Research</a></li>
+            <li><a class="dropdown-item" href="research/additional-gis-spatial-analysis.html">Additional GIS &amp; Spatial Analysis</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experience</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="experience.html">Professional Overview</a></li>
+            <li><a class="dropdown-item" href="recent-work.html">Recent Work</a></li>
+            <li><a class="dropdown-item" href="satellite-preprocessing.html">Satellite Preprocessing Pipelines</a></li>
+            <li><a class="dropdown-item" href="operational-remote-sensing.html">Operational Remote Sensing Systems</a></li>
+            <li><a class="dropdown-item" href="agricultural-monitoring-yield.html">Agricultural Monitoring &amp; Yield Estimation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Youbin_He_CV.pdf">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <h1>Multi-sensor Satellite Preprocessing Pipelines</h1>
+  <p class="page-subtitle">From Raw Satellite Data to Analysis-ready Remote Sensing Products</p>
+  <div class="workflow-figure-card">
+    <img src="images/projects/satellite-preprocessing/satellite-preprocessing-workflow.png" alt="Multi-sensor satellite data preprocessing workflow">
+    <p class="figure-caption">Generic workflow diagram for multi-sensor satellite data preprocessing, from raw inputs to standardized outputs and application scenarios.</p>
+  </div>
+<p>This page summarizes my professional experience in developing <strong>multi-sensor satellite preprocessing workflows</strong> for operational remote sensing applications. These projects cover multiple satellite data sources, including <strong>GF-series PMS imagery</strong>, <strong>Sentinel-2 MSI</strong>, <strong>AQUA/MODIS</strong>, and <strong>NOAA-20/VIIRS-related fire detection data preparation</strong>.</p>
+<p>My work in this direction focuses on transforming raw or semi-processed satellite data into <strong>analysis-ready GeoTIFF products</strong>, supporting downstream applications such as <strong>wildfire monitoring</strong>, <strong>agricultural monitoring</strong>, <strong>land surface condition analysis</strong>, <strong>thematic mapping</strong>, and <strong>machine-learning-based fire detection</strong>.</p>
+<p><span class="highlight">These preprocessing projects form the engineering foundation for my later work in operational remote sensing systems, wildfire detection, crop growth assessment, and explainable GeoAI research.</span></p>
+<p>Due to confidentiality requirements, detailed code, non-public datasets, private implementation details, non-public operational information, and operational product examples are not publicly displayed. The descriptions below summarize generalized technical workflows and my personal contributions.</p>
+<section class="preprocess-section">
+<h2>Overview of Satellite Preprocessing Workflows</h2>
+<p>Across different projects, I developed or contributed to workflows involving:</p>
+<ul>
+  <li><strong>Radiometric calibration</strong></li>
+  <li><strong>Atmospheric correction</strong></li>
+  <li><strong>Geometric correction and reprojection</strong></li>
+  <li><strong>HDF and SAFE data parsing</strong></li>
+  <li><strong>RPC-based correction</strong></li>
+  <li><strong>Brightness temperature retrieval</strong></li>
+  <li><strong>Cloud and quality control</strong></li>
+  <li><strong>Pan-sharpening</strong></li>
+  <li><strong>True-color and false-color visualization</strong></li>
+  <li><strong>Batch processing and deployment-side preparation</strong></li>
+  <li><strong>GeoTIFF product generation</strong></li>
+  <li><strong>Fire-monitoring and machine-learning data preparation</strong></li>
+</ul>
+<p>Representative technologies:</p>
+<div class="tech-tags">
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">GDAL</span>
+  <span class="tech-tag">rasterio</span>
+  <span class="tech-tag">NumPy</span>
+  <span class="tech-tag">pyhdf</span>
+  <span class="tech-tag">Py6S</span>
+  <span class="tech-tag">Sen2Cor</span>
+  <span class="tech-tag">QGIS</span>
+  <span class="tech-tag">GeoTIFF</span>
+  <span class="tech-tag">HDF</span>
+  <span class="tech-tag">SAFE</span>
+  <span class="tech-tag">RPC</span>
+  <span class="tech-tag">VIIRS</span>
+  <span class="tech-tag">MODIS</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>1. GF-Series PMS Preprocessing</h2>
+<h3>Project Summary</h3>
+<p>This project focused on developing a reusable preprocessing workflow for <strong>GF-1, GF-2, and GF-6 PMS imagery</strong>. The goal was to build an automated Python-based processing pipeline for high-resolution optical satellite imagery, supporting standardized preprocessing for downstream remote sensing applications.</p>
+<h3>Technical Workflow</h3>
+<p>The workflow included:</p>
+<ul>
+  <li><strong>Radiometric calibration</strong> using sensor-specific gain and offset coefficients</li>
+  <li><strong>6S-based atmospheric correction</strong> for multispectral imagery</li>
+  <li><strong>RPC-based geometric correction</strong> using satellite rational polynomial coefficients</li>
+  <li><strong>DEM-assisted correction</strong> where applicable</li>
+  <li><strong>Pan-sharpening</strong> by fusing high-resolution panchromatic imagery with multispectral bands</li>
+  <li><strong>GeoTIFF product generation</strong></li>
+  <li><strong>Sensor parameter management</strong> through configuration files</li>
+</ul>
+<h3>My Contributions</h3>
+<p>I was responsible for the technical research, workflow design, Python implementation, sample testing, documentation, and deployment-side preparation of the GF-series preprocessing pipeline.</p>
+<p>My work included:</p>
+<ul>
+  <li>Designing a modular preprocessing workflow for <strong>GF-1 / GF-2 / GF-6 PMS data</strong></li>
+  <li>Implementing radiometric calibration for panchromatic and multispectral imagery</li>
+  <li>Integrating <strong>6S atmospheric correction</strong> into the processing chain</li>
+  <li>Applying <strong>RPC-based geometric correction</strong></li>
+  <li>Implementing pan-sharpening for high-resolution product generation</li>
+  <li>Writing technical documentation and algorithm descriptions</li>
+  <li>Deploying the workflow as a reusable local preprocessing tool</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">GF-series</span>
+  <span class="tech-tag">PMS imagery</span>
+  <span class="tech-tag">Radiometric Calibration</span>
+  <span class="tech-tag">6S Atmospheric Correction</span>
+  <span class="tech-tag">RPC Correction</span>
+  <span class="tech-tag">Pan-sharpening</span>
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">GDAL</span>
+  <span class="tech-tag">rasterio</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>2. Sentinel-2 Preprocessing</h2>
+<h3>Project Summary</h3>
+<p>This project focused on developing an automated preprocessing workflow for <strong>Sentinel-2 MSI imagery</strong>. The workflow combined <strong>Python scripting</strong> with <strong>Sen2Cor</strong> to support batch processing of Sentinel-2 Level-1C products and generate analysis-ready Level-2A surface reflectance products.</p>
+<h3>Technical Workflow</h3>
+<p>The workflow included:</p>
+<ul>
+  <li>Batch scanning of Sentinel-2 <code>.SAFE</code> product directories</li>
+  <li>Automated execution of <strong>Sen2Cor</strong></li>
+  <li><strong>L1C-to-L2A atmospheric correction</strong></li>
+  <li>Cloud and cloud-shadow detection</li>
+  <li>Terrain correction supported by Sen2Cor</li>
+  <li>Extraction and organization of L2A products</li>
+  <li>JP2 to GeoTIFF conversion</li>
+  <li>Output folder organization and standardized file management</li>
+</ul>
+<h3>My Contributions</h3>
+<p>I independently designed and developed the Sentinel-2 preprocessing workflow, including environment configuration, automated processing logic, product organization, representative scene testing, documentation, and deployment-side preparation.</p>
+<p>My work included:</p>
+<ul>
+  <li>Building a Python wrapper for Sentinel-2 preprocessing</li>
+  <li>Configuring and integrating <strong>Sen2Cor</strong></li>
+  <li>Automating batch processing of Sentinel-2 <code>.SAFE</code> products</li>
+  <li>Organizing L2A outputs into analysis-ready raster products</li>
+  <li>Reducing manual preprocessing steps for operational use</li>
+  <li>Preparing technical documentation for reproducible preprocessing</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Sentinel-2</span>
+  <span class="tech-tag">MSI</span>
+  <span class="tech-tag">Sen2Cor</span>
+  <span class="tech-tag">L1C-to-L2A</span>
+  <span class="tech-tag">Surface Reflectance</span>
+  <span class="tech-tag">Cloud Detection</span>
+  <span class="tech-tag">GeoTIFF Conversion</span>
+  <span class="tech-tag">Batch Processing</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>3. AQUA/MODIS Preprocessing for Fire Monitoring</h2>
+<h3>Project Summary</h3>
+<p>This project focused on developing an automated preprocessing workflow for <strong>AQUA/MODIS HDF data</strong> to support fire hotspot interpretation and wildfire-related monitoring. The goal was to convert locally acquired daily satellite data into georeferenced products suitable for visual interpretation of potential high-temperature anomalies.</p>
+<h3>Technical Workflow</h3>
+<p>The workflow included:</p>
+<ul>
+  <li>Searching and filtering <strong>MOD03 geolocation files</strong></li>
+  <li>Parsing filenames to extract platform, date, time, and orbit information</li>
+  <li>Matching geolocation files with <strong>MOD021KM / MYD021KM science data</strong></li>
+  <li>Reading MODIS HDF subdatasets, including:</li>
+</ul>
+<ul>
+  <li>250 m reflective solar bands aggregated to 1 km</li>
+  <li>500 m reflective solar bands aggregated to 1 km</li>
+  <li>1 km reflective solar bands</li>
+  <li>1 km thermal emissive bands</li>
+  <li>Converting raw DN values into:</li>
+</ul>
+<ul>
+  <li><strong>TOA reflectance</strong></li>
+  <li><strong>Spectral radiance</strong></li>
+  <li><strong>Brightness temperature</strong></li>
+  <li>Reprojecting swath data using MOD03 latitude and longitude arrays</li>
+  <li>Generating EPSG:4326 GeoTIFF products</li>
+  <li>Producing <strong>RGB true-color</strong> and <strong>MNR false-color</strong> products for fire hotspot interpretation</li>
+</ul>
+<h3>My Contributions</h3>
+<p>I was mainly responsible for the AQUA/MODIS preprocessing module, including HDF data parsing, physical calibration, geolocation-based reprojection, visualization product generation, and local batch deployment.</p>
+<p>My work included:</p>
+<ul>
+  <li>Implementing automatic MOD03 and MOD021KM/MYD021KM file matching</li>
+  <li>Parsing MODIS HDF subdatasets and calibration attributes</li>
+  <li>Implementing reflectance calibration for reflective solar bands</li>
+  <li>Implementing radiance calibration and brightness temperature retrieval for thermal emissive bands</li>
+  <li>Developing geolocation-array-based reprojection methods</li>
+  <li>Generating full-band GeoTIFF, RGB true-color, and MNR false-color products</li>
+  <li>Preparing technical documentation for team reuse</li>
+</ul>
+<p><span class="highlight">This project strengthened my understanding of MODIS HDF structures, swath geolocation, thermal infrared calibration, and fire-monitoring visualization products.</span></p>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">AQUA</span>
+  <span class="tech-tag">MODIS</span>
+  <span class="tech-tag">HDF</span>
+  <span class="tech-tag">MOD03</span>
+  <span class="tech-tag">MOD021KM</span>
+  <span class="tech-tag">MYD021KM</span>
+  <span class="tech-tag">Brightness Temperature</span>
+  <span class="tech-tag">Geolocation Array</span>
+  <span class="tech-tag">GDAL Warp</span>
+  <span class="tech-tag">Fire Monitoring</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>4. NOAA-20 / VIIRS Fire Detection Data Preparation <span class="status-tag">In progress</span></h2>
+<h3>Project Summary</h3>
+<p>This ongoing work focuses on preparing <strong>NOAA-20 / VIIRS imagery and fire-point records</strong> for machine-learning-based fire detection. Compared with the previous preprocessing projects, this workflow is more directly connected to <strong>fire detection modeling</strong>, <strong>positive and negative sample construction</strong>, and <strong>feature engineering</strong>.</p>
+<h3>Technical Workflow</h3>
+<p>The workflow includes:</p>
+<ul>
+  <li>Matching fire-point records with NOAA-20 / VIIRS image acquisition time</li>
+  <li>Converting local observation time to UTC when required</li>
+  <li>Downloading and organizing satellite granules</li>
+  <li>Preprocessing VIIRS imagery into model-ready raster inputs</li>
+  <li>Extracting spectral and contextual features</li>
+  <li>Constructing positive fire samples from verified fire points</li>
+  <li>Constructing negative samples from background and hard negative regions</li>
+  <li>Designing candidate features for machine-learning-based fire detection</li>
+</ul>
+<p>Candidate features include:</p>
+<ul>
+  <li>Reflectance bands</li>
+  <li>Brightness temperature bands</li>
+  <li>Thermal band differences</li>
+  <li>Neighborhood mean and standard deviation</li>
+  <li>Day/night information</li>
+  <li>Seasonal features such as day-of-year sine and cosine</li>
+  <li>Contextual information from surrounding pixels</li>
+</ul>
+<h3>My Contributions</h3>
+<p>My work in this direction focuses on developing the preprocessing and sample-generation pipeline for polar-orbiting satellite fire detection. This includes time matching, raster preprocessing, positive/negative sample construction, contextual feature extraction, and preparing model-ready datasets.</p>
+<p>This project is still being improved and will be further connected with machine learning models for operational fire detection.</p>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">NOAA-20</span>
+  <span class="tech-tag">VIIRS</span>
+  <span class="tech-tag">Fire Detection</span>
+  <span class="tech-tag">Sample Construction</span>
+  <span class="tech-tag">Feature Engineering</span>
+  <span class="tech-tag">Brightness Temperature</span>
+  <span class="tech-tag">Hard Negative Samples</span>
+  <span class="tech-tag">Machine Learning Preparation</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>Cross-sensor Engineering Capabilities</h2>
+<p>These preprocessing projects helped me develop a reusable engineering mindset for handling different satellite products and sensor-specific requirements.</p>
+<h3>Data Format Adaptation</h3>
+<p>Different sensors use different product structures and file formats:</p>
+<ul>
+  <li>GF-series imagery often requires metadata parsing, RPC correction, and pan-sharpening.</li>
+  <li>Sentinel-2 products are organized as <code>.SAFE</code> directories and require L1C-to-L2A processing.</li>
+  <li>MODIS data are stored in HDF format with multiple subdatasets and geolocation files.</li>
+  <li>VIIRS workflows require time matching, granule organization, and model-ready feature extraction.</li>
+</ul>
+<h3>Physical and Geometric Preprocessing</h3>
+<p>Across projects, I worked with:</p>
+<ul>
+  <li>Radiometric calibration</li>
+  <li>Atmospheric correction</li>
+  <li>Reflectance conversion</li>
+  <li>Radiance calibration</li>
+  <li>Brightness temperature retrieval</li>
+  <li>Geometric correction</li>
+  <li>RPC correction</li>
+  <li>Swath geolocation reprojection</li>
+  <li>DEM-assisted processing</li>
+</ul>
+<h3>Automation and Deployment</h3>
+<p>A key part of my work was to turn preprocessing logic into reusable and operational workflows. This included:</p>
+<ul>
+  <li>Batch file scanning</li>
+  <li>Parameter configuration</li>
+  <li>Automated file organization</li>
+  <li>Standardized naming rules</li>
+  <li>GeoTIFF output generation</li>
+  <li>Deployment-side preparation</li>
+  <li>Technical documentation</li>
+  <li>Integration with downstream analysis workflows</li>
+</ul>
+</section>
+<section class="preprocess-section">
+<h2>Outputs and Applications</h2>
+<p>The preprocessing workflows generated or supported the following types of outputs:</p>
+<ul>
+  <li>Analysis-ready GeoTIFF products</li>
+  <li>Surface reflectance products</li>
+  <li>Geometrically corrected imagery</li>
+  <li>Pan-sharpened high-resolution imagery</li>
+  <li>Brightness temperature products</li>
+  <li>Full-band MODIS products</li>
+  <li>RGB true-color images</li>
+  <li>False-color fire-monitoring products</li>
+  <li>Model-ready VIIRS fire-detection samples</li>
+  <li>Technical documentation and reusable processing templates</li>
+</ul>
+<p>These outputs supported applications including:</p>
+<ul>
+  <li>Fire hotspot interpretation</li>
+  <li>Wildfire monitoring</li>
+  <li>Agricultural monitoring</li>
+  <li>Environmental condition assessment</li>
+  <li>Operational product generation</li>
+  <li>Thematic mapping</li>
+  <li>Machine-learning-based fire detection</li>
+</ul>
+</section>
+<section class="preprocess-section">
+<h2>Technical Skills Highlight</h2>
+<h3>Remote Sensing</h3>
+<ul>
+  <li>Multi-sensor satellite preprocessing</li>
+  <li>Radiometric calibration</li>
+  <li>Atmospheric correction</li>
+  <li>TOA reflectance conversion</li>
+  <li>Brightness temperature retrieval</li>
+  <li>Pan-sharpening</li>
+  <li>Cloud and quality control</li>
+  <li>Fire-monitoring visualization</li>
+</ul>
+<h3>Geospatial Processing</h3>
+<ul>
+  <li>Raster reprojection</li>
+  <li>Swath geolocation</li>
+  <li>RPC-based correction</li>
+  <li>GeoTIFF generation</li>
+  <li>Spatial metadata handling</li>
+  <li>Batch raster processing</li>
+  <li>DEM-assisted correction</li>
+</ul>
+<h3>Programming and Engineering</h3>
+<ul>
+  <li>Python workflow development</li>
+  <li>GDAL and rasterio processing</li>
+  <li>HDF parsing with pyhdf</li>
+  <li>Sen2Cor integration</li>
+  <li>Py6S-based correction</li>
+  <li>Automated file matching</li>
+  <li>Batch processing scripts</li>
+  <li>Technical documentation</li>
+</ul>
+</section>
+<section class="preprocess-section">
+<h2>Professional Growth</h2>
+<p>These satellite preprocessing projects were important steps in my transition from general remote sensing data processing to more advanced operational remote sensing engineering. They helped me understand how different satellite systems store data, how physical quantities are derived from raw observations, and how preprocessing choices affect downstream interpretation, product generation, and machine-learning workflows.</p>
+<p><span class="highlight">The experience also provided a technical bridge between operational engineering projects and my research interests in wildfire monitoring, remote sensing data fusion, and GeoAI.</span></p>
+</section>
+<section class="confidentiality-note">
+<h2>Confidentiality Statement</h2>
+<p>Most projects summarized on this page were conducted in professional or applied operational contexts. Therefore, detailed code, non-public datasets, non-public operational information, private implementation details, and operational product examples are not publicly displayed.</p>
+<p>The purpose of this page is to summarize generalized technical workflows, satellite preprocessing experience, and my personal contributions without exposing confidential materials.</p>
+</section>
+</main>
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

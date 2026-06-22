@@ -1,153 +1,56 @@
 ---
-title: "Applied Remote Sensing Engineering"
+title: "Applied Remote Sensing Research"
 editor:
   markdown:
     wrap: 72
 ---
 
-This section summarizes my production-oriented remote sensing engineering
-experience, including satellite data preprocessing, fire monitoring
-workflows, agricultural monitoring products, and crop-yield estimation
-modules.
+This section summarizes public, research-oriented remote sensing
+application experience. Detailed operational engineering projects are now
+described in the Experience section using desensitized and public-safe
+language.
 
 ::: {.callout-note}
 This page uses public-safe descriptions only. Internal source code,
-client information, server paths, interface addresses, non-public system
+client information, private implementation details, non-public system
 screenshots, contract information, and non-public data are not disclosed.
 :::
 
-## Satellite Data Preprocessing and L1-to-L2 Product Generation
+## Research-oriented Application Themes
 
-**Objective**
+### Satellite Data Preprocessing and Analysis-ready Products
 
-- Support automated generation of operational remote sensing products
-  from satellite imagery.
+I have worked with multi-source satellite observations in workflows that
+connect raw imagery, preprocessing, quality control, and standardized
+analysis-ready products. Public-safe examples include radiometric
+calibration, atmospheric correction, geometric correction, image fusion,
+format conversion, and batch product preparation for downstream
+environmental monitoring tasks.
 
-**Satellite Data**
+### Fire-related Environmental Observation
 
-- GaoFen-series GF-1 / GF-2 / GF-6
-- AQUA satellite
-- [To be added]
+My applied remote sensing experience includes wildfire-relevant
+environmental monitoring, thermal anomaly interpretation, time-series
+surface-condition products, and regional raster statistics. This theme
+connects naturally with my academic research on wildfire risk modeling,
+fire ecology, and explainable GeoAI.
 
-**Technical Workflow**
+### Agricultural Monitoring and Crop Growth Assessment
 
-- Python-based preprocessing algorithms
-- Radiometric calibration
-- Atmospheric correction
-- Geometric correction
-- Image fusion
-- Automated batch L1-to-L2 product generation
+I have contributed to agricultural remote sensing workflows involving
+vegetation indicators, crop growth assessment, anomaly analysis, thematic
+mapping, and county-level yield-estimation prototypes. The public
+research value lies in linking satellite time-series information,
+meteorological context, crop distribution, and statistical records for
+interpretable agricultural monitoring.
 
-**My Contribution**
+### From Engineering Practice to Research Questions
 
-[To be added by Youbin]
+These applied experiences help me formulate research questions that are
+both technically grounded and environmentally meaningful: how to improve
+the reliability of multi-source satellite products, how to integrate
+remote sensing indicators with machine learning, and how to make spatial
+models more interpretable for decision support.
 
-**Public-safe Description**
-
-This work focuses on algorithm development and testing for
-production-oriented remote sensing workflows. Detailed implementation
-logic, internal code, private paths, and non-public product examples are
-not disclosed.
-
-**Figures / Materials to be Added**
-
-- [Add generic preprocessing workflow diagram]
-- [Add non-sensitive sample product illustration]
-
----
-
-## Operational Fire Monitoring Workflow
-
-**Objective**
-
-- Support operational fire monitoring through remote sensing product
-  generation and workflow testing.
-
-**Data and Products**
-
-- MODIS workflow components
-- Daily surface-temperature inversion products
-- Time-series compositing products
-- Thematic-map products
-
-**Workflow**
-
-- Assisted in MODIS workflow development
-- Supported daily surface-temperature inversion
-- Supported time-series compositing
-- Supported thematic-map production
-- Supported B/S module development and testing
-
-**My Contribution**
-
-[To be added by Youbin]
-
-**Public-safe Description**
-
-This section describes public-safe workflow experience in operational
-remote sensing product generation. It does not include internal system
-screenshots, client names, server addresses, or proprietary code.
-
-**Figures / Materials to be Added**
-
-- [Add fire monitoring workflow diagram]
-- [Add non-sensitive thematic product example]
-
----
-
-## Agricultural Monitoring and Crop Growth Assessment
-
-**Objective**
-
-- Support agricultural monitoring and crop-growth assessment using
-  multi-source satellite data.
-
-**Satellite Data**
-
-- FY-3D / FY-3E / FY-3F
-- FY-4B
-- [To be added]
-
-**Products**
-
-- Vegetation index inversion products
-- Crop-growth assessment products
-- Automated workflow outputs
-
-**My Contribution**
-
-[To be added by Youbin]
-
-**Figures / Materials to be Added**
-
-- [Add agricultural monitoring workflow]
-- [Add vegetation index product example]
-
----
-
-## Crop Yield Estimation Module
-
-**Objective**
-
-- Develop a crop-yield estimation module for production forecasting.
-
-**Method**
-
-- [To be added]
-
-**Input Data**
-
-- [To be added]
-
-**Output Products**
-
-- [To be added]
-
-**My Contribution**
-
-[To be added by Youbin]
-
-**Figures / Materials to be Added**
-
-- [Add module workflow]
-- [Add yield estimation product example]
+More detailed professional summaries are provided in the
+[Experience](../experience.qmd) section.

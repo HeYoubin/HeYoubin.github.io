@@ -3,20 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open Resources and GitHub Resources - Youbin He</title>
+  <title>Recent Work - Youbin He</title>
   <link rel="icon" href="images/site-logo.png" type="image/png">
   <link rel="stylesheet" href="site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
   <style>
     body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
     .navbar { background: #1F4E79; }
     .navbar a, .navbar-brand { color: #fff; }
+    .navbar a:hover { color: #EAF3FB; }
     .dropdown-menu a { color: #173B5C; }
     .dropdown-menu a:hover { color: #1F5E9C; }
     main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
-    h1, h2 { color: #173B5C; }
+    h1, h2, h3 { color: #173B5C; }
     h2 { margin-top: 2rem; }
+    h3 { margin-top: 1.35rem; }
     a { color: #1F5E9C; text-decoration: none; }
-    a:hover { color: #173B5C; }
+    a:hover { color: #173B5C; text-decoration: underline; }
+    .callout { border-left: 4px solid #1F4E79; background: #F8FBFE; border-radius: 6px; padding: 1rem; margin: 1rem 0 1.5rem; }
+    .experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .experience-card { border: 1px solid #D7E7F6; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
+    .experience-card h3 { margin-top: 0; }
+    strong, .highlight-primary { color: #1F4E79; font-weight: 700; }
+    @media (max-width: 760px) { .experience-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -40,7 +48,7 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experience</a>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experience</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="experience.html">Professional Overview</a></li>
             <li><a class="dropdown-item" href="recent-work.html">Recent Work</a></li>
@@ -56,25 +64,20 @@
   </div>
 </nav>
 <main>
-  <h1>Open Resources and GitHub Resources</h1>
-  <p>This page is retained for old links and future public resources. Most professional engineering code cannot be publicly released due to confidentiality requirements. Public research code, reproducible examples, and cleaned documentation will be shared through GitHub when available.</p>
-
-  <h2>Public Repositories</h2>
-  <p>Selected repositories will be added after code cleaning and documentation.</p>
-
-  <h2>Technical Skills Demonstrated</h2>
-  <ul>
-    <li>Python geospatial data processing with GDAL, Rasterio, NumPy, Pandas, and scikit-learn.</li>
-    <li>Remote sensing product preprocessing and batch automation.</li>
-    <li>Machine learning for wildfire risk modeling.</li>
-    <li>Explainable AI with SHAP / GeoShapley.</li>
-    <li>Deep learning for remote sensing image classification with PyTorch.</li>
-    <li>Google Earth Engine JavaScript for geospatial analysis.</li>
-  </ul>
-
-  <h2>Code Availability</h2>
-  <p>Code and data for the wildfire modeling project will be made available upon reasonable request or after publication, subject to data-sharing and publication policies.</p>
-  <p>Company source code, internal system details, client information, private data paths, and uncleaned research code are not disclosed on this website.</p>
+  <h1>Recent Work</h1>
+  <p>This page summarizes recent engineering and research directions in a public-safe form. It is intended to show the technical scope of my work without exposing client information, internal system details, or non-public products.</p>
+  <section class="callout"><p>Due to confidentiality requirements, this page only describes generalized technical workflows and personal contributions. Internal code, datasets, system implementation details, screenshots, and operational product examples are not publicly displayed.</p></section>
+  <h2>Recent Engineering and Research Directions</h2>
+  <h3>Polar-orbiting Satellite Fire Detection and Preprocessing</h3>
+  <p>I have worked on preprocessing and sample-preparation workflows for polar-orbiting satellite fire detection. The public-safe description includes fire-point matching, feature extraction, positive / negative sample construction, and preparation for machine-learning-based fire detection experiments.</p>
+  <h3>Operational Remote Sensing Product Generation</h3>
+  <p>Recent engineering work has involved automated generation of remote sensing products, time-series compositing, raster statistics, thematic mapping, and structured outputs for downstream operational systems.</p>
+  <h3>Crop Growth and Yield Estimation Workflows</h3>
+  <p>I have contributed to crop growth assessment and county-level yield estimation workflows using satellite-derived vegetation indicators, meteorological variables, crop distribution information, county boundaries, and statistical yield records.</p>
+  <h3>Explainable GeoAI for Wildfire Risk Prediction</h3>
+  <p>In parallel with engineering work, my research direction focuses on explainable GeoAI for wildfire risk prediction, including machine learning, spatial heterogeneity, SHAP-based interpretation, and GeoShapley-based regional mechanism analysis.</p>
+  <h3>Technical Documentation and System Design</h3>
+  <p>I also contribute to technical documentation, workflow summaries, testing notes, and system-design communication that translate remote sensing algorithms into reproducible and maintainable engineering processes.</p>
 </main>
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 </body>

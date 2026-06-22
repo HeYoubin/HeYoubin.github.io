@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Applied Remote Sensing Engineering - Youbin He</title>
+  <title>Applied Remote Sensing Research - Youbin He</title>
   <link rel="icon" href="../images/site-logo.png" type="image/png">
   <link rel="stylesheet" href="../site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
   <style>
@@ -21,22 +21,35 @@
   </style>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="../index.html">Youbin He</a>
-    <div class="collapse navbar-collapse show">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Projects</a>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research &amp; Projects</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="featured-research.html">Featured Research</a></li>
-            <li><a class="dropdown-item active" href="applied-remote-sensing-engineering.html">Applied Remote Sensing Engineering</a></li>
-            <li><a class="dropdown-item" href="additional-gis-spatial-analysis.html">Additional GIS & Spatial Analysis</a></li>
+            <li><a class="dropdown-item" href="applied-remote-sensing-engineering.html">Applied Remote Sensing Research</a></li>
+            <li><a class="dropdown-item" href="additional-gis-spatial-analysis.html">Additional GIS &amp; Spatial Analysis</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="../publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="../codes.html">Code</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experience</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../experience.html">Professional Overview</a></li>
+            <li><a class="dropdown-item" href="../recent-work.html">Recent Work</a></li>
+            <li><a class="dropdown-item" href="../satellite-preprocessing.html">Satellite Preprocessing Pipelines</a></li>
+            <li><a class="dropdown-item" href="../operational-remote-sensing.html">Operational Remote Sensing Systems</a></li>
+            <li><a class="dropdown-item" href="../agricultural-monitoring-yield.html">Agricultural Monitoring &amp; Yield Estimation</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="../Youbin_He_CV.pdf">CV</a></li>
         <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
       </ul>
@@ -44,66 +57,26 @@
   </div>
 </nav>
 <main>
-  <h1>Applied Remote Sensing Engineering</h1>
-  <p>This section summarizes my production-oriented remote sensing engineering experience, including satellite data preprocessing, fire monitoring workflows, agricultural monitoring products, and crop-yield estimation modules.</p>
-  <div class="alert alert-info" role="note">This page uses public-safe descriptions only. Internal source code, client information, server paths, interface addresses, non-public system screenshots, contract information, and non-public data are not disclosed.</div>
+  <h1>Applied Remote Sensing Research</h1>
+  <p>This section summarizes public, research-oriented remote sensing application experience. Detailed operational engineering projects are now described in the <a href="../experience.html">Experience</a> section using desensitized and public-safe language.</p>
 
-  <h2>Satellite Data Preprocessing and L1-to-L2 Product Generation</h2>
-  <p><strong>Objective</strong></p>
-  <ul><li>Support automated generation of operational remote sensing products from satellite imagery.</li></ul>
-  <p><strong>Satellite Data</strong></p>
-  <ul><li>GaoFen-series GF-1 / GF-2 / GF-6</li><li>AQUA satellite</li><li>[To be added]</li></ul>
-  <p><strong>Technical Workflow</strong></p>
-  <ul><li>Python-based preprocessing algorithms</li><li>Radiometric calibration</li><li>Atmospheric correction</li><li>Geometric correction</li><li>Image fusion</li><li>Automated batch L1-to-L2 product generation</li></ul>
-  <p><strong>My Contribution</strong></p>
-  <p>[To be added by Youbin]</p>
-  <p><strong>Public-safe Description</strong></p>
-  <p>This work focuses on algorithm development and testing for production-oriented remote sensing workflows. Detailed implementation logic, internal code, private paths, and non-public product examples are not disclosed.</p>
-  <p><strong>Figures / Materials to be Added</strong></p>
-  <ul><li>[Add generic preprocessing workflow diagram]</li><li>[Add non-sensitive sample product illustration]</li></ul>
+  <section class="callout">
+    <p>This page uses public-safe descriptions only. Internal source code, client information, private implementation details, non-public system screenshots, contract information, and non-public data are not disclosed.</p>
+  </section>
 
-  <hr>
-  <h2>Operational Fire Monitoring Workflow</h2>
-  <p><strong>Objective</strong></p>
-  <ul><li>Support operational fire monitoring through remote sensing product generation and workflow testing.</li></ul>
-  <p><strong>Data and Products</strong></p>
-  <ul><li>MODIS workflow components</li><li>Daily surface-temperature inversion products</li><li>Time-series compositing products</li><li>Thematic-map products</li></ul>
-  <p><strong>Workflow</strong></p>
-  <ul><li>Assisted in MODIS workflow development</li><li>Supported daily surface-temperature inversion</li><li>Supported time-series compositing</li><li>Supported thematic-map production</li><li>Supported B/S module development and testing</li></ul>
-  <p><strong>My Contribution</strong></p>
-  <p>[To be added by Youbin]</p>
-  <p><strong>Public-safe Description</strong></p>
-  <p>This section describes public-safe workflow experience in operational remote sensing product generation. It does not include internal system screenshots, client names, server addresses, or proprietary code.</p>
-  <p><strong>Figures / Materials to be Added</strong></p>
-  <ul><li>[Add fire monitoring workflow diagram]</li><li>[Add non-sensitive thematic product example]</li></ul>
+  <h2>Research-oriented Application Themes</h2>
 
-  <hr>
-  <h2>Agricultural Monitoring and Crop Growth Assessment</h2>
-  <p><strong>Objective</strong></p>
-  <ul><li>Support agricultural monitoring and crop-growth assessment using multi-source satellite data.</li></ul>
-  <p><strong>Satellite Data</strong></p>
-  <ul><li>FY-3D / FY-3E / FY-3F</li><li>FY-4B</li><li>[To be added]</li></ul>
-  <p><strong>Products</strong></p>
-  <ul><li>Vegetation index inversion products</li><li>Crop-growth assessment products</li><li>Automated workflow outputs</li></ul>
-  <p><strong>My Contribution</strong></p>
-  <p>[To be added by Youbin]</p>
-  <p><strong>Figures / Materials to be Added</strong></p>
-  <ul><li>[Add agricultural monitoring workflow]</li><li>[Add vegetation index product example]</li></ul>
+  <h3>Satellite Data Preprocessing and Analysis-ready Products</h3>
+  <p>I have worked with multi-source satellite observations in workflows that connect raw imagery, preprocessing, quality control, and standardized analysis-ready products. Public-safe examples include radiometric calibration, atmospheric correction, geometric correction, image fusion, format conversion, and batch product preparation for downstream environmental monitoring tasks.</p>
 
-  <hr>
-  <h2>Crop Yield Estimation Module</h2>
-  <p><strong>Objective</strong></p>
-  <ul><li>Develop a crop-yield estimation module for production forecasting.</li></ul>
-  <p><strong>Method</strong></p>
-  <ul><li>[To be added]</li></ul>
-  <p><strong>Input Data</strong></p>
-  <ul><li>[To be added]</li></ul>
-  <p><strong>Output Products</strong></p>
-  <ul><li>[To be added]</li></ul>
-  <p><strong>My Contribution</strong></p>
-  <p>[To be added by Youbin]</p>
-  <p><strong>Figures / Materials to be Added</strong></p>
-  <ul><li>[Add module workflow]</li><li>[Add yield estimation product example]</li></ul>
+  <h3>Fire-related Environmental Observation</h3>
+  <p>My applied remote sensing experience includes wildfire-relevant environmental monitoring, thermal anomaly interpretation, time-series surface-condition products, and regional raster statistics. This theme connects naturally with my academic research on wildfire risk modeling, fire ecology, and explainable GeoAI.</p>
+
+  <h3>Agricultural Monitoring and Crop Growth Assessment</h3>
+  <p>I have contributed to agricultural remote sensing workflows involving vegetation indicators, crop growth assessment, anomaly analysis, thematic mapping, and county-level yield-estimation prototypes. The public research value lies in linking satellite time-series information, meteorological context, crop distribution, and statistical records for interpretable agricultural monitoring.</p>
+
+  <h3>From Engineering Practice to Research Questions</h3>
+  <p>These applied experiences help me formulate research questions that are both technically grounded and environmentally meaningful: how to improve the reliability of multi-source satellite products, how to integrate remote sensing indicators with machine learning, and how to make spatial models more interpretable for decision support.</p>
 </main>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 </body>

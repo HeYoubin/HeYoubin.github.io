@@ -64,6 +64,17 @@ I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span>
 - Research and engineering experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, and remote sensing product generation.
 - Awards including National Encouragement Scholarship, Comprehensive First-Class Scholarship, Esri-Cup awards, and Remote Sensing Technology Competition awards.
 
+## Research and Experience
+
+Research demonstrates my academic interests and research potential,
+while Experience summarizes my operational remote sensing engineering
+practice. Selected professional engineering projects are summarized in
+the [Experience](experience.qmd) section. Due to confidentiality
+requirements, internal code, datasets, interfaces, and operational
+requirements, internal code, datasets, implementation details, and
+operational products are not publicly displayed; the pages focus on
+generalized technical workflows and personal contributions.
+
 ## Beyond Research
 
 Beyond my academic and engineering work, I enjoy using images and food

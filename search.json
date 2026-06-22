@@ -11,7 +11,7 @@
     "href": "Res_Pro.html",
     "title": "Research & Projects",
     "section": "",
-    "text": "Overview page for Featured Research, Applied Remote Sensing Engineering, and Additional GIS & Spatial Analysis."
+    "text": "Overview page for Featured Research, Applied Remote Sensing Research, and Additional GIS & Spatial Analysis."
   },
   {
     "objectID": "research/featured-research.html",
@@ -23,9 +23,9 @@
   {
     "objectID": "research/applied-remote-sensing-engineering.html",
     "href": "research/applied-remote-sensing-engineering.html",
-    "title": "Applied Remote Sensing Engineering",
+    "title": "Applied Remote Sensing Research",
     "section": "",
-    "text": "Production-oriented remote sensing engineering, satellite data preprocessing, L1-to-L2 product generation, fire monitoring, agricultural monitoring, and crop-yield estimation."
+    "text": "Public-safe applied remote sensing research themes including satellite preprocessing, fire-related environmental observation, agricultural monitoring, and interpretable remote sensing applications."
   },
   {
     "objectID": "research/additional-gis-spatial-analysis.html",
@@ -42,11 +42,46 @@
     "text": "Manuscript under review and conference papers in SPIE and IEEE proceedings."
   },
   {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Professional Experience Overview",
+    "section": "",
+    "text": "Public-safe professional experience overview for operational remote sensing engineering, satellite preprocessing, wildfire monitoring, agricultural monitoring, yield estimation, and product generation."
+  },
+  {
+    "objectID": "recent-work.html",
+    "href": "recent-work.html",
+    "title": "Recent Work",
+    "section": "",
+    "text": "Recent public-safe engineering and research directions including fire detection preprocessing, remote sensing product generation, crop growth workflows, and explainable GeoAI."
+  },
+  {
+    "objectID": "satellite-preprocessing.html",
+    "href": "satellite-preprocessing.html",
+    "title": "Multi-sensor Satellite Preprocessing Pipelines",
+    "section": "",
+    "text": "Public-safe multi-sensor preprocessing workflows for GF-series imagery, Sentinel-2, AQUA/MODIS, and NOAA-20 VIIRS data preparation."
+  },
+  {
+    "objectID": "operational-remote-sensing.html",
+    "href": "operational-remote-sensing.html",
+    "title": "Operational Remote Sensing Systems",
+    "section": "",
+    "text": "Operational remote sensing product generation for wildfire-relevant environmental monitoring and agro-meteorological applications."
+  },
+  {
+    "objectID": "agricultural-monitoring-yield.html",
+    "href": "agricultural-monitoring-yield.html",
+    "title": "Agricultural Monitoring and Yield Estimation",
+    "section": "",
+    "text": "Crop growth assessment and county-level yield estimation workflows using remote sensing indicators, meteorological variables, statistical records, and spatial data."
+  },
+  {
     "objectID": "codes.html",
     "href": "codes.html",
-    "title": "Selected Code & Reproducible Research",
+    "title": "Open Resources and GitHub Resources",
     "section": "",
-    "text": "Python geospatial processing, remote sensing product automation, machine learning, SHAP, GeoShapley, PyTorch, and Google Earth Engine."
+    "text": "Future public resources, GitHub repositories, reproducible research examples, Python geospatial processing, machine learning, SHAP, GeoShapley, PyTorch, and Google Earth Engine."
   },
   {
     "objectID": "contact.html",

@@ -20,14 +20,24 @@ website:
         menu:
           - text: "Featured Research"
             href: research/featured-research.qmd
-          - text: "Applied Remote Sensing Engineering"
+          - text: "Applied Remote Sensing Research"
             href: research/applied-remote-sensing-engineering.qmd
           - text: "Additional GIS & Spatial Analysis"
             href: research/additional-gis-spatial-analysis.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Code"
-        href: codes.qmd
+      - text: "Experience"
+        menu:
+          - text: "Professional Overview"
+            href: experience.qmd
+          - text: "Recent Work"
+            href: recent-work.qmd
+          - text: "Satellite Preprocessing Pipelines"
+            href: satellite-preprocessing.qmd
+          - text: "Operational Remote Sensing Systems"
+            href: operational-remote-sensing.qmd
+          - text: "Agricultural Monitoring & Yield Estimation"
+            href: agricultural-monitoring-yield.qmd
       - text: "CV"
         href: Youbin_He_CV.pdf
       - text: "Contact"

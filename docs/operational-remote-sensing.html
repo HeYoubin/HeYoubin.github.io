@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operational Remote Sensing Product Generation - Youbin He</title>
+  <link rel="icon" href="images/site-logo.png" type="image/png">
+  <link rel="stylesheet" href="site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
+  <style>
+    body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
+    .navbar { background: #1F4E79; }
+    .navbar a, .navbar-brand { color: #fff; }
+    .navbar a:hover { color: #EAF3FB; }
+    .dropdown-menu a { color: #173B5C; }
+    .dropdown-menu a:hover { color: #1F5E9C; }
+    main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
+    h1, h2, h3 { color: #173B5C; }
+    h2 { margin-top: 2rem; }
+    h3 { margin-top: 1.35rem; }
+    a { color: #1F5E9C; text-decoration: none; }
+    a:hover { color: #173B5C; text-decoration: underline; }
+    .callout { border-left: 4px solid #1F4E79; background: #F8FBFE; border-radius: 6px; padding: 1rem; margin: 1rem 0 1.5rem; }
+    .experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .experience-card { border: 1px solid #D7E7F6; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
+    .experience-card h3 { margin-top: 0; }
+    strong, .highlight-primary { color: #1F4E79; font-weight: 700; }
+    .highlight { color: #0b4f8a; font-weight: 700; background: linear-gradient(transparent 62%, rgba(255, 193, 7, 0.28) 62%); padding: 0 2px; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 1rem 0; }
+    .tech-tag { display: inline-block; padding: 0.25rem 0.55rem; border-radius: 999px; background: #eef4fb; color: #174a7c; font-size: 0.88rem; font-weight: 600; }
+    .page-subtitle { color: #4b5563; font-size: 1.05rem; margin-top: -0.35rem; margin-bottom: 1.25rem; }
+    .workflow-figure-card, .preprocess-section, .confidentiality-note { border: 1px solid #D7E7F6; border-radius: 8px; background: #ffffff; padding: 1rem; margin: 1rem 0 1.4rem; }
+    .workflow-figure-card { background: #F8FBFE; }
+    .workflow-figure-card img { display: block; width: 100%; height: auto; border-radius: 6px; }
+    .figure-caption { color: #4b5563; font-size: 0.92rem; margin: 0.6rem 0 0; text-align: center; }
+    .confidentiality-note { border-left: 4px solid #1F4E79; background: #F8FBFE; }
+    .output-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin: 0.75rem 0 1rem; }
+    .output-item { border: 1px solid #D7E7F6; border-radius: 6px; background: #F8FBFE; padding: 0.75rem 0.9rem; }
+    @media (max-width: 760px) { .output-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 760px) { .experience-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Youbin He</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research &amp; Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research/featured-research.html">Featured Research</a></li>
+            <li><a class="dropdown-item" href="research/applied-remote-sensing-engineering.html">Applied Remote Sensing Research</a></li>
+            <li><a class="dropdown-item" href="research/additional-gis-spatial-analysis.html">Additional GIS &amp; Spatial Analysis</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experience</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="experience.html">Professional Overview</a></li>
+            <li><a class="dropdown-item" href="recent-work.html">Recent Work</a></li>
+            <li><a class="dropdown-item" href="satellite-preprocessing.html">Satellite Preprocessing Pipelines</a></li>
+            <li><a class="dropdown-item" href="operational-remote-sensing.html">Operational Remote Sensing Systems</a></li>
+            <li><a class="dropdown-item" href="agricultural-monitoring-yield.html">Agricultural Monitoring &amp; Yield Estimation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Youbin_He_CV.pdf">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <h1>Operational Remote Sensing Product Generation for Wildfire and Agro-meteorological Monitoring</h1>
+  <p class="page-subtitle">From Satellite Observations to Operational Environmental Monitoring Products</p>
+  <div class="workflow-figure-card">
+    <img src="images/projects/operational-remote-sensing/operational-remote-sensing-workflow.png" alt="Operational remote sensing product generation workflow">
+    <p class="figure-caption">Generic workflow diagram for operational remote sensing product generation, from satellite observations to monitoring outputs and reporting.</p>
+  </div>
+<p>This page summarizes my professional experience in developing <strong>operational remote sensing product-generation workflows</strong> for wildfire-related environmental monitoring, land surface condition assessment, and agro-meteorological applications.</p>
+<p>The representative project behind this page focused on building automated satellite-based monitoring products for regional environmental and disaster-prevention applications. My work involved transforming multi-source satellite data into <strong>routine raster products</strong>, <strong>regional statistics</strong>, <strong>comparison products</strong>, <strong>thematic maps</strong>, <strong>JSON outputs</strong>, and <strong>structured operational results</strong>.</p>
+<p><span class="highlight">This project represents one of my first large-scale operational remote sensing engineering experiences, where I worked across algorithm development, geospatial processing, thematic mapping, system integration support, technical documentation, and deployment-side preparation.</span></p>
+<p>Due to confidentiality requirements, detailed code, non-public datasets, private implementation details, non-public operational information, and operational product examples are not publicly displayed. The content below summarizes generalized technical workflows and my personal contributions.</p>
+<section class="preprocess-section">
+<h2>Project Overview</h2>
+<p>The project aimed to support <strong>wildfire-related environmental monitoring</strong>, <strong>land surface temperature monitoring</strong>, and <strong>agro-meteorological product generation</strong> through automated remote sensing workflows.</p>
+<p>The system was designed to process satellite data continuously and generate monitoring products at multiple temporal scales, including:</p>
+<ul>
+  <li><strong>Daily</strong></li>
+  <li><strong>Dekadal</strong></li>
+  <li><strong>Monthly</strong></li>
+  <li><strong>Seasonal</strong></li>
+  <li><strong>Annual</strong></li>
+</ul>
+<p>The core module I worked on was the <strong>land surface temperature monitoring workflow</strong>, mainly based on <strong>Terra/Aqua MODIS LST products</strong>. Additional modules involved crop growth monitoring, crop yield estimation prototypes, statistical summaries, and thematic map production.</p>
+<p>The overall goal was to turn satellite data into operational products that could support environmental monitoring, wildfire-related decision support, and regional agro-meteorological analysis.</p>
+</section>
+<section class="preprocess-section">
+<h2>My Role</h2>
+<p>I worked as a <strong>core algorithm developer and remote sensing engineer</strong> for the modules I participated in.</p>
+<p>My responsibilities included:</p>
+<ul>
+  <li>Designing and implementing remote sensing algorithms</li>
+  <li>Developing Python-based batch-processing workflows</li>
+  <li>Processing MODIS land surface temperature products</li>
+  <li>Producing regional and land-cover-specific raster products</li>
+  <li>Implementing multi-temporal product compositing</li>
+  <li>Developing comparison products against historical baselines</li>
+  <li>Automating raster statistics and JSON outputs</li>
+  <li>Integrating Python with QGIS templates for thematic mapping</li>
+  <li>Supporting system integration and deployment-side preparation</li>
+  <li>Writing algorithm documentation, technical notes, and workflow descriptions</li>
+</ul>
+<p><span class="highlight">My contribution was not limited to isolated scripts; I helped convert remote sensing algorithms into operational workflows that could run under platform scheduling and deployment-side environments.</span></p>
+</section>
+<section class="preprocess-section">
+<h2>Data and Scale</h2>
+<p>The land surface temperature workflow mainly used <strong>Terra MODIS MOD11A1</strong> and <strong>Aqua MODIS MYD11A1</strong> HDF products. The workflow supported multi-year processing from <strong>2020 onward</strong> and was designed for continuous operational execution when new data became available.</p>
+<p>The system supported:</p>
+<ul>
+  <li><strong>Terra/Aqua MODIS LST data</strong></li>
+  <li><strong>Daily LST products</strong></li>
+  <li><strong>Dekadal, monthly, seasonal, and annual composites</strong></li>
+  <li><strong>Regional products</strong></li>
+  <li><strong>Land-cover-specific products</strong></li>
+  <li><strong>Current-year monitoring</strong></li>
+  <li><strong>Previous-year comparison</strong></li>
+  <li><strong>Recent multi-year baseline comparison</strong></li>
+</ul>
+<p>Spatial processing covered multiple types of regional units, including:</p>
+<ul>
+  <li>Province-level or full-region products</li>
+  <li>Municipal and county-level administrative units</li>
+  <li>Ecological or functional zones</li>
+  <li>Nature reserve units</li>
+  <li>Land-cover types such as forest, grassland, farmland, other land, and full-region masks</li>
+</ul>
+<p>The workflow outputs included:</p>
+<ul>
+  <li><strong>GeoTIFF raster products</strong></li>
+  <li><strong>JSON statistical summaries</strong></li>
+  <li><strong>PNG thematic maps</strong></li>
+  <li><strong>Comparison products</strong></li>
+  <li><strong>Structured product records</strong></li>
+  <li><strong>Operational reporting records</strong></li>
+</ul>
+</section>
+<section class="preprocess-section">
+<h2>Technical Workflow</h2>
+</section>
+<section class="preprocess-section">
+<h3>1. MODIS Land Surface Temperature Product Generation</h3>
+<p>The land surface temperature module was the most complete and mature part of the project.</p>
+<p>The workflow included:</p>
+<ul>
+  <li>Reading MODIS LST HDF data</li>
+  <li>Extracting LST subdatasets</li>
+  <li>Applying scale factors and valid-value filtering</li>
+  <li>Converting Kelvin-scale values into Celsius where needed</li>
+  <li>Reprojecting products into standard geographic coordinates</li>
+  <li>Writing standardized GeoTIFF outputs</li>
+  <li>Organizing products according to operational naming and directory rules</li>
+</ul>
+<h3>Outputs</h3>
+<ul>
+  <li>Daily LST GeoTIFF products</li>
+  <li>Standardized raster products for downstream analysis</li>
+  <li>Operational data products for regional monitoring</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">MODIS</span>
+  <span class="tech-tag">MOD11A1</span>
+  <span class="tech-tag">MYD11A1</span>
+  <span class="tech-tag">HDF</span>
+  <span class="tech-tag">Land Surface Temperature</span>
+  <span class="tech-tag">GeoTIFF</span>
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">GDAL</span>
+  <span class="tech-tag">rasterio</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h3>2. Multi-temporal Compositing</h3>
+<p>To support operational monitoring at different temporal scales, I developed workflows for producing <strong>dekadal</strong>, <strong>monthly</strong>, <strong>seasonal</strong>, and <strong>annual</strong> land surface temperature products.</p>
+<p>The workflow included:</p>
+<ul>
+  <li>Searching available daily LST products</li>
+  <li>Grouping products by time period</li>
+  <li>Handling missing or invalid values</li>
+  <li>Calculating period-level mean values</li>
+  <li>Generating standardized composite products</li>
+  <li>Organizing outputs by year, time period, region, satellite, and product type</li>
+</ul>
+<h3>Outputs</h3>
+<ul>
+  <li>Dekadal LST composites</li>
+  <li>Monthly LST composites</li>
+  <li>Seasonal LST composites</li>
+  <li>Annual LST composites</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Time-series Compositing</span>
+  <span class="tech-tag">Dekadal Products</span>
+  <span class="tech-tag">Monthly Products</span>
+  <span class="tech-tag">Seasonal Products</span>
+  <span class="tech-tag">Annual Products</span>
+  <span class="tech-tag">NumPy</span>
+  <span class="tech-tag">Raster Processing</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h3>3. Regional and Land-cover-specific Product Generation</h3>
+<p>The system needed to produce products not only for the whole region but also for different administrative units and land-cover types.</p>
+<p>The workflow included:</p>
+<ul>
+  <li>Administrative boundary clipping</li>
+  <li>Land-cover mask extraction</li>
+  <li>Forest, grassland, farmland, other land, and full-region product generation</li>
+  <li>Raster reprojection and alignment</li>
+  <li>Region-level product naming and folder organization</li>
+  <li>Batch generation across multiple spatial units</li>
+</ul>
+<h3>Outputs</h3>
+<ul>
+  <li>Full-region LST products</li>
+  <li>Administrative-region LST products</li>
+  <li>Forest LST products</li>
+  <li>Grassland LST products</li>
+  <li>Farmland LST products</li>
+  <li>Other-land LST products</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Vector Clipping</span>
+  <span class="tech-tag">Land-cover Masking</span>
+  <span class="tech-tag">Regional Products</span>
+  <span class="tech-tag">Raster Alignment</span>
+  <span class="tech-tag">geopandas</span>
+  <span class="tech-tag">GDAL</span>
+  <span class="tech-tag">rasterio</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h3>4. Raster Statistics and JSON Outputs</h3>
+<p>The workflow included automated statistical analysis for land surface temperature products.</p>
+<p>For each region and land-cover type, the algorithm calculated:</p>
+<ul>
+  <li>Maximum temperature</li>
+  <li>Minimum temperature</li>
+  <li>Mean temperature</li>
+</ul>
+<p>The results were exported as <strong>JSON statistical summaries</strong> and adapted for structured output preparation or operational display.</p>
+<h3>Outputs</h3>
+<ul>
+  <li>Regional LST statistics</li>
+  <li>Land-cover-specific LST statistics</li>
+  <li>JSON outputs</li>
+  <li>Structured statistical records</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Raster Statistics</span>
+  <span class="tech-tag">JSON Output</span>
+  <span class="tech-tag">Regional Summary</span>
+  <span class="tech-tag">Structured Output Preparation</span>
+  <span class="tech-tag">NumPy</span>
+  <span class="tech-tag">rasterio</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h3>5. Historical Comparison Products</h3>
+<p>The system also supported comparison products for operational monitoring.</p>
+<p>Two major comparison modes were implemented:</p>
+<ul>
+  <li><strong>Current period vs. previous year</strong></li>
+  <li><strong>Current period vs. recent multi-year baseline</strong></li>
+</ul>
+<p>The workflow calculated temperature differences and classified changes into categories such as:</p>
+<ul>
+  <li>Significant increase</li>
+  <li>Increase</li>
+  <li>Stable</li>
+  <li>Decrease</li>
+  <li>Significant decrease</li>
+</ul>
+<p>These products supported rapid interpretation of abnormal land surface temperature conditions.</p>
+<h3>Outputs</h3>
+<ul>
+  <li>Previous-year comparison products</li>
+  <li>Recent multi-year baseline comparison products</li>
+  <li>Classified temperature-change maps</li>
+  <li>Comparison-oriented thematic maps</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Change Detection</span>
+  <span class="tech-tag">Baseline Comparison</span>
+  <span class="tech-tag">Temperature Anomaly</span>
+  <span class="tech-tag">Classification</span>
+  <span class="tech-tag">Raster Difference</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h3>6. Automated Thematic Mapping with QGIS</h3>
+<p>The project included automated thematic map production using <strong>Python and QGIS project templates</strong>.</p>
+<p>The map-generation workflow included:</p>
+<ul>
+  <li>Loading predefined QGIS project templates</li>
+  <li>Replacing raster layers dynamically</li>
+  <li>Replacing vector boundary layers</li>
+  <li>Updating map titles</li>
+  <li>Updating time labels</li>
+  <li>Updating satellite and sensor information</li>
+  <li>Switching layout visibility according to product type</li>
+  <li>Exporting PNG thematic maps</li>
+</ul>
+<p>This workflow helped convert raster products into map outputs suitable for operational display and reporting.</p>
+<h3>Outputs</h3>
+<ul>
+  <li>Land surface temperature monitoring maps</li>
+  <li>Historical comparison maps</li>
+  <li>Regional and land-cover-specific thematic maps</li>
+  <li>PNG map products</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">QGIS Python API</span>
+  <span class="tech-tag">Thematic Mapping</span>
+  <span class="tech-tag">Map Automation</span>
+  <span class="tech-tag">Layout Export</span>
+  <span class="tech-tag">Raster Layer Replacement</span>
+  <span class="tech-tag">Vector Boundary Replacement</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h3>7. Crop Growth and Yield-related Supporting Workflows</h3>
+<p>Although the land surface temperature module was the core of this operational system page, I also contributed to related agro-meteorological workflows, including crop growth monitoring and prototype yield estimation.</p>
+<p>These supporting workflows involved:</p>
+<ul>
+  <li>NDVI-based crop growth products</li>
+  <li>Crop distribution masks</li>
+  <li>Regional crop-growth statistics</li>
+  <li>RGB visualization products</li>
+  <li>Crop growth thematic maps</li>
+  <li>Prototype yield estimation workflows</li>
+  <li>Historical yield and vegetation indicator preparation</li>
+</ul>
+<p>These components were connected to the broader goal of building an operational agro-meteorological monitoring system.</p>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">NDVI</span>
+  <span class="tech-tag">Crop Growth Monitoring</span>
+  <span class="tech-tag">Crop Masking</span>
+  <span class="tech-tag">Agricultural Remote Sensing</span>
+  <span class="tech-tag">Yield Estimation Prototype</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>Engineering Implementation</h2>
+<p>The project required both remote sensing knowledge and software engineering adaptation.</p>
+<p>Key engineering tasks included:</p>
+<ul>
+  <li>Python-based algorithm development</li>
+  <li>JSON-based task parameter parsing</li>
+  <li>Automated input and output organization</li>
+  <li>Product naming rule adaptation</li>
+  <li>Batch processing</li>
+  <li>Deployment-side preparation</li>
+  <li>System integration support</li>
+  <li>Execution log reporting</li>
+  <li>Workflow status reporting</li>
+  <li>Result reporting</li>
+  <li>Structured operational output</li>
+</ul>
+<p>Representative technologies:</p>
+<div class="tech-tags">
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">GDAL</span>
+  <span class="tech-tag">rasterio</span>
+  <span class="tech-tag">NumPy</span>
+  <span class="tech-tag">geopandas</span>
+  <span class="tech-tag">QGIS Python API</span>
+  <span class="tech-tag">Structured Outputs</span>
+  <span class="tech-tag">JSON</span>
+  <span class="tech-tag">System Integration Support</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>Main Outputs</h2>
+<p>The workflows supported the generation of multiple operational product types, including:</p>
+<div class="output-grid">
+  <div class="output-item">MODIS daily LST GeoTIFF products</div>
+  <div class="output-item">Dekadal, monthly, seasonal, and annual LST composites</div>
+  <div class="output-item">Regional and land-cover-specific LST products</div>
+  <div class="output-item">LST statistical JSON outputs</div>
+  <div class="output-item">Previous-year comparison products</div>
+  <div class="output-item">Recent multi-year baseline comparison products</div>
+  <div class="output-item">Classified temperature-change products</div>
+  <div class="output-item">LST thematic maps</div>
+  <div class="output-item">Crop growth monitoring products</div>
+  <div class="output-item">Crop growth statistical outputs</div>
+  <div class="output-item">Prototype crop yield estimation outputs</div>
+  <div class="output-item">Technical documentation and algorithm workflow descriptions</div>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>Skills Demonstrated</h2>
+<h3>Remote Sensing Product Generation</h3>
+<ul>
+  <li>MODIS LST product processing</li>
+  <li>Multi-temporal compositing</li>
+  <li>Land-cover-specific product generation</li>
+  <li>Historical baseline comparison</li>
+  <li>Environmental monitoring product design</li>
+</ul>
+<h3>Geospatial Processing</h3>
+<ul>
+  <li>Raster clipping</li>
+  <li>Vector boundary processing</li>
+  <li>Land-cover mask extraction</li>
+  <li>Regional statistics</li>
+  <li>Spatial product organization</li>
+  <li>Thematic map automation</li>
+</ul>
+<h3>Operational Engineering</h3>
+<ul>
+  <li>Python batch workflows</li>
+  <li>JSON task parameters</li>
+  <li>Product naming and file-organization rules</li>
+  <li>System integration support</li>
+  <li>Deployment-side preparation</li>
+  <li>Structured operational outputs</li>
+  <li>Execution log and result reporting</li>
+</ul>
+<h3>Environmental and Agro-meteorological Applications</h3>
+<ul>
+  <li>Wildfire-related environmental monitoring</li>
+  <li>Land surface temperature anomaly assessment</li>
+  <li>Crop growth monitoring</li>
+  <li>Agro-meteorological product support</li>
+  <li>Regional decision-support products</li>
+</ul>
+</section>
+<section class="preprocess-section">
+<h2>Professional Growth</h2>
+<p>This project was an important step in my transition from remote sensing algorithm development to <strong>operational environmental monitoring system implementation</strong>.</p>
+<p>It helped me improve my ability to:</p>
+<ul>
+  <li>Translate remote sensing theory into operational algorithms</li>
+  <li>Work with long-term satellite time series</li>
+  <li>Design products for different temporal and spatial scales</li>
+  <li>Integrate raster processing, statistics, thematic maps, and system reporting</li>
+  <li>Adapt algorithms to platform scheduling and deployment-side preparation environments</li>
+  <li>Communicate technical workflows through documentation</li>
+</ul>
+<p><span class="highlight">This experience strengthened my practical understanding of how remote sensing products are produced, organized, visualized, and delivered in real operational systems.</span></p>
+<p>It also provided a strong engineering foundation for my later work in agricultural monitoring, crop yield estimation, polar-orbiting satellite fire detection, and GeoAI-based wildfire risk modeling.</p>
+</section>
+<section class="confidentiality-note">
+<h2>Confidentiality Statement</h2>
+<p>This project was conducted in an operational and applied operational engineering context. Therefore, detailed source code, non-public datasets, private implementation details, and operational product examples are not publicly displayed.</p>
+<p>The purpose of this page is to summarize generalized technical workflows, product-generation logic, and my personal contributions without exposing confidential project materials.</p>
+</section>
+</main>
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

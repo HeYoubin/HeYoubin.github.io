@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crop Growth Assessment and Yield Estimation - Youbin He</title>
+  <link rel="icon" href="images/site-logo.png" type="image/png">
+  <link rel="stylesheet" href="site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
+  <style>
+    body { background: #F4F8FC; color: #1f2933; font-family: Lato, Arial, sans-serif; line-height: 1.7; }
+    .navbar { background: #1F4E79; }
+    .navbar a, .navbar-brand { color: #fff; }
+    .navbar a:hover { color: #EAF3FB; }
+    .dropdown-menu a { color: #173B5C; }
+    .dropdown-menu a:hover { color: #1F5E9C; }
+    main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
+    h1, h2, h3 { color: #173B5C; }
+    h2 { margin-top: 2rem; }
+    h3 { margin-top: 1.35rem; }
+    a { color: #1F5E9C; text-decoration: none; }
+    a:hover { color: #173B5C; text-decoration: underline; }
+    .callout { border-left: 4px solid #1F4E79; background: #F8FBFE; border-radius: 6px; padding: 1rem; margin: 1rem 0 1.5rem; }
+    .experience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .experience-card { border: 1px solid #D7E7F6; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
+    .experience-card h3 { margin-top: 0; }
+    strong, .highlight-primary { color: #1F4E79; font-weight: 700; }
+    .highlight { color: #0b4f8a; font-weight: 700; background: linear-gradient(transparent 62%, rgba(255, 193, 7, 0.28) 62%); padding: 0 2px; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 1rem 0; }
+    .tech-tag { display: inline-block; padding: 0.25rem 0.55rem; border-radius: 999px; background: #eef4fb; color: #174a7c; font-size: 0.88rem; font-weight: 600; }
+    .page-subtitle { color: #4b5563; font-size: 1.05rem; margin-top: -0.35rem; margin-bottom: 1.25rem; }
+    .workflow-figure-card, .preprocess-section, .confidentiality-note { border: 1px solid #D7E7F6; border-radius: 8px; background: #ffffff; padding: 1rem; margin: 1rem 0 1.4rem; }
+    .workflow-figure-card { background: #F8FBFE; }
+    .workflow-figure-card img { display: block; width: 100%; height: auto; border-radius: 6px; }
+    .figure-caption { color: #4b5563; font-size: 0.92rem; margin: 0.6rem 0 0; text-align: center; }
+    .confidentiality-note { border-left: 4px solid #1F4E79; background: #F8FBFE; }
+    .output-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin: 0.75rem 0 1rem; }
+    .output-item { border: 1px solid #D7E7F6; border-radius: 6px; background: #F8FBFE; padding: 0.75rem 0.9rem; }
+    @media (max-width: 760px) { .output-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 760px) { .experience-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Youbin He</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research &amp; Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="research/featured-research.html">Featured Research</a></li>
+            <li><a class="dropdown-item" href="research/applied-remote-sensing-engineering.html">Applied Remote Sensing Research</a></li>
+            <li><a class="dropdown-item" href="research/additional-gis-spatial-analysis.html">Additional GIS &amp; Spatial Analysis</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Experience</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="experience.html">Professional Overview</a></li>
+            <li><a class="dropdown-item" href="recent-work.html">Recent Work</a></li>
+            <li><a class="dropdown-item" href="satellite-preprocessing.html">Satellite Preprocessing Pipelines</a></li>
+            <li><a class="dropdown-item" href="operational-remote-sensing.html">Operational Remote Sensing Systems</a></li>
+            <li><a class="dropdown-item" href="agricultural-monitoring-yield.html">Agricultural Monitoring &amp; Yield Estimation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Youbin_He_CV.pdf">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <h1>Crop Growth Assessment and County-level Yield Estimation for Integrated Agricultural Monitoring</h1>
+  <p class="page-subtitle">Remote Sensing-based Agricultural Monitoring and Yield Modeling</p>
+  <div class="workflow-figure-card">
+    <img src="images/projects/agricultural-monitoring-yield/agricultural-monitoring-yield-workflow.png" alt="Agricultural monitoring and county-level yield estimation workflow">
+    <p class="figure-caption">Generic workflow diagram for agricultural monitoring and county-level yield estimation, from FY-series observations to crop growth assessment and yield modeling.</p>
+  </div>
+<p>This page summarizes my professional experience in developing <strong>crop growth assessment</strong> and <strong>county-level crop yield estimation</strong> workflows for integrated agricultural monitoring. The representative project behind this page focused on agricultural monitoring over <strong>Heilongjiang Province</strong>, one of the most important agricultural regions in China.</p>
+<p>My work in this project covered both <strong>remote sensing product generation</strong> and <strong>yield estimation model development</strong>, including FY-series satellite data processing, vegetation index retrieval, crop growth evaluation, multi-source data integration, machine-learning model exploration, thematic map automation, and backend/client-side algorithm adaptation.</p>
+<p><span class="highlight">This project represents one of my most important professional experiences in agricultural remote sensing, because it connected satellite-based crop monitoring, statistical modeling, operational deployment, and deployment-side product delivery.</span></p>
+<p>Due to confidentiality requirements, detailed code, non-public datasets, private implementation details, non-public operational information, and operational product examples are not publicly displayed. The content below summarizes generalized technical workflows and my personal contributions.</p>
+<section class="preprocess-section">
+<h2>Project Overview</h2>
+<p>The project aimed to support an integrated agricultural monitoring system by developing operational algorithms for:</p>
+<ul>
+  <li><strong>Crop growth assessment</strong></li>
+  <li><strong>Crop condition monitoring</strong></li>
+  <li><strong>Vegetation index product generation</strong></li>
+  <li><strong>County-level crop yield estimation</strong></li>
+  <li><strong>Thematic map production</strong></li>
+  <li><strong>Backend and client-side algorithm deployment</strong></li>
+</ul>
+<p>The crop growth assessment module was mainly based on <strong>FY-series satellite data</strong>, especially <strong>FY-3D/MERSI</strong> products. The monitoring period focused on the crop growing season from <strong>May to October</strong>, with products generated at <strong>daily</strong>, <strong>dekadal</strong>, and <strong>monthly</strong> time scales.</p>
+<p>The crop yield estimation module focused on building a county-level workflow for major crops such as:</p>
+<ul>
+  <li><strong>Maize</strong></li>
+  <li><strong>Rice</strong></li>
+  <li><strong>Soybean</strong></li>
+</ul>
+<p>The workflow integrated remote sensing indices, meteorological variables, soil-related variables, crop distribution data, county boundaries, and historical statistical yield records.</p>
+</section>
+<section class="preprocess-section">
+<h2>My Role</h2>
+<p>I worked as a <strong>core algorithm developer and remote sensing engineer</strong> for the crop growth assessment and crop yield estimation modules.</p>
+<p>My responsibilities included:</p>
+<ul>
+  <li>Designing crop growth assessment algorithms</li>
+  <li>Developing FY-series satellite-based vegetation index workflows</li>
+  <li>Implementing daily, dekadal, and monthly product-generation algorithms</li>
+  <li>Developing anomaly and deviation-based crop growth evaluation methods</li>
+  <li>Building thematic map automation workflows</li>
+  <li>Collecting and preprocessing multi-source data for yield estimation</li>
+  <li>Exploring crop yield estimation models</li>
+  <li>Conducting feature importance and multicollinearity analysis</li>
+  <li>Adapting algorithms for backend and client-side deployment</li>
+  <li>Writing technical documentation and algorithm descriptions</li>
+</ul>
+<p><span class="highlight">My role covered the full workflow from data preparation and algorithm development to model exploration, technical documentation, and operational adaptation.</span></p>
+</section>
+<section class="preprocess-section">
+<h2>Data and Scale</h2>
+<p>The project involved multi-source agricultural monitoring data.</p>
+<h3>Remote Sensing Data</h3>
+<p>The crop growth assessment module mainly used <strong>FY-series satellite data</strong>, especially FY-3D/MERSI products, to generate vegetation and crop condition indicators during the growing season.</p>
+<p>Remote sensing products included:</p>
+<ul>
+  <li>NDVI</li>
+  <li>LAI</li>
+  <li>FVC</li>
+  <li>VHI</li>
+  <li>GCI</li>
+  <li>Brightness-related index products</li>
+</ul>
+<h3>Temporal Scale</h3>
+<p>The monitoring workflow supported:</p>
+<ul>
+  <li><strong>Daily products</strong></li>
+  <li><strong>Dekadal products</strong></li>
+  <li><strong>Monthly products</strong></li>
+</ul>
+<p>The main crop growing season was from <strong>May to October</strong>.</p>
+<h3>Spatial Scale</h3>
+<p>The project focused on <strong>Heilongjiang Province</strong>, with outputs designed for:</p>
+<ul>
+  <li>Province-level monitoring</li>
+  <li>County-level crop statistics</li>
+  <li>Regional crop growth assessment</li>
+  <li>County-level yield estimation</li>
+</ul>
+<h3>Yield Estimation Data</h3>
+<p>The yield estimation workflow integrated:</p>
+<ul>
+  <li>Remote sensing vegetation indices</li>
+  <li>Meteorological variables</li>
+  <li>Soil-related variables</li>
+  <li>Land surface temperature variables</li>
+  <li>Crop distribution maps</li>
+  <li>County boundaries</li>
+  <li>Historical statistical yield records</li>
+  <li>Crop area statistics</li>
+</ul>
+<p>Historical modeling data covered multiple years, including the period from <strong>2014 to 2023</strong> in the data preparation and model exploration stage.</p>
+</section>
+<section class="preprocess-section">
+<h2>Technical Workflow</h2>
+</section>
+<section class="preprocess-section">
+<h2>1. FY-series Crop Growth Product Generation</h2>
+<p>The crop growth assessment workflow was designed to generate routine agricultural remote sensing products from FY-series satellite data.</p>
+<p>The workflow included:</p>
+<ul>
+  <li>Reading FY-series satellite reflectance products</li>
+  <li>Extracting required spectral bands</li>
+  <li>Applying cloud or quality filtering where applicable</li>
+  <li>Generating vegetation and crop condition indicators</li>
+  <li>Applying agricultural masks or crop-related spatial constraints</li>
+  <li>Reprojecting and clipping raster outputs</li>
+  <li>Producing standardized raster products</li>
+  <li>Organizing products by time scale and product type</li>
+</ul>
+<h3>Outputs</h3>
+<ul>
+  <li>Daily agricultural index products</li>
+  <li>Dekadal composite products</li>
+  <li>Monthly composite products</li>
+  <li>Standardized raster outputs for crop monitoring</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">FY-series</span>
+  <span class="tech-tag">FY-3D</span>
+  <span class="tech-tag">MERSI</span>
+  <span class="tech-tag">Crop Growth Monitoring</span>
+  <span class="tech-tag">Raster Processing</span>
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">GDAL</span>
+  <span class="tech-tag">rasterio</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>2. Vegetation and Crop Condition Indices</h2>
+<p>The crop growth module included multiple remote sensing indicators for monitoring vegetation status and crop condition.</p>
+<h3>NDVI</h3>
+<p>NDVI was used as the core vegetation index for crop greenness and growth monitoring.</p>
+<h3>LAI</h3>
+<p>LAI was derived from vegetation index information to represent canopy structure and crop leaf area development.</p>
+<h3>FVC</h3>
+<p>FVC was used to describe vegetation coverage and crop canopy density.</p>
+<h3>VHI</h3>
+<p>VHI was used to represent vegetation health by integrating vegetation condition and thermal-related information.</p>
+<h3>GCI</h3>
+<p>GCI was used as a greenness-related indicator for crop growth status.</p>
+<h3>Brightness Index</h3>
+<p>Brightness-related indices were generated to support crop surface condition monitoring and product interpretation.</p>
+<h3>Outputs</h3>
+<ul>
+  <li>NDVI products</li>
+  <li>LAI products</li>
+  <li>FVC products</li>
+  <li>VHI products</li>
+  <li>GCI products</li>
+  <li>Brightness-related products</li>
+  <li>Daily, dekadal, and monthly composites</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">NDVI</span>
+  <span class="tech-tag">LAI</span>
+  <span class="tech-tag">FVC</span>
+  <span class="tech-tag">VHI</span>
+  <span class="tech-tag">GCI</span>
+  <span class="tech-tag">Brightness Index</span>
+  <span class="tech-tag">Vegetation Monitoring</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>3. Crop Growth Assessment</h2>
+<p>The crop growth assessment workflow used both <strong>anomaly-based</strong> and <strong>deviation-based</strong> methods.</p>
+<h3>Anomaly-based Assessment</h3>
+<p>The anomaly method compared current vegetation conditions with historical or multi-year reference conditions to identify whether crop growth was better or worse than normal.</p>
+<h3>Deviation-based Assessment</h3>
+<p>The deviation method compared current vegetation conditions with a reference period, such as the previous year or a selected baseline period, to evaluate crop growth changes.</p>
+<h3>Growth Classification</h3>
+<p>The crop growth products were classified into different condition levels, supporting regional interpretation and map visualization.</p>
+<p>The workflow supported:</p>
+<ul>
+  <li>Current-period crop growth assessment</li>
+  <li>Historical reference comparison</li>
+  <li>Previous-period or previous-year comparison</li>
+  <li>Regional crop condition interpretation</li>
+  <li>Map-ready classified products</li>
+</ul>
+<h3>Outputs</h3>
+<ul>
+  <li>Crop growth anomaly products</li>
+  <li>Crop growth deviation products</li>
+  <li>Classified crop condition maps</li>
+  <li>Growth assessment statistics</li>
+  <li>Thematic map inputs</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Crop Growth Assessment</span>
+  <span class="tech-tag">Anomaly Method</span>
+  <span class="tech-tag">Deviation Method</span>
+  <span class="tech-tag">Temporal Comparison</span>
+  <span class="tech-tag">Classification</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>4. Thematic Map Automation</h2>
+<p>The project included automated thematic map generation for crop growth and agricultural monitoring products.</p>
+<p>The workflow involved:</p>
+<ul>
+  <li>Loading QGIS project templates</li>
+  <li>Replacing raster layers dynamically</li>
+  <li>Replacing vector boundary layers</li>
+  <li>Updating map titles</li>
+  <li>Updating time labels</li>
+  <li>Updating product names</li>
+  <li>Exporting PNG thematic maps</li>
+  <li>Adapting outputs for backend and client-side display</li>
+</ul>
+<p>This helped transform raster products into map products suitable for operational visualization and reporting.</p>
+<h3>Outputs</h3>
+<ul>
+  <li>Crop growth thematic maps</li>
+  <li>Agricultural index maps</li>
+  <li>County-level monitoring maps</li>
+  <li>PNG map products</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">QGIS Python API</span>
+  <span class="tech-tag">Thematic Mapping</span>
+  <span class="tech-tag">Map Automation</span>
+  <span class="tech-tag">Raster Layer Replacement</span>
+  <span class="tech-tag">Vector Boundary Replacement</span>
+  <span class="tech-tag">PNG Export</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>5. County-level Crop Yield Estimation Workflow</h2>
+<p>The crop yield estimation module was developed from data preparation to model exploration and operational workflow design.</p>
+<p>The workflow included:</p>
+<ul>
+  <li>Collecting historical crop yield records</li>
+  <li>Preparing county-level statistical data</li>
+  <li>Processing remote sensing vegetation indicators</li>
+  <li>Preparing meteorological and soil-related variables</li>
+  <li>Extracting crop-specific information using crop distribution maps</li>
+  <li>Calculating county-level crop area statistics</li>
+  <li>Matching remote sensing and environmental variables with yield records</li>
+  <li>Exploring yield estimation models</li>
+  <li>Building model-ready tabular datasets</li>
+  <li>Generating county-level yield estimation outputs</li>
+</ul>
+<p>The final workflow focused on estimating:</p>
+<ul>
+  <li>County-level crop yield</li>
+  <li>Crop planting area</li>
+  <li>Total crop production</li>
+</ul>
+<p>for major crops such as <strong>maize</strong>, <strong>rice</strong>, and <strong>soybean</strong>.</p>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">County-level Yield Estimation</span>
+  <span class="tech-tag">Crop Area Statistics</span>
+  <span class="tech-tag">Remote Sensing Indices</span>
+  <span class="tech-tag">Meteorological Variables</span>
+  <span class="tech-tag">Soil Variables</span>
+  <span class="tech-tag">Statistical Yield Records</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>6. Multi-source Data Integration</h2>
+<p>Yield estimation required integration of multiple data sources.</p>
+<p>Candidate variables included:</p>
+<ul>
+  <li>Precipitation</li>
+  <li>Land surface temperature</li>
+  <li>Maximum temperature</li>
+  <li>Minimum temperature</li>
+  <li>NDVI</li>
+  <li>LAI</li>
+  <li>Soil moisture</li>
+  <li>Vegetation health indicators</li>
+  <li>Crop distribution information</li>
+  <li>Historical yield records</li>
+  <li>County-level administrative units</li>
+</ul>
+<p>The data preparation workflow involved:</p>
+<ul>
+  <li>NetCDF-to-raster conversion where needed</li>
+  <li>Raster compositing</li>
+  <li>Zonal statistics</li>
+  <li>Variable aggregation</li>
+  <li>County-level table construction</li>
+  <li>Data quality checking</li>
+  <li>Feature table generation for modeling</li>
+</ul>
+<p><span class="highlight">This part of the project strengthened my ability to connect remote sensing products, environmental variables, crop distribution data, and statistical records into a unified modeling dataset.</span></p>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Multi-source Data Fusion</span>
+  <span class="tech-tag">Zonal Statistics</span>
+  <span class="tech-tag">Feature Engineering</span>
+  <span class="tech-tag">County-level Dataset</span>
+  <span class="tech-tag">Data Quality Control</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>7. Yield Modeling and Model Exploration</h2>
+<p>During the yield estimation module, I explored several statistical and machine-learning approaches.</p>
+<p>Modeling approaches included:</p>
+<ul>
+  <li>Multiple linear regression</li>
+  <li>Polynomial regression</li>
+  <li>Polynomial Ridge regression</li>
+  <li>Support vector regression</li>
+  <li>Random forest</li>
+  <li>Sensitivity analysis</li>
+  <li>Feature importance analysis</li>
+</ul>
+<p>Model interpretation and diagnostic analysis included:</p>
+<ul>
+  <li>Correlation heatmaps</li>
+  <li>Feature importance analysis</li>
+  <li>Permutation importance</li>
+  <li>VIF-based multicollinearity analysis</li>
+  <li>Model evaluation metrics</li>
+  <li>Sensitivity testing</li>
+</ul>
+<p>The project also involved learning and evaluating the feasibility of the <strong>WOFOST crop growth model</strong>. However, because WOFOST requires many crop physiological parameters and detailed environmental inputs, and because operational data availability was limited, it was not selected as the final operational solution. Instead, a more deployable remote-sensing and statistical or machine-learning-based workflow was adopted.</p>
+<h3>Outputs</h3>
+<ul>
+  <li>Model-ready feature tables</li>
+  <li>Regression and machine-learning model results</li>
+  <li>Feature importance outputs</li>
+  <li>Correlation analysis outputs</li>
+  <li>Multicollinearity analysis results</li>
+  <li>County-level yield estimation workflow</li>
+  <li>Technical documentation</li>
+</ul>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Random Forest</span>
+  <span class="tech-tag">Support Vector Regression</span>
+  <span class="tech-tag">Ridge Regression</span>
+  <span class="tech-tag">Polynomial Regression</span>
+  <span class="tech-tag">Feature Importance</span>
+  <span class="tech-tag">VIF</span>
+  <span class="tech-tag">Model Evaluation</span>
+  <span class="tech-tag">WOFOST Feasibility Assessment</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>8. Backend and Client-side Algorithm Adaptation</h2>
+<p>The project required algorithms to run in both backend and client-side environments.</p>
+<h3>Backend Adaptation</h3>
+<p>Backend algorithms focused on:</p>
+<ul>
+  <li>Platform scheduling</li>
+  <li>JSON-based task parameters</li>
+  <li>Batch processing</li>
+  <li>Product directory organization</li>
+  <li>System integration support</li>
+  <li>Result reporting</li>
+  <li>Operational execution</li>
+</ul>
+<h3>Client-side Adaptation</h3>
+<p>Client-side algorithms focused on:</p>
+<ul>
+  <li>Deployment-side preparation</li>
+  <li>Local runtime environment</li>
+  <li>Product display</li>
+  <li>Thematic map output</li>
+  <li>Client-facing operational workflow adaptation</li>
+</ul>
+<p>The core computational logic was shared where possible, while input parameters, file organization, reporting format, and runtime configuration were adapted for different deployment scenarios.</p>
+<h3>Skills Demonstrated</h3>
+<div class="tech-tags">
+  <span class="tech-tag">Backend Deployment</span>
+  <span class="tech-tag">Client-side Deployment</span>
+  <span class="tech-tag">JSON Parameters</span>
+  <span class="tech-tag">Batch Workflow</span>
+  <span class="tech-tag">Local Deployment</span>
+  <span class="tech-tag">Operational Adaptation</span>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>Main Outputs</h2>
+<p>The project supported the generation of multiple agricultural monitoring and yield-related outputs:</p>
+<div class="output-grid">
+  <div class="output-item">FY-series NDVI products</div>
+  <div class="output-item">LAI products</div>
+  <div class="output-item">FVC products</div>
+  <div class="output-item">VHI products</div>
+  <div class="output-item">GCI products</div>
+  <div class="output-item">Brightness-related products</div>
+  <div class="output-item">Daily agricultural monitoring products</div>
+  <div class="output-item">Dekadal composite products</div>
+  <div class="output-item">Monthly composite products</div>
+  <div class="output-item">Crop growth anomaly products</div>
+  <div class="output-item">Crop growth deviation products</div>
+  <div class="output-item">Crop growth thematic maps</div>
+  <div class="output-item">County-level crop area statistics</div>
+  <div class="output-item">County-level yield estimation results</div>
+  <div class="output-item">Total production estimation results</div>
+  <div class="output-item">Model evaluation outputs</div>
+  <div class="output-item">Feature importance analysis outputs</div>
+  <div class="output-item">Technical documentation and workflow descriptions</div>
+</div>
+</section>
+<section class="preprocess-section">
+<h2>Skills Demonstrated</h2>
+<h3>Agricultural Remote Sensing</h3>
+<ul>
+  <li>Crop growth monitoring</li>
+  <li>Vegetation index retrieval</li>
+  <li>Crop condition assessment</li>
+  <li>Growing-season monitoring</li>
+  <li>County-level agricultural analysis</li>
+  <li>Crop distribution masking</li>
+</ul>
+<h3>Geospatial Processing</h3>
+<ul>
+  <li>Raster preprocessing</li>
+  <li>Regional clipping</li>
+  <li>Zonal statistics</li>
+  <li>Crop area calculation</li>
+  <li>Spatial masking</li>
+  <li>Thematic mapping</li>
+  <li>Product organization</li>
+</ul>
+<h3>Modeling and Data Science</h3>
+<ul>
+  <li>Multi-source feature construction</li>
+  <li>Regression modeling</li>
+  <li>Random forest modeling</li>
+  <li>Support vector regression</li>
+  <li>Feature importance analysis</li>
+  <li>Multicollinearity analysis</li>
+  <li>Yield estimation workflow design</li>
+</ul>
+<h3>Operational Engineering</h3>
+<ul>
+  <li>Python batch processing</li>
+  <li>Backend and client-side adaptation</li>
+  <li>JSON task parameters</li>
+  <li>Deployment-side preparation</li>
+  <li>QGIS-based map automation</li>
+  <li>Technical documentation</li>
+  <li>Workflow standardization</li>
+</ul>
+</section>
+<section class="preprocess-section">
+<h2>Professional Growth</h2>
+<p>This project was a major step in my professional development because it required me to move beyond routine remote sensing product generation and engage with the full complexity of agricultural monitoring and yield estimation.</p>
+<p>The main challenges included:</p>
+<ul>
+  <li>Limited availability of key crop model parameters</li>
+  <li>Frequent changes in project requirements</li>
+  <li>Need for both backend and client-side algorithm adaptation</li>
+  <li>Multi-source data inconsistency</li>
+  <li>Variable selection and model uncertainty</li>
+  <li>Translating agricultural modeling concepts into operational algorithms</li>
+</ul>
+<p>Through this project, I gained experience in:</p>
+<ul>
+  <li>Building agricultural remote sensing product chains</li>
+  <li>Designing county-level yield estimation workflows</li>
+  <li>Integrating remote sensing, meteorological, soil, crop distribution, and statistical yield data</li>
+  <li>Evaluating different modeling strategies</li>
+  <li>Communicating technical trade-offs</li>
+  <li>Delivering deployable algorithms under real project constraints</li>
+</ul>
+<p><span class="highlight">This project strengthened my interest in agricultural remote sensing, environmental data fusion, GeoAI, and interpretable modeling for real-world decision-support systems.</span></p>
+</section>
+<section class="confidentiality-note">
+<h2>Confidentiality Statement</h2>
+<p>This project was conducted in an operational and applied operational engineering context. Therefore, detailed source code, non-public datasets, private implementation details and non-public operational information, and operational product examples are not publicly displayed.</p>
+<p>The purpose of this page is to summarize generalized technical workflows, model-development logic, and my personal contributions without exposing confidential project materials.</p>
+</section>
+</main>
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

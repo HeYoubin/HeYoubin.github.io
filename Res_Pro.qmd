@@ -22,13 +22,13 @@ modeling, and remote sensing image interpretation.
 
 [Open Featured Research](research/featured-research.qmd)
 
-## Applied Remote Sensing Engineering
+## Applied Remote Sensing Research
 
-Production-oriented remote sensing engineering experience, including
-satellite data preprocessing, operational fire monitoring workflows,
-agricultural monitoring products, and crop-yield estimation modules.
+Public-safe applied remote sensing research experience, including
+satellite data preprocessing, fire-related environmental observation,
+agricultural monitoring, and crop-yield estimation workflows.
 
-[Open Applied Remote Sensing Engineering](research/applied-remote-sensing-engineering.qmd)
+[Open Applied Remote Sensing Research](research/applied-remote-sensing-engineering.qmd)
 
 ## Additional GIS & Spatial Analysis
 

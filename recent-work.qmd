@@ -1,0 +1,55 @@
+---
+title: "Recent Work"
+editor:
+  markdown:
+    wrap: 72
+---
+
+This page summarizes recent engineering and research directions in a
+public-safe form. It is intended to show the technical scope of my work
+without exposing client information, internal system details, or
+non-public products.
+
+::: {.callout-note}
+Due to confidentiality requirements, this page only describes generalized
+technical workflows and personal contributions. Internal code, datasets,
+system implementation details, screenshots, and operational product
+examples are not publicly displayed.
+:::
+
+## Recent Engineering and Research Directions
+
+### Polar-orbiting Satellite Fire Detection and Preprocessing
+
+I have worked on preprocessing and sample-preparation workflows for
+polar-orbiting satellite fire detection. The public-safe description
+includes fire-point matching, feature extraction, positive / negative
+sample construction, and preparation for machine-learning-based fire
+detection experiments.
+
+### Operational Remote Sensing Product Generation
+
+Recent engineering work has involved automated generation of remote
+sensing products, time-series compositing, raster statistics, thematic
+mapping, and structured outputs for downstream operational systems.
+
+### Crop Growth and Yield Estimation Workflows
+
+I have contributed to crop growth assessment and county-level yield
+estimation workflows using satellite-derived vegetation indicators,
+meteorological variables, crop distribution information, county
+boundaries, and statistical yield records.
+
+### Explainable GeoAI for Wildfire Risk Prediction
+
+In parallel with engineering work, my research direction focuses on
+explainable GeoAI for wildfire risk prediction, including machine
+learning, spatial heterogeneity, SHAP-based interpretation, and
+GeoShapley-based regional mechanism analysis.
+
+### Technical Documentation and System Design
+
+I also contribute to technical documentation, workflow summaries,
+testing notes, and system-design communication that translate remote
+sensing algorithms into reproducible and maintainable engineering
+processes.

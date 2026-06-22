@@ -1,0 +1,411 @@
+---
+title: "Professional Experience Overview"
+editor:
+  markdown:
+    wrap: 72
+---
+
+## Remote Sensing Engineering, Forestry Geospatial Analysis, and Operational Environmental Monitoring
+
+I am a **remote sensing algorithm engineer** with professional experience across **forestry geospatial data processing**, **multi-source satellite data preprocessing**, **operational remote sensing product generation**, **wildfire and environmental monitoring**, **agricultural remote sensing**, and **crop yield estimation**.
+
+My professional work has gradually evolved from **forestry GIS, photogrammetry, point cloud visualization, and WebGIS development** to more advanced remote sensing engineering tasks, including **satellite data preprocessing**, **automated product generation**, **crop growth assessment**, **wildfire-related monitoring**, **thematic map automation**, and **operational algorithm deployment**.
+
+<span class="highlight">My current technical focus lies at the intersection of remote sensing, geospatial automation, wildfire monitoring, agricultural monitoring, and GeoAI-oriented environmental analysis.</span>
+
+Due to confidentiality requirements, detailed code, non-public datasets, private implementation details, client-specific materials, and operational product examples are not publicly displayed. The content below summarizes generalized technical workflows and my personal contributions.
+
+---
+
+## Professional Focus
+
+My professional experience can be summarized into five connected directions:
+
+### 1. Forestry GIS and Geospatial Data Engineering
+
+My early professional experience was rooted in **forestry technical engineering**, where I worked on geospatial data processing, forestry inventory support, photogrammetric workflows, individual tree segmentation, point cloud visualization, and WebGIS-related development.
+
+This experience helped me build a practical foundation in:
+
+* **GIS data organization**
+* **forest resource assessment workflows**
+* **photogrammetry and forestry spatial data processing**
+* **individual tree crown detection and segmentation**
+* **LiDAR and 3D point cloud visualization**
+* **WebGIS front-end components and interactive spatial visualization**
+
+This forestry-oriented foundation later supported my transition into broader remote sensing algorithm development and environmental monitoring systems.
+
+---
+
+### 2. Multi-source Satellite Data Processing
+
+I have developed preprocessing workflows for multiple satellite sensors and data formats, including **GF-series PMS imagery**, **Sentinel-2 MSI**, **AQUA/MODIS**, **FY-series satellites**, and **VIIRS-related fire-monitoring data**.
+
+These workflows involve:
+
+* **Radiometric calibration**
+* **Atmospheric correction**
+* **Geometric correction**
+* **HDF parsing**
+* **Brightness temperature retrieval**
+* **Cloud and quality control**
+* **Pan-sharpening**
+* **Raster reprojection**
+* **Batch GeoTIFF product generation**
+
+<span class="highlight">This experience strengthened my ability to transform raw satellite observations into analysis-ready products for downstream monitoring and modeling tasks.</span>
+
+---
+
+### 3. Operational Remote Sensing Product Generation
+
+I have participated in operational remote sensing projects that convert satellite data into routine monitoring products. These systems support automated generation of raster products, regional statistics, comparison products, JSON outputs, thematic maps, structured records, and task-reporting results.
+
+Typical workflows include:
+
+* Daily, dekadal, monthly, seasonal, and annual product generation
+* Administrative-region clipping
+* Land-cover and crop-type masking
+* Long-term baseline comparison
+* Raster statistics and JSON output
+* QGIS-based thematic map automation
+* Backend and client-side algorithm adaptation
+* Local deployment and operational reporting
+
+---
+
+### 4. Wildfire and Environmental Monitoring
+
+Several of my professional and research projects focus on wildfire-related monitoring and environmental risk assessment. These include satellite fire hotspot preprocessing, thermal anomaly visualization, MODIS land surface temperature workflows, polar-orbiting satellite preprocessing, fire-point matching, and multi-source environmental factor processing.
+
+My wildfire-related work connects:
+
+* **Thermal infrared remote sensing**
+* **Fire hotspot interpretation**
+* **Satellite data preprocessing**
+* **Land surface temperature monitoring**
+* **Lightning-induced wildfire risk analysis**
+* **Machine-learning-based wildfire risk modeling**
+* **Explainable GeoAI methods**
+
+---
+
+### 5. Agricultural Remote Sensing and Crop Yield Estimation
+
+I have also developed crop growth assessment and county-level crop yield estimation workflows. These projects integrate FY-series satellite data, vegetation index products, crop distribution maps, meteorological variables, soil-related variables, historical yield records, and county boundaries.
+
+My work includes:
+
+* **NDVI, LAI, FVC, VHI, GCI, and brightness-related product generation**
+* **Daily, dekadal, and monthly crop growing-season monitoring**
+* **Anomaly and deviation-based crop growth assessment**
+* **Crop distribution masking**
+* **County-level crop area statistics**
+* **Regression and machine-learning-based yield modeling**
+* **Feature importance and multicollinearity analysis**
+
+---
+
+## Experience Timeline
+
+### Remote Sensing Algorithm Engineer
+
+*Operational remote sensing, wildfire monitoring, agricultural monitoring, and satellite data preprocessing*
+
+My recent work focuses on **remote sensing algorithm development** for wildfire monitoring, agro-meteorological monitoring, crop growth assessment, crop yield estimation, and multi-source satellite preprocessing. I have participated in large-scale engineering projects involving **deployment-side adaptation**, **backend and client-side algorithm adaptation**, **automatic product generation**, **technical documentation**, and **workflow coordination**.
+
+Representative work includes:
+
+* Developed automated satellite preprocessing workflows for **GF-series**, **Sentinel-2**, **AQUA/MODIS**, and **VIIRS-related** datasets.
+* Built MODIS land surface temperature monitoring workflows for **daily to annual product generation**.
+* Developed crop growth monitoring algorithms based on **FY-series** and **Sentinel-2 vegetation products**.
+* Constructed county-level crop yield estimation workflows using **remote sensing indices**, **meteorological variables**, **soil-related variables**, **crop distribution data**, and **statistical yield records**.
+* Automated thematic map production using **Python and QGIS project templates**.
+* Supported local operational deployment through **JSON-based task parameters**, **product naming rules**, **directory organization**, **structured output preparation**, **workflow reporting**, and **result-delivery workflows**.
+
+<span class="highlight">These projects trained me to connect remote sensing algorithms with operational environmental monitoring systems, rather than only developing isolated scripts.</span>
+
+---
+
+### Forestry Technical Engineer
+
+**Beijing Reserve Forest Technology Co., Ltd.**
+*Contract | Mar. 2024 – May 2024 | Chongqing, China | On-site*
+
+Before focusing on operational satellite remote sensing algorithms, I worked as a **Forestry Technical Engineer**, where I gained practical experience in forestry-oriented GIS and spatial data workflows.
+
+My responsibilities and technical exposure included:
+
+* **Geospatial Data Processing:** Managed forestry and photogrammetric data workflows, with attention to spatial accuracy, attribute consistency, and data organization for forest resource assessment tasks.
+* **Individual Tree Segmentation:** Used **ArcGIS Pro** and deep-learning-related workflows to support individual tree crown detection and segmentation, improving the efficiency of forest inventory and resource assessment.
+* **LiDAR and Point Cloud Visualization:** Processed and visualized high-density **3D point cloud data** to support analysis of forest vertical structures and biomass-related spatial patterns.
+* **WebGIS Development:** Participated in the development of WebGIS front-end components for interactive visualization and spatial query functions in forestry management systems.
+
+Technical keywords:
+
+::: {.tech-tags}
+<span class="tech-tag">ArcGIS Pro</span>
+<span class="tech-tag">Point Clouds</span>
+<span class="tech-tag">LiDAR Visualization</span>
+<span class="tech-tag">Individual Tree Segmentation</span>
+<span class="tech-tag">Forestry GIS</span>
+<span class="tech-tag">Photogrammetry</span>
+<span class="tech-tag">WebGIS</span>
+:::
+
+This early forestry engineering experience provided an important foundation for my later work in remote sensing automation, forest and wildfire monitoring, environmental spatial analysis, and GeoAI-related research.
+
+---
+
+## Representative Engineering Project Categories
+
+### 1. Satellite Preprocessing Pipelines
+
+I have developed reusable preprocessing workflows for multiple satellite sensors and data products. These workflows support high-resolution optical imagery preprocessing, Sentinel-2 atmospheric correction, AQUA/MODIS HDF parsing and georeferencing, and polar-orbiting satellite fire-monitoring data preparation.
+
+Typical tasks include:
+
+* HDF, SAFE, GeoTIFF, and multi-band raster data handling
+* Radiometric calibration and TOA reflectance conversion
+* Thermal infrared radiance calibration and brightness temperature retrieval
+* Atmospheric correction using Sen2Cor or 6S-based workflows
+* RPC-based geometric correction and DEM-assisted processing
+* Geolocation-array-based reprojection for swath data
+* Batch processing and standardized GeoTIFF product generation
+
+Representative technologies:
+
+::: {.tech-tags}
+<span class="tech-tag">Python</span>
+<span class="tech-tag">GDAL</span>
+<span class="tech-tag">rasterio</span>
+<span class="tech-tag">NumPy</span>
+<span class="tech-tag">pyhdf</span>
+<span class="tech-tag">Py6S</span>
+<span class="tech-tag">Sen2Cor</span>
+<span class="tech-tag">QGIS</span>
+<span class="tech-tag">GeoTIFF</span>
+<span class="tech-tag">HDF</span>
+<span class="tech-tag">SAFE</span>
+:::
+
+---
+
+### 2. Operational Remote Sensing Systems
+
+I have contributed to operational remote sensing systems for wildfire-related environmental monitoring and agro-meteorological applications. These projects involve generating routine satellite products, statistical outputs, comparison products, thematic maps, and structured operational results.
+
+Typical tasks include:
+
+* MODIS land surface temperature product generation
+* Daily, dekadal, monthly, seasonal, and annual compositing
+* Regional and land-cover-specific product generation
+* Administrative-region clipping and land-cover masking
+* Previous-year and recent multi-year baseline comparison
+* Raster statistics, JSON outputs, and structured output preparation
+* Python-based QGIS thematic map automation
+* System integration support and operational task reporting
+
+Representative technologies:
+
+::: {.tech-tags}
+<span class="tech-tag">Python</span>
+<span class="tech-tag">GDAL</span>
+<span class="tech-tag">rasterio</span>
+<span class="tech-tag">NumPy</span>
+<span class="tech-tag">geopandas</span>
+<span class="tech-tag">QGIS Python API</span>
+<span class="tech-tag">PostgreSQL</span>
+<span class="tech-tag">JSON workflows</span>
+:::
+
+---
+
+### 3. Agricultural Monitoring and Yield Estimation
+
+I have worked on agricultural remote sensing workflows for crop growth assessment and county-level crop yield estimation. These projects integrate satellite vegetation products, crop distribution data, meteorological variables, soil-related variables, and statistical yield records.
+
+Typical tasks include:
+
+* FY-series satellite-based agricultural index retrieval
+* NDVI, LAI, FVC, VHI, greenness, and brightness-related product generation
+* Daily, dekadal, and monthly crop growing-season monitoring
+* Anomaly and deviation-based crop growth assessment
+* Crop distribution masking for maize, rice, soybean, wheat, and other crop types
+* County-level crop area statistics
+* Yield modeling using remote sensing indices, meteorological variables, soil variables, and historical yield records
+* Model exploration using linear regression, polynomial regression, Ridge regression, support vector regression, random forest, and feature importance analysis
+
+Representative technologies:
+
+::: {.tech-tags}
+<span class="tech-tag">Python</span>
+<span class="tech-tag">pandas</span>
+<span class="tech-tag">NumPy</span>
+<span class="tech-tag">rasterio</span>
+<span class="tech-tag">GDAL</span>
+<span class="tech-tag">geopandas</span>
+<span class="tech-tag">rasterstats</span>
+<span class="tech-tag">scikit-learn</span>
+<span class="tech-tag">Random Forest</span>
+<span class="tech-tag">Ridge Regression</span>
+<span class="tech-tag">SVR</span>
+<span class="tech-tag">QGIS automation</span>
+:::
+
+---
+
+### 4. Wildfire and Fire-monitoring Applications
+
+My professional and research experience also includes wildfire-related monitoring and risk assessment. This includes satellite fire hotspot preprocessing, MODIS/AQUA visualization products for fire interpretation, polar-orbiting satellite fire-detection data preparation, lightning-induced wildfire risk system design, and machine-learning-based wildfire risk modeling.
+
+Typical tasks include:
+
+* Satellite fire-point data matching and preprocessing
+* Thermal infrared and brightness temperature feature extraction
+* True-color and false-color fire-monitoring visualization products
+* Multi-source environmental factor processing for wildfire risk assessment
+* Grid-based spatial analysis and environmental unit construction
+* Machine-learning model development and explainable AI analysis for wildfire-related research
+
+Representative technologies:
+
+::: {.tech-tags}
+<span class="tech-tag">MODIS</span>
+<span class="tech-tag">AQUA</span>
+<span class="tech-tag">NOAA-20</span>
+<span class="tech-tag">VIIRS</span>
+<span class="tech-tag">XGBoost</span>
+<span class="tech-tag">SHAP</span>
+<span class="tech-tag">GeoAI</span>
+<span class="tech-tag">Spatial Analysis</span>
+<span class="tech-tag">Remote Sensing Fire Monitoring</span>
+:::
+
+---
+
+### 5. Forestry GIS and Spatial Intelligence
+
+My early forestry engineering experience helped me build a practical foundation in forestry GIS, point cloud visualization, photogrammetric data processing, WebGIS development, and individual tree segmentation.
+
+Typical tasks include:
+
+* Forestry spatial data preprocessing
+* Photogrammetric data organization
+* Individual tree crown detection and segmentation
+* LiDAR and point cloud visualization
+* WebGIS front-end components for forestry management
+* Spatial query and interactive visualization functions
+
+Representative technologies:
+
+::: {.tech-tags}
+<span class="tech-tag">ArcGIS Pro</span>
+<span class="tech-tag">Point Clouds</span>
+<span class="tech-tag">LiDAR</span>
+<span class="tech-tag">WebGIS</span>
+<span class="tech-tag">Forestry GIS</span>
+<span class="tech-tag">Photogrammetry</span>
+<span class="tech-tag">Deep Learning-assisted Tree Segmentation</span>
+:::
+
+---
+
+## Core Technical Skills
+
+### Remote Sensing Data Processing
+
+* Multi-source satellite image preprocessing
+* HDF, SAFE, GeoTIFF, and raster data handling
+* Radiometric calibration
+* Atmospheric correction
+* Brightness temperature retrieval
+* Geometric correction and reprojection
+* Pan-sharpening and visualization products
+* Vegetation index and land surface temperature product generation
+
+### Geospatial Analysis
+
+* Raster and vector data processing
+* Administrative-region clipping
+* Land-cover and crop-mask extraction
+* Spatial statistics
+* Multi-temporal compositing
+* Regional product generation
+* Thematic mapping
+* GIS-based product organization
+
+### Programming and Automation
+
+* Python-based algorithm development
+* GDAL and rasterio workflows
+* NumPy and pandas data processing
+* geopandas and rasterstats spatial analysis
+* QGIS Python API automation
+* JSON-based task parameter parsing
+* System integration support and result reporting
+* Local deployment and operational workflow support
+
+### Modeling and GeoAI
+
+* Machine-learning model development
+* Random forest and gradient-boosting workflows
+* Regression-based crop yield estimation
+* Feature importance analysis
+* SHAP-based model interpretation
+* Multi-source environmental factor integration
+* Spatiotemporal data preparation for wildfire and agricultural applications
+
+### Forestry and 3D Geospatial Processing
+
+* Forestry GIS workflows
+* Individual tree segmentation
+* Point cloud visualization
+* Photogrammetric data processing
+* WebGIS visualization
+* Forest resource assessment support
+
+---
+
+## Selected Professional Project Directions
+
+### Multi-sensor Satellite Preprocessing Pipelines
+
+Developed preprocessing workflows for GF-series PMS imagery, Sentinel-2 MSI data, AQUA/MODIS HDF products, and polar-orbiting satellite fire-monitoring datasets. These workflows support radiometric calibration, atmospheric correction, geometric correction, HDF parsing, brightness temperature retrieval, pan-sharpening, and batch GeoTIFF product generation.
+
+### Operational Remote Sensing Product Generation
+
+Developed operational remote sensing product workflows for environmental and agro-meteorological monitoring. These workflows support multi-temporal product generation, regional statistics, land-cover-specific outputs, comparison products, thematic maps, structured operational results, and local deployment.
+
+### Crop Growth Assessment and Yield Estimation
+
+Developed crop growth assessment and yield estimation workflows for agricultural monitoring. These workflows integrate satellite vegetation products, crop distribution masks, meteorological variables, soil-related variables, historical yield records, county boundaries, and machine-learning or regression-based modeling methods.
+
+### Wildfire Monitoring and Explainable GeoAI
+
+Worked on wildfire-related remote sensing and GeoAI research, including fire detection data preparation, thermal anomaly visualization, multi-source environmental factor analysis, wildfire risk modeling, and explainable machine-learning methods for understanding environmental drivers.
+
+### Forestry GIS and WebGIS Applications
+
+Worked on forestry-oriented spatial data processing, individual tree segmentation, point cloud visualization, and WebGIS development. This experience helped connect forest resource assessment, spatial data engineering, and later remote sensing automation workflows.
+
+---
+
+## Professional Growth
+
+These engineering projects have strengthened my ability to work across the full remote sensing and geospatial workflow, from raw satellite data, forestry spatial datasets, point clouds, and vector layers to operational products, automated maps, statistical outputs, and model-ready datasets.
+
+They also helped me develop practical experience in solving real-world problems involving incomplete data, changing project requirements, cross-platform deployment, algorithm adaptation, technical documentation, and operational delivery.
+
+<span class="highlight">My professional experience has shaped my research interests in remote sensing, GeoAI, wildfire risk modeling, agricultural monitoring, forestry spatial intelligence, and operational environmental monitoring systems.</span>
+
+It also provides a strong engineering foundation for future research involving large-scale satellite data, interpretable machine learning, geospatial artificial intelligence, and environmental decision-support systems.
+
+---
+
+## Confidentiality Statement
+
+Most professional engineering projects summarized here were conducted in operational or applied contexts. Therefore, detailed code, non-public datasets, private implementation details, client-specific materials, and operational product examples are not publicly displayed.
+
+The content on this page summarizes generalized technical workflows, project types, and my personal contributions without exposing confidential information.
