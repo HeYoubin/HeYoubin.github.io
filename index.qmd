@@ -33,19 +33,33 @@ I am a <span class="highlight-primary">Remote Sensing Algorithm Engineer</span> 
 
 ## Current Position
 
-<span class="highlight-primary">Remote Sensing Algorithm Engineer</span><br>
+<span class="highlight-primary">Remote Sensing Algorithm Engineer &middot; May 2024 - Present</span><br>
 XINGTUZHIHUI (XI'AN) DIGITAL TECHNOLOGY CO., LTD<br>
-Chengdu, China
+Chengdu, China &middot; On-site
+
+I develop Python-based remote sensing preprocessing workflows and
+operational product-generation pipelines for multi-source satellite
+data, with applications in wildfire monitoring, agricultural monitoring,
+ecological assessment, and crop-yield estimation.
 
 ## Education
 
-B.S. in Geographic Information Science<br>
+<span class="highlight-primary">B.S. in Geographic Information Science</span><br>
 Shandong Jiaotong University<br>
-<span class="highlight-primary">GPA 89.6 / 100, Top 3%</span>
+<span class="highlight-primary">GPA: 89.6 / 100; Ranked 1st of 33 students, Top 3%</span>
 
 ## Application Focus
 
 I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span> in <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">AI for Remote Sensing</span>, <span class="highlight-secondary">Ecological Remote Sensing</span>, and <span class="highlight-secondary">Wildfire Risk Modeling</span>.
+
+## News
+
+- **Apr 8, 2026** - Completed repayment of my undergraduate student
+  loan, marking an important personal milestone in my academic journey.
+- **May 1, 2026** - Started a structured update of my
+  [academic portfolio website](index.qmd) to better present my research
+  projects, publications, technical experience, and application-oriented
+  materials.
 
 ## Research Interests
 
@@ -56,24 +70,38 @@ I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span>
 - Ecological environment monitoring
 - Operational remote sensing systems
 
-## Selected Highlights
+## Academic & Professional Highlights
 
-- <span class="highlight-primary">GPA 89.6 / 100, Top 3%</span>.
+### Academic Performance
+
+- <span class="highlight-primary">GPA: 89.6 / 100; Ranked 1st of 33 students, Top 3%</span>.
+
+### Research & Publications
+
 - One manuscript on grassland and forest fire driving factors in Southwest China is <span class="status-tag">under review</span>.
 - <span class="highlight-primary">First-author</span> and co-author publications in IEEE and SPIE conference proceedings.
-- Research and engineering experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, and remote sensing product generation.
-- Awards including National Encouragement Scholarship, Comprehensive First-Class Scholarship, Esri-Cup awards, and Remote Sensing Technology Competition awards.
+
+### Technical Experience
+
+- Experience in multi-source satellite data processing, wildfire monitoring, agricultural monitoring, ecological assessment, and remote sensing product generation.
+
+### Awards & Recognition
+
+- National Encouragement Scholarship x3.
+- Comprehensive First-Class Scholarship x3.
+- Esri-Cup Chinese College Students GIS Software Development Contest awards x4.
+- Remote Sensing Technology Competition First Prize awards x3.
 
 ## Research and Experience
 
-Research demonstrates my academic interests and research potential,
-while Experience summarizes my operational remote sensing engineering
-practice. Selected professional engineering projects are summarized in
-the [Experience](experience.qmd) section. Due to confidentiality
-requirements, internal code, datasets, interfaces, and operational
-requirements, internal code, datasets, implementation details, and
-operational products are not publicly displayed; the pages focus on
-generalized technical workflows and personal contributions.
+My [Research & Projects](research/featured-research.qmd) section
+highlights my academic work in wildfire modeling, ecological remote
+sensing, GeoAI, AI for Remote Sensing, and spatial analysis, while my
+[Experience](experience.qmd) section summarizes my operational remote
+sensing engineering practice. Due to confidentiality requirements,
+internal code, datasets, implementation details, and operational
+products are not publicly displayed; the pages focus on generalized
+technical workflows and personal contributions.
 
 ## Beyond Research
 
