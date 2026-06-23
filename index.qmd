@@ -94,14 +94,17 @@ I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span>
 
 ## Research and Experience
 
-My [Research & Projects](research/featured-research.qmd) section
-highlights my academic work in wildfire modeling, ecological remote
-sensing, GeoAI, AI for Remote Sensing, and spatial analysis, while my
-[Experience](experience.qmd) section summarizes my operational remote
-sensing engineering practice. Due to confidentiality requirements,
-internal code, datasets, implementation details, and operational
-products are not publicly displayed; the pages focus on generalized
-technical workflows and personal contributions.
+My [Featured Research](research/featured-research.qmd) follows a
+wildfire-focused trajectory from burned area mapping and post-fire
+ecological assessment to spatially explainable fire driver analysis and
+wildfire prediction modeling. My [Applied Remote Sensing & AI4RS
+Projects](research/applied-remote-sensing-engineering.qmd) summarize my
+broader experience in AI for Remote Sensing, satellite data
+preprocessing, and operational remote sensing workflows. My
+[Experience](experience.qmd) section presents public-safe summaries of
+operational engineering practice; internal code, datasets,
+implementation details, and operational products are not publicly
+displayed.
 
 ## Beyond Research
 

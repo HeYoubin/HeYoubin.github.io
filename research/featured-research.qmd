@@ -1,207 +1,46 @@
-﻿---
+---
 title: "Featured Research"
 editor:
   markdown:
     wrap: 72
 ---
 
-This section highlights my research interests and project experience in
-**GeoAI**, **AI for Remote Sensing**, wildfire risk modeling, ecological
-remote sensing, and remote sensing image interpretation.
+## Wildfire, Ecological Remote Sensing, and Spatially Explainable Fire Modeling
 
-::: {.callout-note}
-Figures and detailed contribution statements will be added later.
-:::
+My featured research follows a continuous trajectory from wildfire monitoring and post-fire ecological assessment to spatially explainable fire driver analysis and predictive wildfire modeling. Starting from multi-source remote sensing projects in Xichang City, I investigated burned-area mapping, land-use / land-cover change, and RSEI-based ecological impacts after wildfire disturbance. These experiences motivated my later work on forest and grass fire drivers across Southwest China using spatial statistical and explainable machine learning approaches. They also shaped my current interest in wildfire prediction modeling with multi-source environmental and remote sensing data. Across these projects, I aim to connect ecological remote sensing, GIS, GeoAI, and interpretable spatial modeling for evidence-based fire ecology and environmental risk analysis.
 
-## Wildfire Risk Modeling in Southwest China
+## 1. Wildfire Monitoring and Burned Area Mapping in Xichang City
 
-**Keywords:** Wildfire Risk Modeling; GeoAI; AI for Remote Sensing;
-Spatial Machine Learning; XGBoost; SHAP; GeoShapley; Multi-scale
-Geospatial Analysis; Ecological Remote Sensing
-
-**Status:** Manuscript under review / manuscript in preparation
-
-**Overview**  
-This research direction focuses on the spatiotemporal driving mechanisms
-of grassland and forest fires in Southwest China. It integrates
-multi-source remote sensing and geospatial data with machine learning and
-explainable AI methods to examine wildfire risk, spatial heterogeneity,
-and interpretable environmental drivers. The project is positioned at
-the intersection of GeoAI, AI for Remote Sensing, ecological remote
-sensing, and wildfire risk modeling. Specific results will be added only
-after the manuscript materials are updated.
-
-**Research Questions**
-
-- [To be added]
-
-**Study Area and Period**
-
-- [To be added]
-
-**Data Sources**
-
-- [To be added]
-
-**Methods**
-
-- [To be added]
-
-**Key Findings**
-
-- [To be added after manuscript update]
-
-**My Contribution**
-
-[To be added by Youbin]
-
-**Figures / Materials to be Added**
-
-- [Add study area map]
-- [Add data and workflow diagram]
-- [Add model performance comparison]
-- [Add SHAP / GeoShapley interpretation figures]
-- [Add spatial prediction or risk map]
-
----
-
-## Multi-source Remote Sensing Assessment of Wildfire Disturbance and Post-fire Ecological Dynamics in Xichang City
-
-**Keywords:** Ecological Remote Sensing; Wildfire Disturbance; Landsat
-8; Sentinel-2; dNBR; RSEI; Burned Area Mapping; Land-use / Land-cover
-Change; Post-fire Ecological Assessment; Xichang City
+**Keywords:** Wildfire Monitoring; Burned Area Mapping; Sentinel-2; Landsat 8; dNBR; GIS; Xichang City; Ecological Remote Sensing
 
 ### Overview
 
-This umbrella project evaluates wildfire disturbance and post-fire
-ecological dynamics in Xichang City, Sichuan Province, using
-<span class="highlight-primary">multi-source remote sensing</span> and
-GIS-based spatial analysis. As <span class="highlight-primary">Project
-Leader</span>, I coordinated a workflow that connected forest fire
-monitoring, <span class="highlight-primary">dNBR burned-area
-mapping</span>, land-use / land-cover change analysis, and
-<span class="highlight-primary">RSEI ecological assessment</span>. The
-project integrated Landsat 8 and Sentinel-2 imagery to quantify burned
-area, evaluate ecological disturbance, and visualize landscape changes
-before and after the 2020 Lushan forest fire. It led to a first-author
-SPIE conference paper on land dynamic changes, a co-authored SPIE
-conference paper on forest fire monitoring, and a First Prize in the
-1st Remote Sensing Technology Competition at Shandong Jiaotong
-University. The work demonstrates my experience in ecological remote
-sensing, satellite image preprocessing, thematic mapping, and organizing
-collaborative research outputs.
+This project focuses on forest fire monitoring and burned-area extraction in Xichang City, Sichuan Province. Using multi-source remote sensing imagery, I analyzed pre-fire and post-fire surface conditions, calculated dNBR, and produced GIS-based burned-area maps for the Lushan fire area. The work established my early research foundation in ecological remote sensing and provided the technical basis for later post-fire land-use and ecological assessment.
 
-### Subproject A: Forest Fire Monitoring and Burned Area Mapping in Xichang City
-
-#### Objective
-
-- Detect and map burned areas caused by forest fire disturbance.
-- Compare remote-sensing-derived burned area with a field survey
-  reference.
-- Support post-fire ecological impact assessment using satellite
-  imagery and GIS mapping.
-
-#### Data
+### Data
 
 - Sentinel-2 imagery
 - Landsat 8 imagery
 - Field survey reference burned area for validation
 
-#### Methods
+### Methods
 
-- dNBR-based burned-area extraction
 - Pre-fire and post-fire remote sensing image comparison
-- GIS-based burned area mapping
-- Area statistics and comparison with field survey reference
-- RSEI-based ecological environment assessment
+- dNBR-based burned-area extraction
+- GIS-based burned-area mapping
+- Area statistics and comparison with a field survey reference
 
-#### Key Results
+### Key Results
 
-- Estimated approximately <span class="highlight-primary">825 ha of
-  burned area</span>.
-- The estimate was within <span class="highlight-primary">4%</span> of
-  the <span class="highlight-primary">791.6 ha</span> field survey
-  reference.
-- Generated burned-area maps and fire monitoring thematic outputs for
-  the Lushan fire area.
-- RSEI analysis indicated that "excellent" ecological zones declined by
-  <span class="highlight-primary">38.2%</span>.
-- Vegetation cover dropped by
-  <span class="highlight-primary">3.3%</span> after fire disturbance.
-
-### Subproject B: Land-use / Land-cover Change and RSEI-based Post-fire Ecological Assessment
-
-#### Objective
-
-- Classify land-use / land-cover patterns in Xichang City.
-- Analyze land-use changes before and after wildfire disturbance.
-- Assess post-fire ecological changes using RSEI.
-- Visualize built-up expansion and land-use transition patterns.
-
-#### Data
-
-- Landsat 8 time-series imagery
-- Sentinel-2 imagery for wildfire-related analysis
-- Reconstructed public-data LULC visualizations for portfolio display
-
-#### Methods
-
-- Supervised classification for five land-use categories
-- Land-use / land-cover change analysis
-- Built-up area expansion analysis
-- RSEI-based ecological assessment
-- Transition matrix and land-use transfer visualization for the
-  reconstructed portfolio outputs
-- GIS thematic mapping
-
-#### Key Results
-
-- Classified five land-use categories using preprocessed Landsat 8
-  time-series imagery.
-- Quantified <span class="highlight-primary">103.5 km²</span> expansion
-  of built-up areas in the original project analysis.
-- Identified a <span class="highlight-primary">38.2%</span> decline in
-  "excellent" ecological zones and a
-  <span class="highlight-primary">3.3%</span> drop in overall vegetation
-  cover.
-- Reconstructed portfolio figures provide public-data visualizations of
-  LULC change, built-up expansion, and transition-matrix patterns for
-  2013-2021.
-
-### My Contribution
-
-- **Role:** <span class="highlight-primary">Project Leader</span>
-- Conceptualized the research topic and developed the analytical
-  framework for wildfire monitoring, land-use change analysis, and
-  post-fire ecological assessment in Xichang City.
-- Organized data collection and preprocessing using multi-source remote
-  sensing datasets.
-- Led the implementation of land-use / land-cover classification,
-  burned-area mapping, RSEI-based ecological assessment, and GIS-based
-  spatial analysis.
-- Produced thematic maps, statistical summaries, and result
-  interpretations for the project and subsequent conference papers.
-- Led project reporting and manuscript refinement while coordinating
-  collaboration among team members.
-
-### Outputs and Recognition
-
-- First Prize, 1st Remote Sensing Technology Competition, Shandong
-  Jiaotong University.
-- First-author conference paper: Youbin He and Xiaolei Ju. *XiChang
-  City land dynamic changes based on the remote sensing data*. ICGMRS
-  2023, SPIE Vol. 12978, 2023. DOI:
-  [10.1117/12.3020749](https://doi.org/10.1117/12.3020749).
-- Co-author conference paper: Rui Wang, Youbin He, Songyan Li, and
-  Rubing Huang. *Forest fire monitoring based on the remote sensing
-  technology*. ICGMRS 2024, SPIE Vol. 13223, 2024.
+- Estimated approximately <span class="highlight-primary">825 ha</span> of burned area.
+- The estimate was within <span class="highlight-primary">4%</span> of the <span class="highlight-primary">791.6 ha</span> field survey reference.
+- Generated burned-area maps and fire monitoring thematic outputs for the Lushan fire area.
 
 ### Selected Figures
 
 ![Before-and-after false-color remote sensing comparison of the Lushan fire area.](../images/projects/xichang-wildfire-ecology/xichang-before-after-fire-comparison.jpg){fig-alt="False-color remote sensing comparison before and after the 2020 Lushan forest fire in Xichang City." fig-align="center"}
 
-Pre-fire and post-fire false-color imagery showing the spatial footprint
-of the Lushan forest fire disturbance.
+Pre-fire and post-fire false-color imagery showing the spatial footprint of the Lushan forest fire disturbance.
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -216,6 +55,39 @@ dNBR thresholding used for burned-area extraction.
 Burned-area classification map for the Lushan region.
 :::
 :::
+
+## 2. Post-fire Land-use / Land-cover Change and RSEI-based Ecological Assessment
+
+**Keywords:** Land-use / Land-cover Change; RSEI; Post-fire Ecological Assessment; Landsat 8; Sentinel-2; Ecological Remote Sensing; Xichang City
+
+### Overview
+
+Building on the burned-area mapping work, this project extends the analysis from fire detection to post-fire landscape and ecological change assessment. It examines land-use / land-cover patterns, built-up expansion, vegetation disturbance, and RSEI-based ecological conditions in Xichang City. The module links remote sensing image preprocessing, supervised classification, land-use transfer analysis, and ecological index mapping to evaluate how wildfire disturbance and regional development were reflected in the landscape.
+
+### Data
+
+- Landsat 8 time-series imagery
+- Sentinel-2 imagery for wildfire-related analysis
+- Reconstructed public-data LULC visualizations for portfolio display
+- RSEI-related remote sensing inputs used for ecological assessment
+
+### Methods
+
+- Supervised land-use / land-cover classification
+- Five land-use categories
+- Land-use change and built-up expansion analysis
+- RSEI-based ecological assessment
+- Transition matrix and land-use transfer visualization for reconstructed portfolio outputs
+- GIS thematic mapping
+
+### Key Results
+
+- Classified five land-use categories using preprocessed Landsat 8 time-series imagery.
+- Quantified <span class="highlight-primary">103.5 km^2</span> expansion of built-up areas in the original project analysis.
+- Identified a <span class="highlight-primary">38.2%</span> decline in "excellent" ecological zones.
+- Observed a <span class="highlight-primary">3.3%</span> drop in overall vegetation cover.
+
+### Selected Figures
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -235,7 +107,7 @@ dNDVI thresholding used to support vegetation disturbance analysis.
 ::: {.column width="50%"}
 ![Reconstructed land-use / land-cover change visualization for Xichang City.](../images/projects/xichang-wildfire-ecology/xichang-reconstructed-lulc-change-2013-2021.jpg){fig-alt="Reconstructed land-use and land-cover change visualization for Xichang City from 2013 to 2021."}
 
-Reconstructed LULC change map generated for portfolio visualization.
+Reconstructed land-use / land-cover visualization for portfolio display.
 :::
 
 ::: {.column width="50%"}
@@ -247,95 +119,82 @@ Reconstructed built-up expansion visualization for portfolio display.
 
 ![Reconstructed LULC transition matrix for Xichang City.](../images/projects/xichang-wildfire-ecology/xichang-reconstructed-transition-matrix-2013-2021.jpg){fig-alt="Reconstructed land-use and land-cover transition matrix for Xichang City from 2013 to 2021." fig-align="center"}
 
-Reconstructed LULC transition matrix generated for portfolio
-visualization. These reconstructed figures are public-data
-visualizations and should not be interpreted as original published paper
-figures.
+Reconstructed LULC transition matrix generated for portfolio visualization. These reconstructed figures are public-data visualizations and should not be interpreted as original published paper figures.
 
----
+## 3. Spatially Explainable Analysis of Forest and Grass Fire Drivers in Southwest China
 
-## Attention-Enhanced Deep Learning for Remote Sensing Scene Classification
+**Keywords:** Forest and Grass Fires; Southwest China; MGWR; GeoShapley; Spatial Explainability; GeoAI; Fire Drivers; Spatial Heterogeneity
 
-**Keywords:** AI for Remote Sensing; Deep Learning; Remote Sensing Scene
-Classification; Efficient Channel Attention; ECA-ResNet34; ResNet-34;
-AID Dataset; PyTorch
+**Status:** Manuscript under review / in revision.
 
 ### Overview
 
-This project addresses remote sensing image scene classification using an
-attention-enhanced convolutional neural network. The specific model,
-**ECA-ResNet34**, integrates Efficient Channel Attention blocks into
-ResNet-34 residual modules to strengthen channel-wise feature
-representation while preserving the residual learning structure. The
-model was validated on the AID dataset and demonstrates my foundational
-experience in AI for Remote Sensing, deep-learning experiment design, and
-intelligent interpretation of remote sensing imagery.
+Building on my earlier work in wildfire monitoring and post-fire ecological assessment, this project extends the research focus from local fire disturbance mapping to regional-scale fire driver analysis. It investigates the spatially heterogeneous drivers of forest and grass fires in Southwest China using an MGWR-GeoShapley framework, aiming to interpret how environmental, climatic, topographic, vegetation, and human-related factors contribute to fire occurrence across space. The project emphasizes mechanism interpretation rather than only prediction, and it connects spatial statistical modeling with explainable GeoAI for wildfire research.
 
-### Research Objective
+### Research Questions
 
-- Improve remote sensing scene classification using an
-  attention-enhanced CNN architecture.
-- Integrate lightweight channel attention into ResNet-34 while
-  preserving the residual learning structure.
-- Evaluate the proposed ECA-ResNet34 model on the AID dataset.
+- What are the dominant driving factors of forest and grass fires in Southwest China?
+- How do fire drivers vary spatially across different ecological and geographic contexts?
+- How can spatial statistical models and explainable AI improve interpretation of wildfire mechanisms?
 
-### Dataset
+### Data
 
-- AID dataset: a 30-category aerial image scene dataset with 10,000
-  images collected from Google Earth.
-- Each category contains 200-400 images with a 600 x 600 pixel size.
-- The available project materials use a random 8:2 training /
-  validation split.
+- Multi-source geospatial and remote sensing data
+- Fire occurrence / fire event data
+- Meteorological and climatic variables
+- Vegetation and land surface variables
+- Topographic variables
+- Human activity proxies where verified in the manuscript workflow
 
-### Method
+### Methods
 
-- Baseline: ResNet-34
-- Attention mechanism: Efficient Channel Attention, ECA
-- Proposed model: ECA-ResNet34
-- Task: Remote sensing scene classification
-- Experimental setup: Adam optimizer, initial learning rate of 0.0001,
-  batch size of 16, 100 epochs for training without pre-trained weights,
-  and 10 epochs for tests with pre-trained weights.
-- Evaluation: overall accuracy, confusion matrix, and class-level
-  precision.
+- MGWR for spatially varying relationships
+- GeoShapley and explainable spatial machine learning for interpreting factor contributions
+- GIS-based spatial analysis and visualization
 
-### Key Results
+### Current Status
 
-- Achieved <span class="highlight-primary">94.95%</span> classification
-  accuracy on the AID dataset.
-- Improved accuracy by <span class="highlight-primary">3.45 percentage
-  points</span> compared with standard ResNet-34.
-- The available paper draft reports that the identity variant of
-  ECA-ResNet34 achieved the best non-pre-trained result among the tested
-  ECA block placements.
-- The confusion matrix and class-level evaluation indicate strong
-  recognition performance for several scene categories, including
-  BareLand, Beach, Forest, Mountain, and SparseResidential.
+- Manuscript under review / in revision.
 
-### My Contribution
+## 4. Wildfire Prediction Modeling in Southwest China
 
-- Participated in data collection and research design.
-- Contributed to the formulation of the research idea and experimental
-  workflow.
-- Independently implemented the experimental component, including model
-  configuration, training, evaluation, and result analysis.
-- Assisted in drafting, revising, and polishing the manuscript.
+**Keywords:** Wildfire Prediction; Fire Risk Modeling; XGBoost; Machine Learning; Remote Sensing; Environmental Variables; Model Explainability; Southwest China
 
-### Outputs
+**Status:** Manuscript in preparation.
 
-- Role: <span class="highlight-primary">Co-first author / core
-  contributor</span>
-- IEEE conference paper: *Remote Sensing Image Scene
-  Classification Based on ECA Attention Mechanism Convolutional Neural
-  Network*.
-- Publisher link: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9987089)
-- PDF: Available upon reasonable request, subject to publisher sharing
-  policy.
+### Overview
 
-### Selected Figure
+This ongoing project further extends my wildfire research from driver interpretation to predictive modeling. Motivated by the question of whether spatially explainable fire mechanisms can support fire risk prediction, the project explores machine learning-based wildfire prediction using multi-source remote sensing, meteorological, topographic, vegetation, and human-related variables in Southwest China. The study aims to evaluate predictive performance while maintaining attention to model interpretability and spatial generalization. Specific performance metrics and final conclusions will be added only after the analysis and manuscript are finalized.
 
-![Confusion matrix for ECA-ResNet34 on the AID dataset.](../images/projects/eca-resnet/eca-resnet34-aid-confusion-matrix.png){fig-alt="Confusion matrix showing ECA-ResNet34 scene classification results on the AID dataset." fig-align="center"}
+### Research Questions
 
-Confusion matrix for the ECA-ResNet34 identity variant on the AID
-dataset. Additional architecture diagrams and training-curve figures will
-be added only after web-ready, publicly shareable versions are verified.
+- Can multi-source geospatial and remote sensing data support reliable wildfire prediction in Southwest China?
+- Which environmental and human-related variables contribute most to predictive performance?
+- How can model interpretability be incorporated into wildfire risk modeling?
+
+### Data
+
+- Multi-source remote sensing and geospatial datasets
+- Meteorological and land surface variables
+- Vegetation and fuel-related indicators
+- Topographic variables
+- Human activity proxies where verified in the modeling workflow
+
+### Methods
+
+- Candidate machine learning models for wildfire prediction
+- XGBoost-based modeling where confirmed by the manuscript workflow
+- Feature engineering and model evaluation
+- Explainable AI analysis where supported by verified results
+
+### Current Status
+
+- Manuscript in preparation.
+- Detailed results will be added after the analysis and manuscript are finalized.
+
+## Related Outputs
+
+- First-author conference paper: Youbin He, Xiaolei Ju. *XiChang City land dynamic changes based on the remote sensing data*. ICGMRS 2023, SPIE, Vol. 12978, 2023.
+- Co-author conference paper: Rui Wang, Youbin He, Songyan Li, Rubing Huang. *Forest fire monitoring based on the remote sensing technology*. ICGMRS 2024, SPIE, Vol. 13223, 2024.
+- Manuscript under review / revision: *Analysis of driving factors of forest and grass fires in Southwest China based on an MGWR-GeoShapley framework*.
+- Manuscript in preparation: *Wildfire prediction modeling in Southwest China*.

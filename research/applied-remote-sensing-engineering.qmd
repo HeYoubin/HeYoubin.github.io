@@ -1,56 +1,94 @@
 ---
-title: "Applied Remote Sensing Research"
+title: "Applied Remote Sensing & AI4RS Projects"
 editor:
   markdown:
     wrap: 72
 ---
 
-This section summarizes public, research-oriented remote sensing
-application experience. Detailed operational engineering projects are now
-described in the Experience section using desensitized and public-safe
-language.
+This section presents my applied remote sensing projects, AI for Remote Sensing experiments, and production-oriented remote sensing engineering experience. It complements my wildfire-focused research trajectory by showing broader technical skills in deep learning, satellite data preprocessing, operational monitoring workflows, agricultural monitoring, and remote sensing product generation.
 
 ::: {.callout-note}
-This page uses public-safe descriptions only. Internal source code,
-client information, private implementation details, non-public system
-screenshots, contract information, and non-public data are not disclosed.
+This page uses public-safe descriptions only. Internal source code, client information, private implementation details, non-public system screenshots, contract information, and non-public data are not disclosed.
 :::
 
-## Research-oriented Application Themes
+## 1. Attention-Enhanced Deep Learning for Remote Sensing Scene Classification
 
-### Satellite Data Preprocessing and Analysis-ready Products
+**Keywords:** AI for Remote Sensing; Deep Learning; Remote Sensing Scene Classification; Efficient Channel Attention; ECA-ResNet34; ResNet-34; AID Dataset; PyTorch
 
-I have worked with multi-source satellite observations in workflows that
-connect raw imagery, preprocessing, quality control, and standardized
-analysis-ready products. Public-safe examples include radiometric
-calibration, atmospheric correction, geometric correction, image fusion,
-format conversion, and batch product preparation for downstream
-environmental monitoring tasks.
+### Overview
 
-### Fire-related Environmental Observation
+This AI4RS project addresses remote sensing image scene classification using an attention-enhanced convolutional neural network. The specific model, <span class="highlight-primary">ECA-ResNet34</span>, integrates Efficient Channel Attention blocks into ResNet-34 residual modules to strengthen channel-wise feature representation while preserving the residual learning structure. The model was validated on the AID dataset and demonstrates my foundational experience in deep-learning experiment design, model evaluation, and intelligent interpretation of remote sensing imagery.
 
-My applied remote sensing experience includes wildfire-relevant
-environmental monitoring, thermal anomaly interpretation, time-series
-surface-condition products, and regional raster statistics. This theme
-connects naturally with my academic research on wildfire risk modeling,
-fire ecology, and explainable GeoAI.
+### Research Objective
 
-### Agricultural Monitoring and Crop Growth Assessment
+- Improve remote sensing scene classification using an attention-enhanced CNN architecture.
+- Integrate lightweight channel attention into ResNet-34 while preserving the residual learning structure.
+- Evaluate the proposed ECA-ResNet34 model on the AID dataset.
 
-I have contributed to agricultural remote sensing workflows involving
-vegetation indicators, crop growth assessment, anomaly analysis, thematic
-mapping, and county-level yield-estimation prototypes. The public
-research value lies in linking satellite time-series information,
-meteorological context, crop distribution, and statistical records for
-interpretable agricultural monitoring.
+### Dataset
 
-### From Engineering Practice to Research Questions
+- AID dataset: a 30-category aerial image scene dataset with 10,000 images collected from Google Earth.
+- Each category contains 200-400 images with a 600 x 600 pixel size.
+- The available project materials use a random 8:2 training / validation split.
 
-These applied experiences help me formulate research questions that are
-both technically grounded and environmentally meaningful: how to improve
-the reliability of multi-source satellite products, how to integrate
-remote sensing indicators with machine learning, and how to make spatial
-models more interpretable for decision support.
+### Method
 
-More detailed professional summaries are provided in the
-[Experience](../experience.qmd) section.
+- Baseline: ResNet-34
+- Attention mechanism: Efficient Channel Attention, ECA
+- Proposed model: ECA-ResNet34
+- Task: Remote sensing scene classification
+- Experimental setup: Adam optimizer, initial learning rate of 0.0001, batch size of 16, 100 epochs for training without pre-trained weights, and 10 epochs for tests with pre-trained weights.
+- Evaluation: overall accuracy, confusion matrix, and class-level precision.
+
+### Key Results
+
+- Achieved <span class="highlight-primary">94.95%</span> classification accuracy on the AID dataset.
+- Improved accuracy by <span class="highlight-primary">3.45 percentage points</span> compared with standard ResNet-34.
+- The available paper draft reports that the identity variant of ECA-ResNet34 achieved the best non-pre-trained result among the tested ECA block placements.
+- The confusion matrix and class-level evaluation indicate strong recognition performance for several scene categories, including BareLand, Beach, Forest, Mountain, and SparseResidential.
+
+### My Contribution
+
+- Participated in data collection and research design.
+- Contributed to the formulation of the research idea and experimental workflow.
+- Independently implemented the experimental component, including model configuration, training, evaluation, and result analysis.
+- Assisted in drafting, revising, and polishing the manuscript.
+
+### Outputs
+
+- Role: <span class="highlight-primary">Co-first author / core contributor</span>
+- IEEE conference paper: *Remote Sensing Image Scene Classification Based on ECA Attention Mechanism Convolutional Neural Network*.
+- Publisher link: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9987089)
+- PDF: Available upon reasonable request, subject to publisher sharing policy.
+
+### Selected Figure
+
+![Confusion matrix for ECA-ResNet34 on the AID dataset.](../images/projects/eca-resnet/eca-resnet34-aid-confusion-matrix.png){fig-alt="Confusion matrix showing ECA-ResNet34 scene classification results on the AID dataset." fig-align="center"}
+
+Confusion matrix for the ECA-ResNet34 identity variant on the AID dataset. Additional architecture diagrams and training-curve figures will be added only after web-ready, publicly shareable versions are verified.
+
+## 2. Satellite Data Preprocessing and L1-to-L2 Product Generation
+
+I have worked with multi-source satellite observations in workflows that connect raw imagery, preprocessing, quality control, and standardized analysis-ready products. Public-safe examples include radiometric calibration, atmospheric correction, geometric correction, image fusion, format conversion, quality-mask generation, and batch product preparation for downstream environmental monitoring tasks.
+
+For detailed professional context, see [Satellite Preprocessing Pipelines](../satellite-preprocessing.qmd).
+
+## 3. Operational Fire Monitoring Workflow
+
+My applied remote sensing experience includes wildfire-relevant environmental monitoring, thermal anomaly interpretation, time-series surface-condition products, regional raster statistics, and operational product generation. This work connects naturally with my academic research on wildfire monitoring, fire ecology, and explainable GeoAI, while remaining framed here in public-safe engineering terms.
+
+For detailed professional context, see [Operational Remote Sensing Systems](../operational-remote-sensing.qmd).
+
+## 4. Agricultural Monitoring and Crop Growth Assessment
+
+I have contributed to agricultural remote sensing workflows involving vegetation indicators, crop growth assessment, anomaly analysis, thematic mapping, multi-source data integration, and remote sensing product generation. The public research value lies in linking satellite time-series information, meteorological context, crop distribution, and statistical records for interpretable agricultural monitoring.
+
+For detailed professional context, see [Agricultural Monitoring & Yield Estimation](../agricultural-monitoring-yield.qmd).
+
+## 5. Crop Yield Estimation Module
+
+This module summarizes my experience with county-level crop yield estimation workflows, including feature table construction, regression and machine-learning-based model exploration, feature importance analysis, multicollinearity checks, and public-safe reporting outputs. I present this work conservatively as a prototype and workflow-oriented experience rather than a finalized high-accuracy prediction system.
+
+## From Engineering Practice to Research Questions
+
+These applied experiences help me formulate research questions that are technically grounded and environmentally meaningful: how to improve the reliability of multi-source satellite products, how to integrate remote sensing indicators with machine learning, and how to make spatial models more interpretable for environmental decision support.

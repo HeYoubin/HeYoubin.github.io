@@ -5,45 +5,30 @@ editor:
     wrap: 72
 ---
 
-This page has been reorganized into three focused sections. Please use
-the **Research & Projects** menu in the navigation bar to view the current
-project pages.
+This compatibility page points to the reorganized **Research & Projects** sections. Please use the navigation menu for the current project pages.
 
 ## Featured Research
 
-GeoAI, AI for Remote Sensing, ecological remote sensing, wildfire risk
-modeling, and remote sensing image interpretation.
+A wildfire-focused research trajectory from burned-area mapping and post-fire ecological assessment to spatially explainable fire driver analysis and wildfire prediction modeling.
 
-- Wildfire Risk Modeling in Southwest China
-- Multi-source Remote Sensing Assessment of Wildfire Disturbance and
-  Post-fire Ecological Dynamics in Xichang City
-- Attention-Enhanced Deep Learning for Remote Sensing Scene
-  Classification
+- Wildfire Monitoring and Burned Area Mapping in Xichang City
+- Post-fire Land-use / Land-cover Change and RSEI-based Ecological Assessment
+- Spatially Explainable Analysis of Forest and Grass Fire Drivers in Southwest China
+- Wildfire Prediction Modeling in Southwest China
 
 [Open Featured Research](research/featured-research.qmd)
 
-## Applied Remote Sensing Research
+## Applied Remote Sensing & AI4RS Projects
 
-Public-safe applied remote sensing research experience, including
-satellite data preprocessing, fire-related environmental observation,
-agricultural monitoring, and crop-yield estimation workflows.
+AI for Remote Sensing and public-safe applied remote sensing experience, including scene classification, satellite data preprocessing, operational monitoring workflows, agricultural monitoring, and crop-yield estimation workflows.
 
-[Open Applied Remote Sensing Research](research/applied-remote-sensing-engineering.qmd)
+[Open Applied Remote Sensing & AI4RS Projects](research/applied-remote-sensing-engineering.qmd)
 
 ## Additional GIS & Spatial Analysis
 
-Earlier GIScience and spatial analysis projects involving multi-source
-geospatial data, spatial statistics, spatial econometric models, and
-urban/regional analysis.
+Earlier GIScience and spatial analysis projects involving multi-source geospatial data, spatial statistics, spatial econometric models, and urban/regional analysis.
 
-- Multiscale Spatial Patterns and Driving Mechanisms of Homestay
-  Development in Liangshan Prefecture
-- Integrated Assessment of Urban Development Quality in Jinan City Using
-  Multi-source Geospatial Data
+- Multiscale Spatial Patterns and Driving Mechanisms of Homestay Development in Liangshan Prefecture
+- Integrated Assessment of Urban Development Quality in Jinan City Using Multi-source Geospatial Data
 
 [Open Additional GIS & Spatial Analysis](research/additional-gis-spatial-analysis.qmd)
-
-::: {.callout-note}
-Detailed contribution statements, figures, datasets, and publication
-links will be added as Youbin provides project-specific materials.
-:::

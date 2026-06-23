@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Applied Remote Sensing Research - Youbin He</title>
+  <title>Applied Remote Sensing &amp; AI4RS Projects - Youbin He</title>
   <link rel="icon" href="../images/site-logo.png" type="image/png">
   <link rel="stylesheet" href="../site_libs/bootstrap/bootstrap-514b4b19e9d24a72632852b29f151577.min.css">
   <style>
@@ -13,11 +13,16 @@
     .dropdown-menu a { color: #173B5C; }
     .dropdown-menu a:hover { color: #1F5E9C; }
     main { background: #fff; border-top: 4px solid #D7E7F6; max-width: 980px; margin: 0 auto; min-height: calc(100vh - 56px); padding: 3rem 1.25rem; }
-    h1, h2 { color: #173B5C; }
+    h1, h2, h3 { color: #173B5C; }
     h2 { margin-top: 2.5rem; }
+    h3 { margin-top: 1.8rem; font-size: 1.25rem; }
     a { color: #1F5E9C; text-decoration: none; }
     a:hover { color: #173B5C; text-decoration: underline; }
-    .alert { border-radius: 6px; }
+    .highlight-primary { color: #1F4E79; font-weight: 700; }
+    .callout { background: #EEF4FB; border-left: 4px solid #1F4E79; padding: 1rem; border-radius: 6px; margin: 1.25rem 0; }
+    figure { margin: 1.5rem 0; text-align: center; }
+    figure img { max-width: 100%; height: auto; border: 1px solid #D7E7F6; }
+    figcaption { color: #4b5563; font-size: 0.95rem; margin-top: 0.5rem; }
   </style>
 </head>
 <body>
@@ -35,7 +40,7 @@
           <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research &amp; Projects</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="featured-research.html">Featured Research</a></li>
-            <li><a class="dropdown-item" href="applied-remote-sensing-engineering.html">Applied Remote Sensing Research</a></li>
+            <li><a class="dropdown-item" href="applied-remote-sensing-engineering.html">Applied Remote Sensing &amp; AI4RS Projects</a></li>
             <li><a class="dropdown-item" href="additional-gis-spatial-analysis.html">Additional GIS &amp; Spatial Analysis</a></li>
           </ul>
         </li>
@@ -57,26 +62,51 @@
   </div>
 </nav>
 <main>
-  <h1>Applied Remote Sensing Research</h1>
-  <p>This section summarizes public, research-oriented remote sensing application experience. Detailed operational engineering projects are now described in the <a href="../experience.html">Experience</a> section using desensitized and public-safe language.</p>
-
+  <h1>Applied Remote Sensing &amp; AI4RS Projects</h1>
+  <p>This section presents my applied remote sensing projects, AI for Remote Sensing experiments, and production-oriented remote sensing engineering experience. It complements my wildfire-focused research trajectory by showing broader technical skills in deep learning, satellite data preprocessing, operational monitoring workflows, agricultural monitoring, and remote sensing product generation.</p>
   <section class="callout">
     <p>This page uses public-safe descriptions only. Internal source code, client information, private implementation details, non-public system screenshots, contract information, and non-public data are not disclosed.</p>
   </section>
 
-  <h2>Research-oriented Application Themes</h2>
+  <h2>1. Attention-Enhanced Deep Learning for Remote Sensing Scene Classification</h2>
+  <p><strong>Keywords:</strong> AI for Remote Sensing; Deep Learning; Remote Sensing Scene Classification; Efficient Channel Attention; ECA-ResNet34; ResNet-34; AID Dataset; PyTorch</p>
+  <h3>Overview</h3>
+  <p>This AI4RS project addresses remote sensing image scene classification using an attention-enhanced convolutional neural network. The specific model, <span class="highlight-primary">ECA-ResNet34</span>, integrates Efficient Channel Attention blocks into ResNet-34 residual modules to strengthen channel-wise feature representation while preserving the residual learning structure. The model was validated on the AID dataset and demonstrates my foundational experience in deep-learning experiment design, model evaluation, and intelligent interpretation of remote sensing imagery.</p>
+  <h3>Research Objective</h3>
+  <ul><li>Improve remote sensing scene classification using an attention-enhanced CNN architecture.</li><li>Integrate lightweight channel attention into ResNet-34 while preserving the residual learning structure.</li><li>Evaluate the proposed ECA-ResNet34 model on the AID dataset.</li></ul>
+  <h3>Dataset</h3>
+  <ul><li>AID dataset: a 30-category aerial image scene dataset with 10,000 images collected from Google Earth.</li><li>Each category contains 200-400 images with a 600 x 600 pixel size.</li><li>The available project materials use a random 8:2 training / validation split.</li></ul>
+  <h3>Method</h3>
+  <ul><li>Baseline: ResNet-34</li><li>Attention mechanism: Efficient Channel Attention, ECA</li><li>Proposed model: ECA-ResNet34</li><li>Task: Remote sensing scene classification</li><li>Experimental setup: Adam optimizer, initial learning rate of 0.0001, batch size of 16, 100 epochs for training without pre-trained weights, and 10 epochs for tests with pre-trained weights.</li><li>Evaluation: overall accuracy, confusion matrix, and class-level precision.</li></ul>
+  <h3>Key Results</h3>
+  <ul><li>Achieved <span class="highlight-primary">94.95%</span> classification accuracy on the AID dataset.</li><li>Improved accuracy by <span class="highlight-primary">3.45 percentage points</span> compared with standard ResNet-34.</li><li>The available paper draft reports that the identity variant of ECA-ResNet34 achieved the best non-pre-trained result among the tested ECA block placements.</li><li>The confusion matrix and class-level evaluation indicate strong recognition performance for several scene categories, including BareLand, Beach, Forest, Mountain, and SparseResidential.</li></ul>
+  <h3>My Contribution</h3>
+  <ul><li>Participated in data collection and research design.</li><li>Contributed to the formulation of the research idea and experimental workflow.</li><li>Independently implemented the experimental component, including model configuration, training, evaluation, and result analysis.</li><li>Assisted in drafting, revising, and polishing the manuscript.</li></ul>
+  <h3>Outputs</h3>
+  <ul><li>Role: <span class="highlight-primary">Co-first author / core contributor</span></li><li>IEEE conference paper: <em>Remote Sensing Image Scene Classification Based on ECA Attention Mechanism Convolutional Neural Network</em>.</li><li>Publisher link: <a href="https://ieeexplore.ieee.org/abstract/document/9987089">IEEE Xplore</a></li><li>PDF: Available upon reasonable request, subject to publisher sharing policy.</li></ul>
+  <h3>Selected Figure</h3>
+  <figure>
+    <img src="../images/projects/eca-resnet/eca-resnet34-aid-confusion-matrix.png" alt="Confusion matrix showing ECA-ResNet34 scene classification results on the AID dataset.">
+    <figcaption>Confusion matrix for the ECA-ResNet34 identity variant on the AID dataset. Additional architecture diagrams and training-curve figures will be added only after web-ready, publicly shareable versions are verified.</figcaption>
+  </figure>
 
-  <h3>Satellite Data Preprocessing and Analysis-ready Products</h3>
-  <p>I have worked with multi-source satellite observations in workflows that connect raw imagery, preprocessing, quality control, and standardized analysis-ready products. Public-safe examples include radiometric calibration, atmospheric correction, geometric correction, image fusion, format conversion, and batch product preparation for downstream environmental monitoring tasks.</p>
+  <h2>2. Satellite Data Preprocessing and L1-to-L2 Product Generation</h2>
+  <p>I have worked with multi-source satellite observations in workflows that connect raw imagery, preprocessing, quality control, and standardized analysis-ready products. Public-safe examples include radiometric calibration, atmospheric correction, geometric correction, image fusion, format conversion, quality-mask generation, and batch product preparation for downstream environmental monitoring tasks.</p>
+  <p>For detailed professional context, see <a href="../satellite-preprocessing.html">Satellite Preprocessing Pipelines</a>.</p>
 
-  <h3>Fire-related Environmental Observation</h3>
-  <p>My applied remote sensing experience includes wildfire-relevant environmental monitoring, thermal anomaly interpretation, time-series surface-condition products, and regional raster statistics. This theme connects naturally with my academic research on wildfire risk modeling, fire ecology, and explainable GeoAI.</p>
+  <h2>3. Operational Fire Monitoring Workflow</h2>
+  <p>My applied remote sensing experience includes wildfire-relevant environmental monitoring, thermal anomaly interpretation, time-series surface-condition products, regional raster statistics, and operational product generation. This work connects naturally with my academic research on wildfire monitoring, fire ecology, and explainable GeoAI, while remaining framed here in public-safe engineering terms.</p>
+  <p>For detailed professional context, see <a href="../operational-remote-sensing.html">Operational Remote Sensing Systems</a>.</p>
 
-  <h3>Agricultural Monitoring and Crop Growth Assessment</h3>
-  <p>I have contributed to agricultural remote sensing workflows involving vegetation indicators, crop growth assessment, anomaly analysis, thematic mapping, and county-level yield-estimation prototypes. The public research value lies in linking satellite time-series information, meteorological context, crop distribution, and statistical records for interpretable agricultural monitoring.</p>
+  <h2>4. Agricultural Monitoring and Crop Growth Assessment</h2>
+  <p>I have contributed to agricultural remote sensing workflows involving vegetation indicators, crop growth assessment, anomaly analysis, thematic mapping, multi-source data integration, and remote sensing product generation. The public research value lies in linking satellite time-series information, meteorological context, crop distribution, and statistical records for interpretable agricultural monitoring.</p>
+  <p>For detailed professional context, see <a href="../agricultural-monitoring-yield.html">Agricultural Monitoring &amp; Yield Estimation</a>.</p>
 
-  <h3>From Engineering Practice to Research Questions</h3>
-  <p>These applied experiences help me formulate research questions that are both technically grounded and environmentally meaningful: how to improve the reliability of multi-source satellite products, how to integrate remote sensing indicators with machine learning, and how to make spatial models more interpretable for decision support.</p>
+  <h2>5. Crop Yield Estimation Module</h2>
+  <p>This module summarizes my experience with county-level crop yield estimation workflows, including feature table construction, regression and machine-learning-based model exploration, feature importance analysis, multicollinearity checks, and public-safe reporting outputs. I present this work conservatively as a prototype and workflow-oriented experience rather than a finalized high-accuracy prediction system.</p>
+
+  <h2>From Engineering Practice to Research Questions</h2>
+  <p>These applied experiences help me formulate research questions that are technically grounded and environmentally meaningful: how to improve the reliability of multi-source satellite products, how to integrate remote sensing indicators with machine learning, and how to make spatial models more interpretable for environmental decision support.</p>
 </main>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 </body>

@@ -11,21 +11,21 @@
     "href": "Res_Pro.html",
     "title": "Research & Projects",
     "section": "",
-    "text": "Overview page for Featured Research, Applied Remote Sensing Research, and Additional GIS & Spatial Analysis."
+    "text": "Overview page for Featured Research, Applied Remote Sensing & AI4RS Projects, and Additional GIS & Spatial Analysis."
   },
   {
     "objectID": "research/featured-research.html",
     "href": "research/featured-research.html",
     "title": "Featured Research",
     "section": "",
-    "text": "GeoAI, AI for Remote Sensing, wildfire risk modeling, wildfire disturbance and post-fire ecological dynamics in Xichang City, and attention-enhanced deep learning for remote sensing scene classification."
+    "text": "Wildfire monitoring, post-fire ecological assessment, spatially explainable fire driver analysis, and wildfire prediction modeling in Southwest China."
   },
   {
     "objectID": "research/applied-remote-sensing-engineering.html",
     "href": "research/applied-remote-sensing-engineering.html",
-    "title": "Applied Remote Sensing Research",
+    "title": "Applied Remote Sensing & AI4RS Projects",
     "section": "",
-    "text": "Public-safe applied remote sensing research themes including satellite preprocessing, fire-related environmental observation, agricultural monitoring, and interpretable remote sensing applications."
+    "text": "AI for Remote Sensing and public-safe applied remote sensing projects including scene classification, satellite preprocessing, operational monitoring workflows, agricultural monitoring, and crop-yield estimation."
   },
   {
     "objectID": "research/additional-gis-spatial-analysis.html",
@@ -91,3 +91,4 @@
     "text": "Email, GitHub, Google Scholar, ORCID, and LinkedIn contact links for Youbin He."
   }
 ]
+
