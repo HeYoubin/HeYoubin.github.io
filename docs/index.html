@@ -22,6 +22,7 @@
     a:hover { color: #173B5C; text-decoration: underline; }
     .highlight-primary { color: #1F4E79; font-weight: 700; }
     .highlight-secondary { color: #0B5CAD; font-weight: 700; }
+    .highlight { color: #0b4f8a; font-weight: 700; background: linear-gradient(transparent 62%, rgba(255, 193, 7, 0.28) 62%); padding: 0 2px; }
     .status-tag { color: #8A6500; font-weight: 700; }
     .hero { display: grid; grid-template-columns: 170px 1fr; gap: 2rem; align-items: start; }
     .hero img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
@@ -30,6 +31,10 @@
     .showcase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
     .showcase-tile { border: 1px solid #D7E7F6; border-left: 4px solid #1F4E79; border-radius: 6px; padding: 1rem; background: #F8FBFE; }
     .showcase-tile h3 { margin-top: 0; color: #1F4E79; }
+    .showcase-photo-collage { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(86px, 0.65fr); gap: 0.45rem; margin-bottom: 0.9rem; }
+    .showcase-photo-main, .showcase-photo-thumbs img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+    .showcase-photo-main { aspect-ratio: 4 / 3; }
+    .showcase-photo-thumbs { display: grid; grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 0.45rem; }
     .visitor-map-card { border: 1px solid #D7E7F6; border-radius: 8px; background: #ffffff; box-shadow: 0 14px 34px rgba(23, 59, 92, 0.10); margin: 1rem 0 1.8rem; overflow: hidden; }
     .visitor-map-body { display: grid; grid-template-columns: minmax(280px, 1.05fr) minmax(260px, 1fr); gap: 2rem; align-items: center; padding: 1.5rem; }
     .visitor-map-visual { border-radius: 4px; overflow: hidden; background: #477DAE; min-height: 260px; }
@@ -44,7 +49,7 @@
     .visitor-map-copy li { margin-bottom: 0.35rem; }
     .last-updated { color: #4b5563; font-size: 0.95rem; margin-top: 2rem; font-style: italic; text-align: left; }
     @media (max-width: 700px) { .hero { grid-template-columns: 1fr; } }
-    @media (max-width: 700px) { .showcase-grid { grid-template-columns: 1fr; } .visitor-map-body { grid-template-columns: 1fr; padding: 1rem; } .visitor-map-visual, .visitor-map-visual svg { min-height: 210px; } }
+    @media (max-width: 700px) { .showcase-grid { grid-template-columns: 1fr; } .showcase-photo-collage { grid-template-columns: minmax(0, 1fr); } .showcase-photo-thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; } .showcase-photo-thumbs img { aspect-ratio: 1 / 1; } .visitor-map-body { grid-template-columns: 1fr; padding: 1rem; } .visitor-map-visual, .visitor-map-visual svg { min-height: 210px; } }
   </style>
 </head>
 <body>
@@ -110,12 +115,6 @@
   <h2>Application Focus</h2>
   <p>I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span> in <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">AI for Remote Sensing</span>, <span class="highlight-secondary">Ecological Remote Sensing</span>, and <span class="highlight-secondary">Wildfire Risk Modeling</span>.</p>
 
-  <h2>News</h2>
-  <ul>
-    <li><strong>Apr 8, 2026</strong> - Completed repayment of my undergraduate student loan, marking an important personal milestone in my academic journey.</li>
-    <li><strong>May 1, 2026</strong> - Started a structured update of my <a href="index.html">academic portfolio website</a> to better present my research projects, publications, technical experience, and application-oriented materials.</li>
-  </ul>
-
   <h2>Research Interests</h2>
   <ul>
     <li>GeoAI and AI for Remote Sensing</li>
@@ -156,17 +155,39 @@
   <p>My <a href="research/featured-research.html">Featured Research</a> follows a wildfire-focused trajectory from burned area mapping and post-fire ecological assessment to spatially explainable fire driver analysis and wildfire prediction modeling. My <a href="research/applied-remote-sensing-engineering.html">Applied Remote Sensing &amp; AI4RS Projects</a> summarize my broader experience in AI for Remote Sensing, satellite data preprocessing, and operational remote sensing workflows. My <a href="experience.html">Experience</a> section presents public-safe summaries of operational engineering practice; internal code, datasets, implementation details, and operational products are not publicly displayed.</p>
 
   <h2>Beyond Research</h2>
-  <p>Beyond my academic and engineering work, I enjoy using images and food as a quieter way to record places, seasons, and everyday observation. This section will grow into a personal showcase for food works and photography when I finish organizing a public image set.</p>
+  <p>Beyond my academic and engineering work, I enjoy using food and photography as quieter forms of observation. Cooking helps me slow down and notice materials, timing, and texture; photography keeps me attentive to light, place, and small details in everyday field-like moments.</p>
   <div class="showcase-grid">
     <section class="showcase-tile">
+      <div class="showcase-photo-collage">
+        <img class="showcase-photo-main" src="images/photos/food/1.jpg" alt="Homemade food work with layered texture and color.">
+        <div class="showcase-photo-thumbs">
+          <img src="images/photos/food/2.jpg" alt="Homemade food detail with warm color contrast.">
+          <img src="images/photos/food/3.jpg" alt="Homemade dish prepared as a personal food study.">
+          <img src="images/photos/food/4.jpg" alt="Food plating detail from a personal cooking record.">
+        </div>
+      </div>
       <h3>Food Studio</h3>
-      <p>Homemade dishes, plating experiments, and regional flavors that reflect my curiosity about craft, texture, and daily life.</p>
+      <p>Homemade dishes, plating experiments, and regional flavors that reflect my curiosity about <span class="highlight">craft, texture, and daily life</span>.</p>
     </section>
     <section class="showcase-tile">
+      <div class="showcase-photo-collage">
+        <img class="showcase-photo-main" src="images/photos/landscape/8.jpg" alt="Architectural and urban photography from a personal travel record.">
+        <div class="showcase-photo-thumbs">
+          <img src="images/photos/landscape/7.jpg" alt="Quiet everyday scene captured through close observation.">
+          <img src="images/photos/landscape/6.jpg" alt="Outdoor scene recorded as part of a personal photography note.">
+          <img src="images/photos/landscape/9.jpg" alt="Architectural detail and sky captured during travel.">
+        </div>
+      </div>
       <h3>Photography Notes</h3>
-      <p>Landscape, city, campus, and fieldwork moments captured through the same habit of close observation that also shapes my remote sensing work.</p>
+      <p>Landscape, city, campus, and fieldwork moments captured through the same habit of <span class="highlight">close observation</span> that also shapes my remote sensing work.</p>
     </section>
   </div>
+
+  <h2>News</h2>
+  <ul>
+    <li><strong>Apr 8, 2026</strong> - Completed repayment of my undergraduate student loan, marking an important personal milestone in my academic journey.</li>
+    <li><strong>May 1, 2026</strong> - Started a structured update of my <a href="index.html">academic portfolio website</a> to better present my research projects, publications, technical experience, and application-oriented materials.</li>
+  </ul>
 
   <h2>Visitor Map</h2>
   <div class="visitor-map-card">

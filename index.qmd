@@ -52,15 +52,6 @@ Shandong Jiaotong University<br>
 
 I am seeking <span class="highlight-primary">M.S. and Ph.D. opportunities</span> in <span class="highlight-secondary">GeoAI</span>, <span class="highlight-secondary">AI for Remote Sensing</span>, <span class="highlight-secondary">Ecological Remote Sensing</span>, and <span class="highlight-secondary">Wildfire Risk Modeling</span>.
 
-## News
-
-- **Apr 8, 2026** - Completed repayment of my undergraduate student
-  loan, marking an important personal milestone in my academic journey.
-- **May 1, 2026** - Started a structured update of my
-  [academic portfolio website](index.qmd) to better present my research
-  projects, publications, technical experience, and application-oriented
-  materials.
-
 ## Research Interests
 
 - GeoAI and AI for Remote Sensing
@@ -108,26 +99,56 @@ displayed.
 
 ## Beyond Research
 
-Beyond my academic and engineering work, I enjoy using images and food
-as a quieter way to record places, seasons, and everyday observation.
-This section will grow into a personal showcase for food works and
-photography when I finish organizing a public image set.
+Beyond my academic and engineering work, I enjoy using food and
+photography as quieter forms of observation. Cooking helps me slow down
+and notice materials, timing, and texture; photography keeps me
+attentive to light, place, and small details in everyday field-like
+moments.
 
 ::: {.showcase-grid}
 ::: {.showcase-tile}
+::: {.showcase-photo-collage}
+![Homemade food work with layered texture and color.](images/photos/food/1.jpg){.showcase-photo-main}
+::: {.showcase-photo-thumbs}
+![Homemade food detail with warm color contrast.](images/photos/food/2.jpg)
+![Homemade dish prepared as a personal food study.](images/photos/food/3.jpg)
+![Food plating detail from a personal cooking record.](images/photos/food/4.jpg)
+:::
+:::
+
 ### Food Studio
 
 Homemade dishes, plating experiments, and regional flavors that reflect
-my curiosity about craft, texture, and daily life.
+my curiosity about <span class="highlight">craft, texture, and daily
+life</span>.
 :::
 
 ::: {.showcase-tile}
+::: {.showcase-photo-collage}
+![Architectural and urban photography from a personal travel record.](images/photos/landscape/8.jpg){.showcase-photo-main}
+::: {.showcase-photo-thumbs}
+![Quiet everyday scene captured through close observation.](images/photos/landscape/7.jpg)
+![Outdoor scene recorded as part of a personal photography note.](images/photos/landscape/6.jpg)
+![Architectural detail and sky captured during travel.](images/photos/landscape/9.jpg)
+:::
+:::
+
 ### Photography Notes
 
 Landscape, city, campus, and fieldwork moments captured through the same
-habit of close observation that also shapes my remote sensing work.
+habit of <span class="highlight">close observation</span> that also
+shapes my remote sensing work.
 :::
 :::
+
+## News
+
+- **Apr 8, 2026** - Completed repayment of my undergraduate student
+  loan, marking an important personal milestone in my academic journey.
+- **May 1, 2026** - Started a structured update of my
+  [academic portfolio website](index.qmd) to better present my research
+  projects, publications, technical experience, and application-oriented
+  materials.
 
 ## Visitor Map
 
