@@ -7,10 +7,6 @@ editor:
 
 This section presents my applied remote sensing projects, AI for Remote Sensing experiments, and production-oriented remote sensing engineering experience. It complements my wildfire-focused research trajectory by showing broader technical skills in deep learning, satellite data preprocessing, operational monitoring workflows, agricultural monitoring, and remote sensing product generation.
 
-::: {.callout-note}
-This page uses public-safe descriptions only. Internal source code, client information, private implementation details, non-public system screenshots, contract information, and non-public data are not disclosed.
-:::
-
 ## 1. Attention-Enhanced Deep Learning for Remote Sensing Scene Classification
 
 **Keywords:** AI for Remote Sensing; Deep Learning; Remote Sensing Scene Classification; Efficient Channel Attention; ECA-ResNet34; ResNet-34; AID Dataset; PyTorch

@@ -9,11 +9,6 @@ This section presents my earlier GIScience and spatial analysis projects,
 highlighting my experience with multi-source geospatial data, spatial
 statistics, spatial econometric models, and urban/regional analysis.
 
-::: {.callout-note}
-Project details, figures, and contribution statements will be expanded
-after additional materials are provided.
-:::
-
 ## Multiscale Spatial Patterns and Driving Mechanisms of Homestay Development in Liangshan Prefecture
 
 **Keywords:** GIS; Spatial Analysis; Homestays; B&Bs; Liangshan
@@ -192,7 +187,7 @@ data, land-use information, and socioeconomic statistics into an
 **AHP-based composite assessment framework**. The assessment considered
 economic vitality, ecological quality, and urban welfare / social
 development dimensions, classified urban development levels into three
-tiers, and produced spatial evaluation maps for **2017–2020**. As an
+tiers, and produced spatial evaluation maps for **2017-2020**. As an
 early team-based GIS and remote sensing application project, it
 demonstrates my experience in project leadership, urban spatial
 evaluation, multi-source data integration, and GIS-based analytical
@@ -227,7 +222,7 @@ in urban economy, ecological environment, and social-welfare conditions.
 - NPP-VIIRS and Luojia-1 nighttime light data.
 - OSM road network data.
 - Per-capita GDP data from Jinan statistical yearbook materials.
-- Land-use classification data for 2017–2020.
+- Land-use classification data for 2017-2020.
 
 ### Indicator System
 
@@ -242,7 +237,7 @@ urban development quality across Jinan City.
 
 Representative indicators included:
 
-- ANLI nighttime light index
+- ANLI (Average Nighttime Light Index)
 - GDPP per-capita GDP index
 - Remote Sensing Ecological Index, RSEI
 - Road-network kernel density
@@ -263,7 +258,7 @@ Representative indicators included:
 - Developed an **AHP-based composite assessment framework** integrating
   economic, ecological, and social-welfare dimensions.
 - Produced GIS-based urban development quality maps for Jinan City from
-  <span class="highlight-primary">2017–2020</span>.
+  <span class="highlight-primary">2017-2020</span>.
 - Classified urban development quality into three tiers for spatial
   comparison and interpretation.
 - Integrated remote sensing products and non-remote-sensing geospatial
@@ -319,6 +314,6 @@ Representative indicators included:
   </figure>
   <figure>
     <img src="../images/projects/jinan-urban-quality/jinan-land-use-2017-2020.jpg" alt="Land-use classification maps for Jinan City from 2017 to 2020." style="width:100%; border:1px solid #d7e7f6;">
-    <figcaption>Land-use classification outputs for 2017–2020.</figcaption>
+    <figcaption>Land-use classification outputs for 2017-2020.</figcaption>
   </figure>
 </div>
